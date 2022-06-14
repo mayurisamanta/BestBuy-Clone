@@ -108,8 +108,8 @@ input{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    margin-left: 27%;
-    padding: 5px 50px 5px 50px;
+    margin-left: 25%;
+    padding: 5px 10% 5px 50px;
     background-color: white;
     border: 1px solid rgb(0, 70, 190);
     font-family: 'Poppins' , sans-serif;
@@ -148,8 +148,8 @@ footer{
     box-sizing: border-box;
     background-color: white;
     margin-top: 50px;
-    height: 150px;
-    padding: 25px 200px 10px 200px;
+    height: 250px;
+    padding: 50px 200px 10px 200px;
     line-height: 25px;
 }
 .footer{
@@ -168,4 +168,35 @@ footer>div>p{
     padding-top: 10px;
     font-family: 'Poppins' , sans-serif;
     color: #939393;
+}
+
+@media all and (min-width: 768px) and (max-width: 1324px) {
+    .signup{
+        width: 60%;
+    }
+    .withGoogle{
+        padding-left: 30px;
+    }
+    footer{
+        height: 200px;
+        padding: 50px;
+    }
+    
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+    .signup{
+        width: 90%;
+    }
+    .withGoogle{
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: 20%;
+    }
+    input{
+        width: 100%;
+    }
+    footer{
+        padding: 20px ;
+    }
 }

@@ -9,6 +9,7 @@ body{
     background-color: rgb(236, 236, 236);
 }
 
+/* Navbar Css Start */
 nav {
     background-color: rgb(0, 70, 190);
     color: white;
@@ -27,8 +28,10 @@ nav>a {
     color: white;
     text-decoration: none;
 }
+/* Navbar Css End */
 
 
+/* CSS for sign in Form */
 form {
     width: 70%;
     margin: auto;
@@ -143,12 +146,12 @@ input{
 }
 
 
-
+/* CSS for Footer */
 footer{
     box-sizing: border-box;
     background-color: white;
     margin-top: 50px;
-    height: 150px;
+    height:250px;
     padding: 25px 200px 10px 200px;
     line-height: 25px;
 }
@@ -168,4 +171,36 @@ footer>div>p{
     padding-top: 10px;
     font-family: 'Poppins' , sans-serif;
     color: #939393;
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1324px) {
+    .signup{
+        width: 60%;
+    }
+    .withGoogle{
+        padding-left: 30px;
+    }
+    footer{
+        height: 200px;
+        padding: 50px;
+    }
+    
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+    .signup{
+        width: 90%;
+    }
+    .withGoogle{
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: 20%;
+    }
+    input{
+        width: 100%;
+    }
+    footer{
+        padding: 20px ;
+    }
 }

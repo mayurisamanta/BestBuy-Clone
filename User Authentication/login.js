@@ -1,9 +1,13 @@
-let userData = JSON.parse(localStorage.getItem("userData")) || [];
-let loggedInUsers = JSON.parse(localStorage.getItem("loggedInUsers")) || [];
-let tempData = JSON.parse(localStorage.getItem("tempUserData"));
+
+let userData = JSON.parse(localStorage.getItem("userData")) || []; // All user info
+
+let loggedInUsers = JSON.parse(localStorage.getItem("loggedInUsers")) || []; // User who logged in
+
+let tempData = JSON.parse(localStorage.getItem("tempUserData")); // Temporary Data
 
 document.querySelector("form").addEventListener("submit" , checkForLogIn);
 
+// Main Function to check user information
 function checkForLogIn(event){
     event.preventDefault();
     let email = document.getElementById("email").value;
