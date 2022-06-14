@@ -32,3 +32,17 @@ function checkForLogIn(event){
         alert("Wrong login Email or Password");
     }
 }
+
+let eye = document.getElementById("eyeBtn");
+eye.addEventListener("click" , showHide);
+
+function showHide(){
+    let column = document.getElementById("password");
+    if(column.type == "password"){
+        column.type = "text";
+        eye.src = "hidden.png"
+    }else{
+        column.type = "password";
+        eye.src = "eye.png"
+    }
+}

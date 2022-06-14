@@ -89,6 +89,17 @@ input{
     font-weight: 500;
     margin-top: 10px;
 }
+
+#showHide{
+    position: relative;
+}
+#showHide>img{
+    position: absolute;
+    top:8px;
+    right:55px;
+    width: 20px;
+}
+
 .signup>div:nth-child(3){
     width: 60%;
     margin: auto;
@@ -202,5 +213,8 @@ footer>div>p{
     }
     footer{
         padding: 20px ;
+    }
+    #showHide>img{
+        right: 15px;
     }
 }
