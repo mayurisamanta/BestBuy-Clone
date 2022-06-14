@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 footer{
     background-color: rgb(240,242,244);
@@ -63,6 +68,7 @@ footer{
 #sec_2-1>div>p{
     color: rgb(9,90,201);
     font-family: 'Poppins' , sans-serif;
+    padding-top: 20px;
 }
 footer>div:nth-child(4){
     display: flex;
@@ -98,11 +104,14 @@ footer>div:nth-child(4)>div>p{
     color: rgb(9,90,201);
     font-family: 'Poppins' , sans-serif;
     font-weight: 500;
+    padding-bottom: 15px;
 }
 
 #footer_form>h3{
     font-family: 'Poppins',sans-serif;
     font-weight: 500;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 #footer_form>input:nth-child(4){
     padding: 10px 40px 10px 20px;
@@ -181,6 +190,8 @@ footer>div:nth-child(4)>div>p{
     }
     #sec_2-1{
         padding: 10px;
+        gap: 20px;
+        grid-template-columns: repeat(2 , 1fr);
     }
 }
 
@@ -189,15 +200,19 @@ footer>div:nth-child(4)>div>p{
         grid-template-columns: repeat(2 ,1fr);
     }
     #footer_form{
-        width: 90%;
+        width:80%;
     }
     #sec_2-1{
         padding: 20px;
+        gap: 20px;
     }
     #sec_3>div:first-child{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 10px;
         padding: 20px;
+    }
+    #footer_form>input{
+        margin-top: 15px;
     }
 }
