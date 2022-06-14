@@ -5,5 +5,6 @@ Name             Page-Name    Branch-Name
 
 Mayuri Samanta - Homepage - brachname( homepage , navbar)
 Rohan Mourya   - User Sign in and Up - Branch Name (userAuthentication)
+Siddharth Sharma -Top Deals - Branch Name (topDeals)
 
 
