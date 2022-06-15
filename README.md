@@ -6,7 +6,7 @@ Name - Page-Name - Branch-Name - Localstorage name
 
 Mayuri Samanta - Homepage - brachname (homepage , navbar)
 Rohan Mourya - User Sign in and Up - Branch Name (userAuthentication)
-Sadanand Mare - cartpage  :- branchname (cartpage) :- localstorage name("cart-page")
+Sadanand Mare - cartpage  :- branchname (cartpage) :- localstorage name("cart_page")
 Siddharth Sharma -Top Deals - Branch Name (topDeals)
 Anurag Shekhawat - Payments Page - Branch Name (paymentsSection)
 Sushank Mandal - Product Page - Brach Name(products)
