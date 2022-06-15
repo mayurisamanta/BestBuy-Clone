@@ -30,7 +30,6 @@ document.querySelector("#top").addEventListener("click",function(){
 // Deals of the day 
 document.querySelector("#deal").addEventListener("click", function(){
     window.location.href = "";
-    console.log("inside");
 });
 
 // Account 
