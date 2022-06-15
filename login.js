@@ -1,8 +1,6 @@
 
 let userData = JSON.parse(localStorage.getItem("userData")) || []; // All user info
 
-let loggedInUsers = JSON.parse(localStorage.getItem("loggedInUsers")) || []; // User who logged in
-
 let tempData = JSON.parse(localStorage.getItem("tempUserData")); // Temporary Data
 
 document.querySelector("form").addEventListener("submit" , checkForLogIn);
@@ -40,9 +38,9 @@ function showHide(){
     let column = document.getElementById("password");
     if(column.type == "password"){
         column.type = "text";
-        eye.src = "hidden.png"
+        eye.src = "/Assets/hidden.png"
     }else{
         column.type = "password";
-        eye.src = "eye.png"
+        eye.src = "/Assets/eye.png"
     }
 }
