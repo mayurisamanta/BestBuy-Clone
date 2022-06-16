@@ -3,7 +3,7 @@ let productData = [
     image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6493/6493491_sd.jpg;maxHeight=200;maxWidth=300",
     name: "Samsung - Bespoke 29 cu. ft 4-Door French Door Refrigerator with Beverage Center - Stainless steel",
-    price: "2,599.99",
+    price: "2599.99",
     model: "Samsung",
     id: 20221,
   },
@@ -149,8 +149,9 @@ let productData = [
 //sort by section start
 let sortby = document.getElementById("sort");
 sortby.addEventListener("change", function () {
-  if (sortby.value == "A to Z") {
-    console.log("Hello");
+  // console.log(sortby.value);
+  if (sortby.value == "A") {
+    document.querySelector(".item-list").innerHTML = "";
     let filtered = productData.sort(function (a, b) {
       if (a.model < b.model) {
         return -1;
@@ -161,10 +162,33 @@ sortby.addEventListener("change", function () {
       return 0;
     });
     displayItems(filtered);
+  } else if (sortby.value == "Z") {
+    document.querySelector(".item-list").innerHTML = "";
+    let filtered = productData.sort(function (a, b) {
+      if (a.model < b.model) {
+        return 1;
+      }
+      if (a.model > b.model) {
+        return -1;
+      }
+      return 0;
+    });
+    displayItems(filtered);
+  } else if (sortby.value == "LtoH") {
+    document.querySelector(".item-list").innerHTML = "";
+    let filtered = productData.sort(function (a, b) {
+      return Number(a.price) - Number(b.price);
+    });
+    displayItems(filtered);
+  } else if (sortby.value == "HtoL") {
+    document.querySelector(".item-list").innerHTML = "";
+    let filtered = productData.sort(function (a, b) {
+      return Number(b.price) - Number(a.price);
+    });
+    displayItems(filtered);
   }
 });
 // sort by section end
-
 displayItems(productData);
 
 // this is a function which dynamically takes input from productData array
@@ -184,7 +208,7 @@ function displayItems(productData) {
     pCost.innerText = "$" + element.price;
     let pModel = document.createElement("p");
     pModel.setAttribute("class", "pModel");
-    pModel.innerText = element.model;
+    pModel.innerText = "Brand: " + element.model;
     let pContent = document.createElement("img");
     pContent.setAttribute("class", "pContent");
     pContent.src = "/rating.png";
