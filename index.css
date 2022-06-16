@@ -1,0 +1,425 @@
+/* Navbar  */
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+#main >select > option , #buttons  select > option{
+    background-color: white;
+    color: #0046be;
+}
+#main > select, #buttons > select{
+    cursor: pointer;
+}
+
+/* First div */
+
+#main{
+    height: 70px;
+    width: 100%;
+    background-color: 
+    #0046be;
+    display: flex;
+    align-items: center;
+}
+#main > img:first-child{
+    height: 90%;
+    margin-left: 1.5%;
+    cursor: pointer;
+}
+#main > img:nth-child(2){  
+    height: 30px;
+    cursor: pointer;
+    margin-left: 2%;
+}
+#main > div > img{
+    height: 55%; 
+}
+
+#main > div{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 57%;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#main > input{
+    height: 60%;
+    width: 35%;
+    padding-left: 1%;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #0046be;
+    border-right: white;
+    margin-left: 2%;
+}
+#main > select{
+    background-color: #0046be;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid #0046be;
+    width: 6%;
+}
+#main > p{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+#main > p:nth-child(7){
+    cursor: pointer;
+}
+#main > img:nth-child(8){
+    height: 80%;
+    cursor: pointer;
+    margin-left: 3%;
+}
+#main > p:last-child{
+    cursor: pointer;
+    margin-right: 1%;
+}
+#main > p:last-child:hover{
+    text-decoration: underline;
+}
+#main > img:nth-child(6){
+    height: 100%;
+    cursor: pointer;
+    margin-left: 18%;
+}
+
+/* Second div  */
+
+#buttons{
+    height: 50px;
+    width: 100%;
+    border-top: 0.5px solid 
+    #1e88e5;
+    background-color: #0046be;
+    display: flex;
+    justify-content: space-between;
+}
+#buttons > div{
+    display: flex;
+    align-items: center;
+   color: white;
+   font-size: 14px;
+}
+#buttons > div:first-child{
+   width: 52%;
+   justify-content: space-around;
+   margin-left: 2%;
+}
+#buttons > div:last-child{
+    width: 35%;
+    justify-content: space-between;
+    margin-right: 2.5%;
+}
+#buttons select{
+    background-color: #0046be;
+    color: white;
+    font-size: 14px;
+    border: 0px;
+}
+#buttons p{
+    cursor: pointer;
+}
+#buttons P:hover{
+    text-decoration: underline;
+}
+
+
+/* Homepage  */
+body{
+    background-color: #f0f2f4;
+}
+
+/* First section */
+
+#firstsec{
+    width: 97%;
+    height: 620px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#firstsec > div:first-child{
+    width: 49%;
+    height: 620px;
+    position: relative;
+}
+#firstsec > div:first-child > img{
+    height: 100%;
+    width: 100%;
+}
+#firstsec > div:first-child > p{
+    position: absolute;
+    top: 55%;
+    right: 17%;
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+}
+#firstsec > div:first-child > button{
+    position: absolute;
+    top: 65%;
+    right: 42%;
+    padding: 8px 18px;
+    border-radius: 5px;
+    border: 0px solid;
+    color: #0046be;
+    font-weight: bold;
+}
+#firstsec > div:first-child > button:hover{
+    color: white;
+    background-color: #0046be;
+    border: 1px solid white;
+}
+#firstsec > div:last-child{
+    width: 49%;
+    height: 620px;
+}
+#first{
+    width: 100%;
+    height: 230px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid lightgray;
+}
+#first > p{
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 15px;
+}
+#first > div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+#first img{
+    height: 100px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+#first > div > div > p{
+    font-size: 14px;
+    color: #0046be;
+}
+#first > div > div > p:hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#second{
+    display: flex;
+    margin-top: 25px;
+}
+#second > div:first-child{
+ width: 48%;
+ height: 365px;
+ margin-right: 35px;
+ border: 1px solid lightgray;
+ background-color: white;
+ cursor: pointer;
+}
+#second > div:first-child > p:first-child{
+    background-color: #0046be;
+    padding: 5px 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: fit-content;
+}
+#second > div:first-child > p:first-child > span:first-child{
+    color: yellow;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+#second > div:first-child > p:first-child > span:last-child{
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+#second > div:first-child > p:nth-child(2){
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    width: 90%;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: 40px;
+}
+#second > div:first-child > p:nth-child(2) > span:first-child , #second > div:first-child > p:nth-child(2) > span:last-child{
+    color: #bb0729;
+}
+#second > div:first-child > p:nth-child(3){
+    color: #0046be;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+#second > div:first-child > p:nth-child(3):hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+}
+#second > div:last-child{
+    width: 48%;
+    height: 365px;
+    border: 1px solid lightgray;
+    background-color: white;
+    cursor: pointer;
+}
+#second > div:last-child >p:first-child{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+#second > div:last-child > img{
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+#second > div:last-child >p:nth-child(3) , #second > div:last-child >p:nth-child(4){
+    color: #0046be;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#second > div:last-child >p:nth-child(3):hover , #second > div:last-child >p:nth-child(4):hover {
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+}
+
+/* Medium screen  */
+
+@media all and (min-width:768px) and (max-width:1023px){
+
+     /* navbar */
+
+    /* First div  */
+    #main > input{
+        width: 20%;
+    }
+    #main > select{
+        font-size: 18px;
+        width: 12%;
+    }
+    #main > img:first-child{
+        margin-left: 0.5%;
+    }
+    #main > img:nth-child(2){  
+        margin-left: 0.5%;
+    }
+    #main > img:nth-child(6){
+        margin-left: 3%; 
+    }
+    #main > img:nth-child(8){
+        margin-left: 1%;
+    }
+    /* Second div  */
+    #buttons > div{
+       font-size: 12px;
+    }
+    #buttons select{
+        font-size: 10px;
+    }
+    #buttons > div:last-child{
+        width: 45%;
+        margin-right: 0.5%;
+    }
+    #buttons > div:first-child{
+        width: 48%;
+        margin-left: 0.5%;
+     }
+
+     /* Homepage */
+
+     /* First section */
+
+    #firstsec{
+        display: inline;
+    }
+    #firstsec > div:first-child{
+        width: 100%;
+    }
+    #firstsec > div:first-child > p{
+        right: 23%;
+    }
+    #firstsec > div:first-child > button{
+        right: 43%;
+    }
+    #firstsec > div:last-child{
+        width: 100%;
+    }
+}
+
+/* Small screen */
+
+@media all and (min-width:340px) and (max-width:767px){
+
+    /* navbar */
+
+    #main  .other, #buttons  .other{
+        width: 0%;
+        height: 0%;
+        font-size: 0px;
+        font-size: 0%;
+     }
+
+    /* First div  */
+    #main > select{
+        font-size: 18px;
+        width: 30%;
+        margin-left: 0%;
+    }
+    #main > input{
+        width: 60%;
+    }
+    #main > p:nth-child(7){
+        font-size: 0px;
+        margin: 0%;
+    }
+    #main > img:nth-child(6){
+        margin-left: 0%; 
+    }
+    #main > img:nth-child(8){
+        margin-left: 0%;
+    }
+
+    /* Second div  */
+    #buttons > div:last-child{
+        width: 35%;
+        margin-right: 1%;
+    }
+    #buttons > div:first-child{
+        width: 50%;
+        margin-left: 0.5%;
+    }  
+    #main > div{
+        width: 0%;
+        height: 0%;
+    }
+
+     /* Homepage */
+
+     /* First section */
+
+     #firstsec{
+        display: inline;
+    }
+    #firstsec > div:first-child{
+        width: 100%;
+    }
+    #firstsec > div:first-child > p{
+        right: 23%;
+    }
+    #firstsec > div:first-child > button{
+        right: 43%;
+    }
+    #firstsec > div:last-child{
+        width: 100%;
+    }
+}
