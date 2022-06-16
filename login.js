@@ -19,10 +19,12 @@ function checkForLogIn(event) {
   });
   if (flag) {
     let name = userData[i].userName;
+    let id = userData[i].userId;
     let tempUserData = [];
     let obj = {
       Name: name,
       Email: email,
+      memberId: id,
     };
     tempUserData.push(obj);
     localStorage.setItem("tempUserData", JSON.stringify(tempUserData));
