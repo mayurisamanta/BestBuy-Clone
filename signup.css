@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* sign up css */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgb(236, 236, 236);
 }
 
@@ -32,19 +35,22 @@ form {
     width: 70%;
     margin: auto;
 }
-form>input:nth-child(10){
+
+form>input:nth-child(10) {
     text-align: center;
-    background-color: rgb(0,70,190);
-    font-family: 'Poppins' , sans-serif;
+    background-color: rgb(0, 70, 190);
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: white;
     border: none;
     padding: 10px;
 }
-form>input:nth-child(10):hover{
+
+form>input:nth-child(10):hover {
     background-color: rgb(0, 48, 131);
     cursor: pointer;
 }
+
 .signup {
     background-color: white;
     width: 40%;
@@ -56,7 +62,8 @@ form>input:nth-child(10):hover{
     border-radius: 5px;
     box-shadow: 0px 0px 5px gray;
 }
-.signup>h1{
+
+.signup>h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
@@ -64,12 +71,14 @@ form>input:nth-child(10):hover{
     padding-top: 20px;
     padding-bottom: 5px;
 }
-.signup>p{
+
+.signup>p {
     padding-bottom: 20px;
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
 }
-input{
+
+input {
     padding: 10px;
     margin-bottom: 10px;
     width: 80%;
@@ -77,7 +86,8 @@ input{
     border-radius: 5px;
     border: 1px solid rgb(181, 181, 181);
 }
-::placeholder{
+
+::placeholder {
     font-size: 15px;
     padding: 5px;
     color: rgb(41, 41, 41);
@@ -85,7 +95,8 @@ input{
     font-weight: 500;
     margin-top: 10px;
 }
-.signup>div:nth-child(4){
+
+.signup>div:nth-child(4) {
     width: 60%;
     margin: auto;
     position: relative;
@@ -94,7 +105,7 @@ input{
     justify-content: center;
 }
 
-.signup>div:nth-child(4)>div:nth-child(1){
+.signup>div:nth-child(4)>div:nth-child(1) {
     position: absolute;
     background-color: #595a5c;
     top: 50%;
@@ -103,7 +114,7 @@ input{
     height: 3px;
 }
 
-.withGoogle{
+.withGoogle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,39 +123,43 @@ input{
     padding: 5px 10% 5px 50px;
     background-color: white;
     border: 1px solid rgb(0, 70, 190);
-    font-family: 'Poppins' , sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 15px;
     color: rgb(0, 70, 190);
 }
 
-.withGoogle>img{
+.withGoogle>img {
     width: 30px;
 }
-.withGoogle:hover{
-    background-color: rgb(0,70,190);
+
+.withGoogle:hover {
+    background-color: rgb(0, 70, 190);
     color: white;
     cursor: pointer;
 }
-.signup>div:nth-child(6){
+
+.signup>div:nth-child(6) {
     height: 2px;
     background-color: rgb(80, 80, 80);
     width: 50%;
     margin: auto;
     margin-top: 30px;
 }
-.signup>div:nth-child(7)>p{
-    font-family: 'Poppins' , sans-serif;
+
+.signup>div:nth-child(7)>p {
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 13px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-#tabLogo{
+#tabLogo {
     border-radius: 100%;
 }
-footer{
+
+footer {
     box-sizing: border-box;
     background-color: white;
     margin-top: 50px;
@@ -152,51 +167,59 @@ footer{
     padding: 50px 200px 10px 200px;
     line-height: 25px;
 }
-.footer{
+
+.footer {
     display: flex;
 }
-.vl{
-   border-left: 1px solid rgb(209, 209, 209);
-   margin-left: 10px;
-   margin-right: 10px;
+
+.vl {
+    border-left: 1px solid rgb(209, 209, 209);
+    margin-left: 10px;
+    margin-right: 10px;
 }
-footer>div>a{
+
+footer>div>a {
     text-decoration: none;
 }
 
-footer>div>p{
+footer>div>p {
     padding-top: 10px;
-    font-family: 'Poppins' , sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #939393;
 }
 
 @media all and (min-width: 768px) and (max-width: 1324px) {
-    .signup{
+    .signup {
         width: 60%;
     }
-    .withGoogle{
+
+    .withGoogle {
         padding-left: 30px;
     }
-    footer{
+
+    footer {
         height: 200px;
         padding: 50px;
     }
-    
+
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {
-    .signup{
+    .signup {
         width: 90%;
     }
-    .withGoogle{
+
+    .withGoogle {
         padding-right: 10px;
         padding-left: 10px;
         margin-left: 20%;
     }
-    input{
+
+    input {
         width: 100%;
     }
-    footer{
-        padding: 20px ;
+
+    footer {
+        padding: 20px;
     }
 }

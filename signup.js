@@ -1,6 +1,6 @@
 document.querySelector("form").addEventListener("submit", main);
 
-let userData = JSON.parse(localStorage.getItem("userData")) || [];
+let userData = JSON.parse(localStorage.getItem("userData")) || []; // use this as local storage
 
 function main(event) {
     event.preventDefault();

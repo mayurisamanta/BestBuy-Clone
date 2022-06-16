@@ -1,6 +1,6 @@
 # Best-Buyers
 
-Unit 2 group project 14 - 19 / 06/2022
+Unit 2 group project 14 -- 19 / 06/2022
 
 Name - Page-Name - Branch-Name - Localstorage name
 
