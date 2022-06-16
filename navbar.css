@@ -3,7 +3,7 @@
     margin: 0%;
     box-sizing: border-box;
 }
-#main > option , #buttons > option{
+#main >select > option , #buttons  select > option{
     background-color: white;
     color: #0046be;
 }
