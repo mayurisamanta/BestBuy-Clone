@@ -146,6 +146,25 @@ let productData = [
   },
 ];
 
+//sort by section start
+let sortby = document.getElementById("sort");
+sortby.addEventListener("change", function () {
+  if (sortby.value == "A to Z") {
+    console.log("Hello");
+    let filtered = productData.sort(function (a, b) {
+      if (a.model < b.model) {
+        return -1;
+      }
+      if (a.model > b.model) {
+        return 1;
+      }
+      return 0;
+    });
+    displayItems(filtered);
+  }
+});
+// sort by section end
+
 displayItems(productData);
 
 // this is a function which dynamically takes input from productData array
@@ -165,7 +184,7 @@ function displayItems(productData) {
     pCost.innerText = "$" + element.price;
     let pModel = document.createElement("p");
     pModel.setAttribute("class", "pModel");
-    pModel.innerText = "Brand:  " + element.model;
+    pModel.innerText = element.model;
     let pContent = document.createElement("img");
     pContent.setAttribute("class", "pContent");
     pContent.src = "/rating.png";
