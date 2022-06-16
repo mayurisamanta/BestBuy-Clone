@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2cdd242e4b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>All Appliances</title>
+    <link rel="stylesheet" href="appliances.css" />
+  </head>
+  <body>
+    <main id="main">
+      <div class="scroll">
+        <div>
+          <h5>Filter By Brand</h5>
+          <ul>
+            <li>
+              <input type="checkbox" id="Apple" value="Apple" />
+              <label for="Apple">Apple</label>
+            </li>
+            <li>
+              <input type="checkbox" id="OnePlus" value="OnePlus" />
+              <label for="OnePlus">OnePlus</label>
+            </li>
+            <li>
+              <input type="checkbox" id="Motorola" value="Motorola" />
+              <label for="Motorola">Motorola</label>
+            </li>
+            <li>
+              <input type="checkbox" id="Samsung" value="Samsung" />
+              <label for="Samsung">Samsung</label>
+            </li>
+          </ul>
+        </div>
+        <div class="hl-1"></div>
+        <div>
+          <h5>Filter By Price</h5>
+          <ul>
+            <li>
+              <input type="checkbox" id="zero-100" value="0-100" />
+              <label for="zero-100">0 to $100</label>
+            </li>
+            <li>
+              <input type="checkbox" id="oneZeroOne" value="oneZeroOne" />
+              <label for="oneZeroOne">$101 to $500</label>
+            </li>
+            <li>
+              <input type="checkbox" id="toOnezero" value="toOnezero" />
+              <label for="toOnezero">$501 to $1000</label>
+            </li>
+            <li>
+              <input type="checkbox" id="toThreeZero" value="toThreeZero" />
+              <label for="toThreeZero">$1001 to $3000</label>
+            </li>
+          </ul>
+        </div>
+        <div class="hl-1"></div>
+        <div>
+          <h5>Filter By Rating</h5>
+          <ul>
+            <li>
+              <input type="checkbox" id="bad" value="0-100" />
+              <label for="bad">Bad (1)</label>
+            </li>
+            <li>
+              <input type="checkbox" id="Good" value="oneZeroOne" />
+              <label for="Good">Good (2-3)</label>
+            </li>
+            <li>
+              <input type="checkbox" id="veryGood" value="toOnezero" />
+              <label for="veryGood">Very Good (4)</label>
+            </li>
+            <li>
+              <input type="checkbox" id="excellent" value="toThreeZero" />
+              <label for="excellent">Excellent (5)</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="items">
+        <div id="heading-1">
+          <h1>Sponsored products</h1>
+          <i class="fa-solid fa-circle-info"></i>
+        </div>
+        <div class="hl-1"></div>
+        <div class="slider">
+          <img src="/slider1.png" id="productSlide" alt="product" />
+          <button id="slide-1">
+            <i id="arrow1" class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button id="slide-2">
+            <i id="arrow2" class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="hl-1"></div>
+        <div id="sorting">
+          <h2 id="item_count">57 items</h2>
+          <form action="">
+            <label for="sortby" id="sortby">Sort By: </label>
+            <select id="sort">
+              <option value="">Sort By</option>
+              <option value="">A to Z</option>
+              <option value="">Z to A</option>
+              <option value="">Price Low to High</option>
+              <option value="">Price High to Low</option>
+            </select>
+          </form>
+        </div>
+        <div>
+          <ol class="item-list">
+            <!-- <li class="item">
+            <div class="rowdiv">
+              <div class="item_image"></div>
+              <div class="item_details"></div>
+              <div class="item_cost"></div>
+            </div>
+          </li> -->
+          </ol>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="appliances.js"></script>
+</html>
