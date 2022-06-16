@@ -175,7 +175,7 @@
 
 @media all and (min-width:340px) and (max-width:767px){
 
-    #main > .other, #buttons > .other{
+    #main  .other, #buttons  .other{
         width: 0%;
         height: 0%;
         font-size: 0px;
