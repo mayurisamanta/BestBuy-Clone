@@ -13,13 +13,13 @@ document.querySelector("#main > select").addEventListener("click", function(){
         window.location.href = "topDeals.html";
     }
     else if (selected == "dealofday"){
-        window.location.href = "";
+        window.location.href = "deals.html";
     }
 });
 
 // cart Image
 document.querySelector("#main > p:last-child").addEventListener("click", function(){
-    window.location.href = "";
+    window.location.href = "cartpage.html";
 });
 
 // Top deals 
@@ -29,20 +29,19 @@ document.querySelector("#top").addEventListener("click",function(){
 
 // Deals of the day 
 document.querySelector("#deal").addEventListener("click", function(){
-    window.location.href = "";
-    console.log("inside");
+    window.location.href = "deals.html";
 });
 
 // Account 
 document.querySelector("#account").addEventListener("click", function(){
     let selectedd = document.querySelector("#account").value;
     if (selectedd == "signin"){
-        window.location.href = "";
+        window.location.href = "login.html";
     }
     else if (selectedd == "create"){
-        window.location.href = "";
+        window.location.href = "signup.html";
     }
     else if (selectedd == "ac"){
-        window.location.href = "";
+        window.location.href = "userAccount.html";
     }
 });

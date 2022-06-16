@@ -3,11 +3,11 @@
     margin: 0%;
     box-sizing: border-box;
 }
-option{
+#main >select > option , #buttons  select > option{
     background-color: white;
     color: #0046be;
 }
-select{
+#main > select, #buttons > select{
     cursor: pointer;
 }
 
@@ -20,7 +20,6 @@ select{
     #0046be;
     display: flex;
     align-items: center;
-    position: relative;
 }
 #main > img:first-child{
     height: 90%;
@@ -28,10 +27,9 @@ select{
     cursor: pointer;
 }
 #main > img:nth-child(2){  
-    position: absolute;
-    left: 11%;
     height: 30px;
     cursor: pointer;
+    margin-left: 2%;
 }
 #main > div > img{
     height: 55%; 
@@ -47,7 +45,7 @@ select{
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
-input{
+#main > input{
     height: 60%;
     width: 35%;
     padding-left: 1%;
@@ -64,7 +62,6 @@ input{
     font-weight: bold;
     font-size: 20px;
     border: 1px solid #0046be;
-    margin-left: 4%;
     width: 6%;
 }
 #main > p{
@@ -73,29 +70,24 @@ input{
     font-weight: bold;
 }
 #main > p:nth-child(7){
-    margin-left: 25%;
     cursor: pointer;
 }
 #main > img:nth-child(8){
-    margin-left: 25%;
     height: 80%;
-    position: absolute;
-    right: 5.5%;
     cursor: pointer;
+    margin-left: 3%;
 }
 #main > p:last-child{
-    margin-left: 7%;
     cursor: pointer;
+    margin-right: 1%;
 }
 #main > p:last-child:hover{
     text-decoration: underline;
 }
 #main > img:nth-child(6){
-    margin-left: 10%;
     height: 100%;
-    position: absolute;
-    right: 16%;
     cursor: pointer;
+    margin-left: 18%;
 }
 
 /* Second div  */
@@ -143,29 +135,25 @@ input{
 @media all and (min-width:768px) and (max-width:1023px){
 
     /* First div  */
-    #main > img:nth-child(2){  
-        left: 15%;
+    #main > input{
+        width: 20%;
     }
     #main > select{
-        width: 32%;
+        font-size: 18px;
+        width: 12%;
     }
-    input{
-        width: 55%;
+    #main > img:first-child{
+        margin-left: 0.5%;
+    }
+    #main > img:nth-child(2){  
+        margin-left: 0.5%;
     }
     #main > img:nth-child(6){
-        right: 23%;
-    }
-    #main > p:nth-child(7){
-        margin-right: 1%;
-        margin-left: 15%;
+        margin-left: 3%; 
     }
     #main > img:nth-child(8){
-        right: 9%;
+        margin-left: 1%;
     }
-    #main > p:last-child{
-        margin-right: 2%;
-    }
-
     /* Second div  */
     #buttons > div{
        font-size: 12px;
@@ -187,50 +175,40 @@ input{
 
 @media all and (min-width:340px) and (max-width:767px){
 
-    .other{
+    #main > .other, #buttons > .other{
         width: 0%;
         height: 0%;
         font-size: 0px;
+        font-size: 0%;
      }
 
     /* First div  */
-    #main > img:first-child{
+    #main > select{
+        font-size: 18px;
+        width: 30%;
         margin-left: 0%;
     }
-    #main > img:nth-child(2){  
-       width: 0%;
-       height: 0%;
-    }
-    #main > select{
-        width: 32%;
-        font-size: 16px;
-    }
-    input{
-        width: 37%;
-        border-radius: 5px;
-    }
-    #main > img:nth-child(6){
-        height: 0%;
+    #main > input{
+        width: 60%;
     }
     #main > p:nth-child(7){
         font-size: 0px;
         margin: 0%;
     }
-    #main > img:nth-child(8){
-        right: 10%;
+    #main > img:nth-child(6){
+        margin-left: 0%; 
     }
-    #main > p:last-child{
-        margin-right: 1%;
-        font-size: 16px;
+    #main > img:nth-child(8){
+        margin-left: 0%;
     }
 
     /* Second div  */
     #buttons > div:last-child{
-        width: 23%;
+        width: 35%;
         margin-right: 1%;
     }
     #buttons > div:first-child{
-        width: 40%;
+        width: 50%;
         margin-left: 0.5%;
     }  
     #main > div{
