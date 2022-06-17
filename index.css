@@ -142,7 +142,7 @@ body{
 
 #firstsec{
     width: 97%;
-    height: 620px;
+    height: fit-content;
     margin: 20px;
     display: flex;
     justify-content: space-between;
@@ -182,11 +182,11 @@ body{
 }
 #firstsec > div:last-child{
     width: 49%;
-    height: 620px;
+    height: fit-content;
 }
 #first{
     width: 100%;
-    height: 230px;
+    height: fit-content;
     background-color: white;
     padding: 20px;
     border: 1px solid lightgray;
@@ -218,7 +218,8 @@ body{
 }
 #second{
     display: flex;
-    margin-top: 25px;
+    margin-top: 20px;
+    height: fit-content;
 }
 #second > div:first-child{
  width: 48%;
@@ -293,6 +294,558 @@ body{
     text-decoration: underline;
 }
 
+/* Second section  */
+
+#secondsec{
+    border: 1px solid transparent;
+    width: 100%;
+    background-color: white;
+}
+#secondsec > p:first-child{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 20px;
+}
+#secondsec1{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 98%;
+    margin: auto;
+}
+#secondsec > hr{
+    margin-bottom: 40px;
+    color: lightgray;
+}
+#secondsec1 > div{
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#secondsec1 > div >  img{
+    height: 150px;
+    width: 200px;
+}
+#secondsec1 > div > p{
+    margin-top: 20px;
+    color: #0046be;
+}
+#secondsec1 > div > p:hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+}
+#secondsec2 {
+    height: 80px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+#secondsec2 > div{
+    display: flex;
+    width: 96%;
+    height: 100%;
+    border: 1px solid lightgray;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f4;
+}
+#secondsec2 > div > img{
+    height: 90%;
+    cursor: pointer;
+}
+#secondsec2 > div > div{
+    margin-left: 20px;
+}
+#secondsec2 > div > div > p:first-child{
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+}
+#secondsec2 > div > div > p:last-child{
+    color: #0046be;
+}
+#secondsec2 > div > div > p:last-child:hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#secondsec3{
+    height: 70px;
+    width: 98%;
+    margin-top: 30px;
+    margin-left: 12px;
+    margin-bottom: 30px;
+    background-color: 
+    #fff200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#secondsec3 > p:first-child{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+#secondsec3 > p:last-child{
+    color: #0046be;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+#secondsec3 > p:last-child:hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Third section */
+#thirdsec{
+    display: grid;
+    padding: 25px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+#thirdsec1{
+    position: relative;
+}
+#thirdsec1 > div{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+#thirdsec1 > div > p:first-child{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+#thirdsec1 > div > p:nth-child(2){
+    font-family: 'Raleway', sans-serif;
+    margin-top: 5px;
+}
+#thirdsec1 > div > p:nth-child(3){
+    font-family: 'Raleway', sans-serif;
+    margin-top: 5px;
+    font-size: 12px;
+}
+#thirdsec1 > div > button{
+    margin-top: 5px;
+    padding: 8px 20px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #0046be;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#thirdsec1 > div > button:hover{
+    background-color: #133775;
+}
+#thirdsec1 > img{
+    width: 100%;
+}
+#thirdsec2{
+    position: relative;
+}
+#thirdsec2 > div{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+#thirdsec2 > img{
+    width: 100%;
+}
+#thirdsec2 > div > p:first-child{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+#thirdsec2 > div > p:nth-child(2){
+    font-family: 'Raleway', sans-serif;
+    margin-top: 5px;
+}
+#thirdsec2 > div > button{
+    margin-top: 5px;
+    padding: 8px 20px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #0046be;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#thirdsec2 > div > button:hover{
+    background-color: #133775;
+}
+
+/* Forth Section  */
+
+#forthsec{
+    background-color: white;
+}
+#forthsec1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    background-color: white;
+}
+#forthsec1 > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#forthsec1 > div:first-child{
+    justify-content: right;
+}
+#forthsec1 > div:last-child{
+    justify-content: left;
+}
+#forthsec1 > div > img{
+    height: 50%;
+    margin-right: 10px;
+}
+#forthsec1 > div > div > p:first-child{
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(75, 71, 71);
+    font-weight: bold;
+    cursor: pointer;
+}
+#forthsec1 > div > div > p:nth-child(2){
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(75, 71, 71);
+    margin-top: 5px;
+}
+#forthsec1 > div > div > p:nth-child(3){
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(75, 71, 71);
+    margin-top: 5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.positn-abs {
+    position: absolute;
+}
+
+#bar_main {
+    height: 200px;
+}
+
+#bar {
+    background: rgb(42, 95, 202);
+    background: linear-gradient(180deg, rgba(42, 95, 202, 1) 12%, rgba(5, 26, 94, 1) 56%, rgba(0, 9, 101, 1) 100%);
+    height: 150px;
+    margin-top: 80px;
+    position: relative;
+}
+
+#bar>div:last-child>img {
+    width: 90%;
+}
+
+#bar>div:last-child {
+    right: 5em;
+    top: -47px;
+}
+
+#bar>div:nth-child(1) {
+    left: 8rem;
+    top: 25px;
+    line-height: 2rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#bar>div:nth-child(1)>button {
+    background-color: white;
+    color: rgb(0, 70, 190);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px 5px 20px;
+    font-weight: 600;
+}
+
+#bar>div:nth-child(1)>button:hover {
+    background-color: rgb(11, 54, 127);
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#bar>div:nth-child(2) {
+    border: none;
+    border-radius: 1px;
+    width: 1px;
+    height: 90px;
+    left: 20em;
+    top: 30px;
+    background-color: white;
+}
+
+#bar>div:nth-child(3) {
+    top: 20px;
+    width: 45%;
+    left: 22em;
+    padding: 10px;
+    color: white;
+    font-family : 'Raleway', sans-serif;
+}
+
+#bar>div:nth-child(3)>h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+#bar>div:nth-child(3)>p:nth-child(2) {
+    font-size: .9rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#bar>div:nth-child(3)>p:nth-child(3) {
+    font-size: .5rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Fifth Section  */
+
+#fifthsec{
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-around;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+#fifthsec >div > p{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-left: 13px;
+}
+#fifthsec > div{
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: 
+    #f0f2f4;
+}
+#fifthsec > div > div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+   gap: 20px;
+}
+#fifthsec > div > div  p{
+    color: #0046be;
+}
+#fifthsec > div > div  p:hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#fifthsec > div > div img{
+    height: 170px;
+    cursor: pointer;
+}
+
+/* Sixth Section  */
+#sixthsec{
+    height: fit-content;
+    width: 100%;
+    background-color: white;
+}
+#sixthsec > p{
+    font-size: 20px;
+   margin-bottom: 20px;
+   margin-left: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+#sixthsec > div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#sixthsec > div > div{
+    border: 0.5px solid rgb(228, 226, 226);
+    padding: 30px;
+}
+#sixthsec > div > div > img{
+    height: 250px;
+    cursor: pointer;
+}
+#sixthsec > div > div > P:nth-child(2){
+    color: #0457c8;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+}
+#sixthsec > div > div > P:nth-child(2):hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#sixthsec > div > div > P:nth-child(3){
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+}
+#sixthsec > div > div > P:nth-child(4){
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+    color: gray;
+}
+
+/* Seventh Section & Eighth Section & Tenth Section*/
+
+#seventhsec , #eighthsec, #tenthsec{
+    width: 100%;
+    background-color: white;
+    height: fit-content;
+}
+#seventhsec > p, #eighthsec > p,  #tenthsec > p {
+    padding-top: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+#seventhsec > p > span:first-child, #eighthsec > p > span:first-child,#tenthsec > p > span:first-child{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+#seventhsec > div, #eighthsec > div, #tenthsec> div{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+#seventhsec > div > div, #eighthsec > div > div, #tenthsec > div > div{
+    padding: 30px;
+}
+#seventhsec > div > div > img, #eighthsec > div > div > img, #tenthsec > div > div > img{
+    height: 100px;
+    cursor: pointer;
+}
+#tenthsec > div > div > img{
+    width: 100%;
+}
+#seventhsec > div > div > P:nth-child(2), #eighthsec > div > div > P:nth-child(2), #tenthsec > div > div > P:nth-child(2){
+    color: #0457c8;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+}
+#seventhsec > div > div > P:nth-child(2):hover, #eighthsec > div > div > P:nth-child(2):hover, #tenthsec > div > div > P:nth-child(2):hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#seventhsec > div > div > P:nth-child(3), #eighthsec > div > div > P:nth-child(3), #tenthsec > div > div > P:nth-child(3){
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Ninth Section  */
+
+#ninthsec{
+    width: 100%;
+    background-color: white;
+    height: fit-content;
+}
+#ninthsec > div:first-child{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+#ninthsec > div:first-child > div{
+    border: 1px solid lightgray;
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}
+#ninthsec > div:first-child > div > img{
+    width: 100%;
+    cursor: pointer;
+}
+#ninthsec > div:first-child > div > :nth-child(2){
+    color: #0046be;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#ninthsec > div:first-child > div > :nth-child(2):hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#ninthsec > div:first-child > div > :nth-child(3){
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+}
+#ninthsec > div:last-child{
+    height: fit-content;
+    width: 98%;
+    margin: auto;
+    background-color: #0046be;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ninthsec > div:last-child > img {
+    height: 100px;
+}
+#ninthsec > div:last-child > div{
+    display: grid;
+    align-items: center;
+    margin-left: 30px;
+}
+#ninthsec > div:last-child > div > p:first-child{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+#ninthsec > div:last-child > div > p:last-child{
+    color: yellow;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+#ninthsec > div:last-child > p{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    width: 20%;
+    margin-left: 30px;
+}
+#ninthsec > div:last-child > button{
+    background-color: yellow;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 25px;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-left: 30px;
+    cursor: pointer;
+}
 /* Medium screen  */
 
 @media all and (min-width:768px) and (max-width:1023px){
@@ -354,6 +907,57 @@ body{
     #firstsec > div:last-child{
         width: 100%;
     }
+
+    /* Second section  */
+
+    #secondsec1{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #secondsec3{
+        margin-left: 7px;
+    }
+
+    /* Third section */
+
+    #thirdsec{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #bar>div:last-child>img {
+        width: 0%;
+    } 
+
+    /* Forth section  */
+
+    #forthsec1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #forthsec1 > div:first-child{
+        justify-content: center;
+    }
+    #forthsec1 > div:last-child{
+        justify-content: center;
+    }
+
+    /* Fifth Section  */
+    #fifthsec{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* Sixth Section  */
+
+    #sixthsec > div{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* Seventh Section & Eighth Section */
+
+    #seventhsec > div, #eighthsec > div, #tenthsec > div{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    #ninthsec > div:first-child{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 /* Small screen */
@@ -370,6 +974,9 @@ body{
      }
 
     /* First div  */
+    #first > div{
+        grid-template-columns: repeat(2,1fr);
+    }
     #main > select{
         font-size: 18px;
         width: 30%;
@@ -421,5 +1028,72 @@ body{
     }
     #firstsec > div:last-child{
         width: 100%;
+    }
+    #second{
+        display: block;
+    }
+    #second > div:first-child{
+        height: fit-content;
+        width: 100%;
+    }
+    #second > div:last-child{
+        height: fit-content;
+        width: 100%;
+    }
+
+        /* Second section  */
+
+        #secondsec1{
+            grid-template-columns: repeat(1,1fr);
+        }
+        #secondsec3{
+            margin-left: 7px;
+        }
+        #secondsec2{
+            display: inline;
+        }
+
+    /* Third section */
+
+    #thirdsec{
+        grid-template-columns: repeat(1,1fr);
+    } 
+    #bar>div:last-child>img {
+        width: 0%;
+    } 
+    
+    /* Forth section  */
+
+    #forthsec1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #forthsec1 > div:first-child{
+        justify-content: center;
+    }
+    #forthsec1 > div:last-child{
+        justify-content: center;
+    }
+
+    /* Fifth Section  */
+
+    #fifthsec{
+        grid-template-columns: repeat(1,400px);
+    }
+
+    /* Sixth Section  */
+
+    #sixthsec > div{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+       /* Seventh Section & Eighth Section */
+
+       #seventhsec > div, #eighthsec > div, #tenthsec > div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #ninthsec > div:first-child{
+        grid-template-columns: repeat(1,1fr);
     }
 }
