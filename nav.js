@@ -1,10 +1,10 @@
 document
   .querySelector("#main > img:first-child")
   .addEventListener("click", function () {
-    window.location.href = "index.html";
+    window.location.href = "mobile.html";
   });
 
-// Menu js
+// Menu
 document.querySelector("#main > select").addEventListener("click", function () {
   let selected = document.querySelector("#main > select").value;
   if (selected == "all") {
@@ -46,4 +46,19 @@ document.querySelector("#account").addEventListener("click", function () {
   }
 });
 
-// end
+let searchIcon = document.getElementById("searchIcon");
+searchIcon.addEventListener("click", searchFun);
+
+function searchFun() {
+  let search = document.getElementById("search").value;
+  switch (search) {
+    case "mobile":
+      window.location.href = "mobile.html";
+      break;
+    case "amazon":
+      window.location.href = "https://www.amazon.in";
+      break;
+    default:
+      window.location.href = "https://www.google.com";
+  }
+}
