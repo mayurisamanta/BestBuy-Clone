@@ -17,6 +17,7 @@
     display: flex;
     justify-content: space-around;
     color: white;
+    position: static;
   }
   nav > div {
     display: flex;
@@ -251,3 +252,39 @@ footer {
   }
   
   /* footer styling */
+
+  /* Media queries */ 
+
+  @media all and (min-width: 790px) and (max-width: 865px){
+    #total{
+      font-size: 15px;
+    }
+  }
+  @media all and (max-width: 790px){
+    #container{
+      display: block;
+    }
+    #formSection{
+      width: 80%;
+    }
+    #summary{
+      width: 80%;
+    }
+  }
+  @media all and (min-width: 320px) and (max-width: 536px){
+    #container{
+      display: block;
+    }
+    #formSection{
+      width: 95%;
+    }
+    #summary{
+      width: 95%;
+    }
+  }
+
+  @media all and (min-width: 320px) and (max-width: 415px){
+    #total{
+      font-size: 15px;
+    }
+  }

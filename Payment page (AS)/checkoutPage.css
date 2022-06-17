@@ -13,6 +13,7 @@ nav {
   display: flex;
   justify-content: space-around;
   color: white;
+  position: static;
 }
 nav > div {
   display: flex;
@@ -242,3 +243,42 @@ a:hover{
 }
 
 /* footer styling */
+
+
+/* Media queries */
+
+@media all and (min-width: 790px) and (max-width: 865px){
+  #total{
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 790px){
+  #container{
+    display: block;
+  }
+  #container > div:last-child{
+    width: 80%;
+  }
+  #container > div:first-child{
+    width: 80%;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 536px){
+  #container{
+    display: block;
+  }
+  #container > div:last-child{
+    width: 80%;
+  }
+  #container > div:first-child{
+    width: 80%;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 420px){
+  #total{
+    font-size: 10px;
+  }
+}
