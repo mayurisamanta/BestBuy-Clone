@@ -951,9 +951,12 @@ body{
 
     /* Seventh Section & Eighth Section */
 
-    #seventhsec > div, #eighthsec > div{
+    #seventhsec > div, #eighthsec > div, #tenthsec > div{
         display: grid;
         grid-template-columns: repeat(3,1fr);
+    }
+    #ninthsec > div:first-child{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
@@ -1085,8 +1088,12 @@ body{
 
        /* Seventh Section & Eighth Section */
 
-       #seventhsec > div, #eighthsec > div{
+       #seventhsec > div, #eighthsec > div, #tenthsec > div{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+    }
+
+    #ninthsec > div:first-child{
+        grid-template-columns: repeat(1,1fr);
     }
 }
