@@ -4,7 +4,7 @@ let tempData = JSON.parse(localStorage.getItem("tempUserData")); // Temporary Da
 
 document.querySelector("form").addEventListener("submit", checkForLogIn);
 
-// Main Function to check user information
+// main Function to check user information
 function checkForLogIn(event) {
   event.preventDefault();
   let email = document.getElementById("email").value;

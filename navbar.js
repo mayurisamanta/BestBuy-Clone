@@ -4,7 +4,7 @@ document
     window.location.href = "index.html";
   });
 
-// Menu js
+// Menu js file
 document.querySelector("#main > select").addEventListener("click", function () {
   let selected = document.querySelector("#main > select").value;
   if (selected == "all") {

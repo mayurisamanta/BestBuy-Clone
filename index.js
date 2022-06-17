@@ -1,4 +1,4 @@
-// Navbar 
+// home page
 
 
 document.querySelector("#main > img:first-child").addEventListener("click", function(){
