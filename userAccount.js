@@ -17,5 +17,5 @@ function applynow() {
   window.location.href = "topDeals.html";
 }
 function shopnow() {
-  window.location.href = "mobiles.html";
+  window.location.href = "laptops.html";
 }

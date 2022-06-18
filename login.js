@@ -31,7 +31,7 @@ function checkForLogIn(event) {
     alert("Sign in Succesfully");
     window.location.href = "index.html";
   } else {
-    alert("Invalid Login Email or Password");
+    alert("Invalid Login Email/ID or Password");
   }
 }
 
