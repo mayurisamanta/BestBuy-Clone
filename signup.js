@@ -6,7 +6,6 @@ function main(event) {
   event.preventDefault();
   let name =
     document.getElementById("fName").value +
-    " " +
     document.getElementById("lName").value;
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
