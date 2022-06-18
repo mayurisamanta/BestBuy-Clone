@@ -66,168 +66,10 @@ document.querySelector("#deal").addEventListener("click", function () {
   window.location.href = "deals.html";
 });
 
-// Account
-// document.querySelector("#account").addEventListener("click", function(){
-//     let selectedd = document.querySelector("#account").value;
-//     if (selectedd == "signin"){
-//         window.location.href = "login.html";
-//     }
-//     else if (selectedd == "create"){
-//         window.location.href = "signup.html";
-//     }
-//     else if (selectedd == "ac"){
-//         window.location.href = "userAccount.html";
-//     }
-// });
 // end
 // nav bar
 
 let productData = [
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5838/5838109_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "Insignia™ - 18.1 Cu. Ft. Top-Freezer Refrigerator - White",
-    price: "479.99",
-    model: "Insignia",
-    id: 20221,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464959_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "LG - 5.0 Cu. Ft. Smart Top Load Washer with 6Motion Technology - White",
-    price: "849.99",
-    model: "LG",
-    id: 20222,
-  },
-
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408648_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "GE Profile - Opal 2.0 24-lb. Portable Ice maker with Nugget Ice Production, Side Tank and Built-in WiFi - Stainless steel",
-    price: "579.99",
-    model: "GE",
-    id: 20223,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5161/5161200_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "Insignia™ - 18 Cu. Ft. Top-Freezer Refrigerator - Stainless steel",
-    price: "579.99",
-    model: "Insignia",
-    id: 20224,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6237/6237753_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "GE - 1.6 Cu. Ft. Microwave with Sensor Cooking - Stainless steel",
-    price: "159.99",
-    model: "GE",
-    id: 20225,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6416/6416175_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "Samsung - 4.5 Cu. Ft. High Efficiency Top Load Washer with Vibration Reduction Technology+ - White",
-    price: "579.99",
-    model: "Samsung",
-    id: 20226,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6397/6397853_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "LG - 4.5 Cu. Ft. High Efficiency Stackable Front-Load Washer with 6Motion Technology - White",
-    price: "849.99",
-    model: "LG",
-    id: 20227,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5900/5900311_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "Whirlpool - 1.7 Cu. Ft. Over-the-Range Microwave - Stainless steel",
-    price: "249.99",
-    model: "Whirlpool",
-    id: 20228,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6321/6321760_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "LG - 7.3 Cu. Ft. Smart Electric Dryer with Sensor Dry - White",
-    price: "779.99",
-    model: "LG",
-    id: 20229,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6448/6448628_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "Insignia™ - 26 Lb. Retro Portable Icemaker with Auto Shut-Off - Red",
-    price: "94.99",
-    model: "Insignia",
-    id: 202210,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6369/6369435_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "Frigidaire - 13.0 Cu. Ft. Frost-Free Upright Freezer with Interior Light - White",
-    price: "679.99",
-    model: "Frigidaire",
-    id: 202211,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6493/6493492_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "Samsung - Bespoke 23 cu. ft. Counter Depth 4-Door French Door Refrigerator with Beverage Center - Stainless steel",
-    price: "2699.99",
-    model: "Samsung",
-    id: 202212,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6322/6322982_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "Samsung - 5.0 Cu. Ft. High Efficiency Top Load Washer with Active WaterJet - White",
-    price: "649.99",
-    model: "Samsung",
-    id: 202213,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6076/6076924_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "Whirlpool - 21.4 Cu. Ft. Side-by-Side Refrigerator Fingerprint Resistant - Stainless steel",
-    price: "1999.99",
-    model: "Whirlpool",
-    id: 202214,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6321/6321755_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "LG - 5.0 Cu. Ft. High-Efficiency Smart Top-Load Washer with TurboWash3D Technology - White",
-    price: "779.99",
-    model: "LG",
-    id: 202215,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6203/6203990_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "Whirlpool - 7 Cu. Ft. Electric Dryer with AutoDry Drying System - White",
-    price: "549.99",
-    model: "Whirlpool",
-    id: 202216,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3073/3073087_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "Amana - 6.5 Cu. Ft. Electric Dryer with Automatic Dryness Control - White",
-    price: "499.99",
-    model: "Amana",
-    id: 202217,
-  },
-  {
-    image:
-      "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6470/6470435_sd.jpg;maxHeight=200;maxWidth=300",
-    name: "Samsung - 4.5 cu. ft. Large Capacity Smart Dial Front Load Washer with Super Speed Wash - Brushed black",
-    price: "829.99",
-    model: "Samsung",
-    id: 202218,
-  },
   {
     image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450853_sd.jpg;maxHeight=200;maxWidth=300",
@@ -430,49 +272,6 @@ sortby.addEventListener("change", function () {
 
 //filter section starts
 // Filter Section Brands
-let Amana = document.getElementById("Amana"); // Selected Input Tag by Id
-
-// Mobile is main Data
-Amana.addEventListener("change", function () {
-  filterItem(productData, Amana.value);
-});
-
-let Frigidaire = document.getElementById("Frigidaire"); // Selected Input Tag by Id
-
-// Mobile is main Data
-Frigidaire.addEventListener("change", function () {
-  filterItem(productData, Frigidaire.value);
-});
-let GE = document.getElementById("GE"); // Selected Input Tag by Id
-
-// Mobile is main Data
-GE.addEventListener("change", function () {
-  filterItem(productData, GE.value);
-});
-let Insignia = document.getElementById("Insignia"); // Selected Input Tag by Id
-
-// Mobile is main Data
-Insignia.addEventListener("change", function () {
-  filterItem(productData, Insignia.value);
-});
-let LG = document.getElementById("LG"); // Selected Input Tag by Id
-
-// Mobile is main Data
-LG.addEventListener("change", function () {
-  filterItem(productData, LG.value);
-});
-let Samsung = document.getElementById("Samsung"); // Selected Input Tag by Id
-
-// Mobile is main Data
-Samsung.addEventListener("change", function () {
-  filterItem(productData, Samsung.value);
-});
-let Whirlpool = document.getElementById("Whirlpool"); // Selected Input Tag by Id
-
-// Mobile is main Data
-Whirlpool.addEventListener("change", function () {
-  filterItem(productData, Whirlpool.value);
-});
 let ASUS = document.getElementById("ASUS"); // Selected Input Tag by Id
 
 // Mobile is main Data
@@ -501,8 +300,8 @@ MacBook.addEventListener("change", function () {
 
 // filter function
 let tempFilter = [];
-function filterItem(all, a) {
-  let filterd = all.filter(function (elem) {
+function filterItem(laptops, a) {
+  let filterd = laptops.filter(function (elem) {
     return elem.model == a;
   });
 
