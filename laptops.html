@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/2cdd242e4b.js" crossorigin="anonymous"></script>
+  <title>Laptops</title>
+  <script src="https://kit.fontawesome.com/2cdd242e4b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="laptops.css" />
+</head>
+
+<body>
+  <!-- navbar  -->
+  <div id="main">
+    <img src="https://www.logo-designer.co/wp-content/uploads/2018/05/2018-bestbuy-new-logo-design.png" alt="logo" />
+    <img class="other"
+      src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8Zz4KICA8cmVjdCB3aWR0aD0iNzUyIiBoZWlnaHQ9Ijc1MiIgZmlsbD0iIzAwNDViZSIvPgogIDxwYXRoIGQ9Im0xNjIuODkgMTcyLjM2aDQyNi4yMnY3MS4wMzloLTQyNi4yMnoiIGZpbGw9IiNmZmYiLz4KICA8cGF0aCBkPSJtMTYyLjg5IDM0Mi44NWg0MjYuMjJ2NzEuMDM5aC00MjYuMjJ6IiBmaWxsPSIjZmZmIi8+CiAgPHBhdGggZD0ibTE2Mi44OSA1MTMuMzRoNDI2LjIydjcxLjAzOWgtNDI2LjIyeiIgZmlsbD0iI2ZmZiIvPgogPC9nPgo8L3N2Zz4K"
+      alt="" />
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="topDeals.html">Top Deals</a>
+        <a href="dealsOfTheDay.html">Deals of the Day</a>
+        <a href="appliances.html">All Appliances</a>
+
+        <!-- changes  -->
+        <a href="mobiles.html">Mobiles</a>
+        <a href="laptop.html">Laptops</a>
+
+        <a href="#">Best Buy Outlet</a>
+        <a href="#">Toys, Games & Collectibles</a>
+      </div>
+    </div>
+    <input id="search-nav" type="text" placeholder="Search Best Buy" />
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/128/7644/7644705.png" alt="" />
+    </div>
+    <img class="other"
+      src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8ZGVmcz4KICA8Y2xpcFBhdGggaWQ9ImEiPgogICA8cGF0aCBkPSJtMTM5LjIxIDEzOS4yMWg0NzMuNTh2NDczLjU4aC00NzMuNTh6Ii8+CiAgPC9jbGlwUGF0aD4KIDwvZGVmcz4KIDxyZWN0IHdpZHRoPSI3NTIiIGhlaWdodD0iNzUyIiBmaWxsPSIjMDA0NWJlIi8+CiA8ZyBjbGlwLXBhdGg9InVybCgjYSkiPgogIDxwYXRoIGQ9Im01NTMuNzMgMTM5LjIxYzExLjkzOCAwIDIyLjc2NiA3LjIyMjcgMjcuMzQ0IDE4LjI1bDI4LjE5MSA4My4xMjljNy4wOTM4IDIwLjY1NiAzLjYwNTUgNDIuNTUxLTExLjQ0NSA1OC42Ni02LjU3NDIgNy4wMzUyLTE1LjA3NCAxMi4yNTQtMjQuNDkyIDE1LjEwNXYyMTkuNTFjMCAyMS42OTEtMTcuNzczIDM5LjQ2NS0zOS40NjUgMzkuNDY1aC0xMTguMzljLTUuNDY4OCAwLTkuODY3Mi00LjQwMjMtOS44NjcyLTkuODY3MiAwLTUuNDY0OCA0LjM5ODQtOS44NjcyIDkuODY3Mi05Ljg2NzJoMTE4LjM5YzExLjEwMiAwIDE5LjczLTguNjI4OSAxOS43My0xOS43M3YtMjE3LjIzYy0yLjgyMDMtMC4xODM1OS01LjY1MjMtMC41MjM0NC04LjQ5NjEtMS4xNTYyLTEyLjQ4LTIuNzY5NS0yMy41NjItMTAuMTYtMzEuNjYtMjEuOTY1LTIuMTYwMiAyLjgxNjQtNC42MTcyIDUuNDIxOS03LjI2NTYgNy43NjU2LTEwLjU1OSA5LjMyODEtMjQuNjg0IDE1LjY3Mi0zOS40ODQgMTUuNTMxLTE4LjU3LTAuMTc5NjktMzQuODY3LTEwLjMyLTQ0LjkxOC0yNC44NC05Ljk1NyAxNC43ODEtMjYuODIgMjQuODEyLTQ1Ljc2NiAyNC44NC0xOC41NjIgMC4wMjczNDMtMzUuNDYxLTkuNzI2Ni00NS41NzQtMjQuMTY0LTEwLjUwOCAxNS4wNjYtMjguMDc0IDI0Ljk3My00Ny41IDI0LjE2NC0xNC40NjUtMC42MDE1Ni0yNy45NzMtNy4xOTUzLTM3Ljk4NC0xNi40MzgtMi4xMzY3LTEuOTc2Ni00LjA1MDgtNC4xOTE0LTUuODU1NS02LjQ3NjYtNy43NTc4IDExLjAwNC0xOS4yNDYgMTkuMjIzLTMzLjEwNSAyMS43MzgtMi41NzAzIDAuNDY0ODQtNS4xNDQ1IDAuNzU3ODEtNy43MTA5IDAuODg2NzJ2MjE3LjM1YzAgMTEuMTAyIDguNjMyOCAxOS43MyAxOS43MzQgMTkuNzNoMTE4LjUzYzUuNDY0OCAwIDkuODYzMyA0LjQwMjMgOS44NjMzIDkuODY3MiAwIDUuNDY0OC00LjM5ODQgOS44NjcyLTkuODYzMyA5Ljg2NzJoLTExOC41M2MtMjEuNjk1IDAtMzkuNDY1LTE3Ljc3My0zOS40NjUtMzkuNDY1di0yMTkuODdjLTEwLjAxNi0zLjA2NjQtMTkuMTUyLTguODEyNS0yNi4xODgtMTcuMjExLTEzLjE3Ni0xNS43MjMtMTYuOTM4LTM3LjYwMi05LjAxOTUtNTYuNzVsMjcuNTE2LTgyLjI2MmM0LjU3NDItMTEuMDI3IDE1LjU2Mi0xOC41NTkgMjcuNS0xOC41NTl6bTAgMTkuNzM0aC0zNTUuMzhjLTQuMDAzOSAwLTcuNTI3MyAyLjM3NS05LjA3NDIgNi4wMzEybC0yNy43MTEgODIuNTljLTUuMDQzIDEyLjE4OC0yLjY3OTcgMjYuMjc3IDUuOTE0MSAzNi41MzUgOC42MDU1IDEwLjI3IDIxLjMxNiAxNC41ODIgMzQuOTc3IDEyLjEwMiAxMi40NjEtMi4yNTc4IDI2LjQzOC0xNy42NDggMjYuNDM4LTI4LjczIDAuMDAzOTA2LTMuNTIzNCAxLjg4MjgtNi43NzczIDQuOTMzNi04LjUzNTIgMy4wNTA4LTEuNzY1NiA2LjgxMjUtMS43NjU2IDkuODY3MiAwIDMuMDUwOCAxLjc1NzggNC45Mjk3IDUuMDExNyA0LjkzMzYgOC41MzUyIDAgNS41MTU2IDMuMjQyMiAxMi40MzQgOS43MTA5IDE4LjQwMiA2LjYzNjcgNi4xMjg5IDE2LjM3MSAxMC44NCAyNS4zOTggMTEuMjE1IDE3LjkwMiAwLjc0NjA5IDM2Ljk5Ni0xNS4xOCAzNi45OTYtMjkuNjE3IDAuMDAzOTA2LTMuNTIzNCAxLjg4MjgtNi43NzczIDQuOTMzNi04LjUzNTIgMy4wNTQ3LTEuNzY1NiA2LjgxNjQtMS43NjU2IDkuODY3MiAwIDMuMDUwOCAxLjc1NzggNC45Mjk3IDUuMDExNyA0LjkzMzYgOC41MzUyIDAgMTQuMTQ1IDE4LjYyNSAyOS42MjEgMzUuNDk2IDI5LjU5OCAxNy40NTMtMC4wMjczNDMgMzUuNjQ4LTE3LjA5NCAzNS42NDgtMjkuNTk4IDAuMDAzOTA2LTMuNTIzNCAxLjg4MjgtNi43NzczIDQuOTMzNi04LjUzNTIgMy4wNTA4LTEuNzY1NiA2LjgxMjUtMS43NjU2IDkuODY3MiAwIDMuMDUwOCAxLjc1NzggNC45Mjk3IDUuMDExNyA0LjkzMzYgOC41MzUyIDAgMTEuNjAyIDE5LjM1MiAyOS40NDEgMzUuNTMxIDI5LjU5OCA4Ljk1NyAwLjA4OTg0NCAxOS4yMDctNC4zOTQ1IDI2LjIyNy0xMC41OTggNS4yMzA1LTQuNjIxMSA4LjgwNDctOS42MDE2IDkuNjE3Mi0xNC4yOTcgMC4yNzM0NC0xLjU4MiAwLjM0Mzc1LTIuNzI2NiAwLjM0NzY2LTQuNjI1IDAuMDI3MzQ0LTMuNDk2MSAxLjkwNjItNi43ODkxIDQuOTMzNi04LjUzOTEgMy4wNTA4LTEuNzYxNyA2LjgxMjUtMS43NjE3IDkuODYzMyAwczQuOTMzNiA1LjAxNTYgNC45MzM2IDguNTM5MWMwIDExLjkwMiAxNC4zMjQgMjUuOTM4IDI2LjU1NSAyOC42NTIgMTMuMDA0IDIuODg2NyAyNi4wMzEtMS44Mzk4IDM0LjA1MS0xMC40MjYgMTAuMzk1LTExLjEyNSAxMi40NDEtMjMuNDczIDcuMTg3NS0zOC43N2wtMjcuNzctODIuMDEyYy0xLjUzOTEtMy42ODc1LTUuMDcwMy02LjA1MDgtOS4wOTM4LTYuMDUwOHptLTE3Ny43MyAyMDcuMTljNS40NjQ4IDAgOS44NDM4IDQuMzk4NCA5Ljg2MzMgOS44NjMzbDAuMDM5MDYzIDkuODY3Mmg0OS4yOTNjMjEuNjAyIDAgMzkuNDY1IDE3LjY3MiAzOS40NjUgMzkuMzMydjM5LjczNGMwIDIxLjYwMi0xNy43MjcgMzkuMzI4LTM5LjMyOCAzOS4zMjhoLTQ5LjQ2OWwtMC4wNTQ2ODcgODguNzk3aDE5Ljc4OWM1LjQ2NDggMCA5Ljg2NzIgNC40MDIzIDkuODY3MiA5Ljg2NzIgMCA1LjQ2NDgtNC40MDIzIDkuODY3Mi05Ljg2NzIgOS44NjcyaC01OS4xOTljLTUuNDY0OCAwLTkuODYzMy00LjQwMjMtOS44NjMzLTkuODY3MiAwLTUuNDY0OCA0LjM5ODQtOS44NjcyIDkuODYzMy05Ljg2NzJoMTkuNzM0bDAuMDU4NTk0LTg4Ljc5N2gtNDQuNTU1Yy0xMC40NjEgMC0yMC41MDQtNC4xNjQxLTI3LjkwMi0xMS41NjJsLTI3LjQ4LTI2LjYyOWMtMTEuNDc3LTExLjQ3Ny0xMS41NDctMzAuNDU3LTAuMDc0MjE4LTQxLjkzNGwyNy41NTUtMjYuNzA3YzcuNDAyMy03LjM5ODQgMTcuNDQxLTExLjU2MiAyNy45MDItMTEuNTYyaDQ0LjUzNWwtMC4wMzkwNjMtOS44NjcyYy0wLjAxOTUzMS01LjQ2NDggNC4zOTg0LTkuODYzMyA5Ljg2NzItOS44NjMzem01OS4xOTUgMzkuNDY1aC0xMTMuNTZjLTUuMjM0NCAwLTEwLjMyNCAyLjE1MjMtMTQuMDI3IDUuODU1NWwtMjcuNDggMjYuNjMzYy0zLjkzMzYgMy45MzM2LTMuOTMzNiAxMC4wMTYgMCAxMy45NTNsMjcuNDggMjYuNjI5YzMuNzAzMSAzLjcwMzEgOC43OTMgNS44NTk0IDE0LjAyNyA1Ljg1OTRoMTEzLjdjMTAuOTM4IDAgMTkuNTk4LTguNjYwMiAxOS41OTgtMTkuNTk4di0zOS43MzRjMC0xMC44ODMtOC43OTY5LTE5LjU5OC0xOS43MzQtMTkuNTk4em0tMTkuNzMgMjkuNTk4YzUuNDQ5MiAwIDkuODYzMyA0LjQxOCA5Ljg2MzMgOS44NjcyIDAgMi42MTcyLTEuMDM5MSA1LjEyNS0yLjg4NjcgNi45NzY2LTEuODUxNiAxLjg0NzctNC4zNTk0IDIuODg2Ny02Ljk3NjYgMi44ODY3LTIuNjE3MiAwLTUuMTI4OS0xLjAzOTEtNi45NzY2LTIuODg2Ny0xLjg1MTYtMS44NTE2LTIuODkwNi00LjM1OTQtMi44OTA2LTYuOTc2NiAwLTIuNjE3MiAxLjAzOTEtNS4xMjg5IDIuODkwNi02Ljk3NjYgMS44NDc3LTEuODUxNiA0LjM1OTQtMi44OTA2IDYuOTc2Ni0yLjg5MDZ6bS0zOS40NjUgMGM1LjQ0OTIgMCA5Ljg2MzMgNC40MTggOS44NjMzIDkuODY3MiAwIDIuNjE3Mi0xLjAzOTEgNS4xMjUtMi44ODY3IDYuOTc2Ni0xLjg1MTYgMS44NDc3LTQuMzU5NCAyLjg4NjctNi45NzY2IDIuODg2N3MtNS4xMjg5LTEuMDM5MS02Ljk3NjYtMi44ODY3Yy0xLjg1MTYtMS44NTE2LTIuODkwNi00LjM1OTQtMi44OTA2LTYuOTc2NiAwLTIuNjE3MiAxLjAzOTEtNS4xMjg5IDIuODkwNi02Ljk3NjYgMS44NDc3LTEuODUxNiA0LjM1OTQtMi44OTA2IDYuOTc2Ni0yLjg5MDZ6bS0zOS40NjUgMGM1LjQ0OTIgMCA5Ljg2MzMgNC40MTggOS44NjMzIDkuODY3MiAwIDIuNjE3Mi0xLjAzOTEgNS4xMjUtMi44ODY3IDYuOTc2Ni0xLjg1MTYgMS44NDc3LTQuMzYzMyAyLjg4NjctNi45NzY2IDIuODg2Ny0yLjYxNzIgMC01LjEyODktMS4wMzkxLTYuOTc2Ni0yLjg4NjctMS44NTE2LTEuODUxNi0yLjg5MDYtNC4zNTk0LTIuODkwNi02Ljk3NjYgMC0yLjYxNzIgMS4wMzkxLTUuMTI4OSAyLjg5MDYtNi45NzY2IDEuODQ3Ny0xLjg1MTYgNC4zNTk0LTIuODkwNiA2Ljk3NjYtMi44OTA2eiIgZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIi8+CiA8L2c+Cjwvc3ZnPgo="
+      alt="" />
+    <p class="other">Aiea</p>
+    <img
+      src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8Zz4KICA8cmVjdCB3aWR0aD0iNzUyIiBoZWlnaHQ9Ijc1MiIgZmlsbD0iIzAwNDViZSIvPgogIDxwYXRoIGQ9Im0xODMuNzQgMTc4Ljk2Yy02LjUxOTUgMC0xMS44MDUtNS4yODUyLTExLjgwNS0xMS44MDUgMC02LjUxOTUgNS4yODUyLTExLjgwNSAxMS44MDUtMTEuODA1aDgwLjQzYzUuNzY5NSAwIDEwLjU3IDQuMTMyOCAxMS42MDkgOS41ODk4bDEwLjAzMSAzOC4wNDdoMjgyLjQ2YzYuNTE5NSAwIDExLjgwNSA1LjI4NTIgMTEuODA1IDExLjgwNSAwIDEuMjM0NC0wLjE4MzU5IDIuNDE0MS0wLjUzOTA2IDMuNTIzNGwtNDMuNDE4IDE3Mi44NmMtMS4zMzU5IDUuMzcxMS02LjE1MjMgOC45Mzc1LTExLjQzOCA4LjkzNzV2MC4wMTU2MjVoLTIwMi4xN2MtOC45Mzc1IDAtMTcuMDYyIDMuNjY0MS0yMi45NjEgOS41NjI1LTUuODk0NSA1Ljg5NDUtOS41NjI1IDE0LjAyMy05LjU2MjUgMjIuOTYxIDAgOC45MjE5IDMuNjY0MSAxNy4wNTEgOS41NjI1IDIyLjk2MSA1Ljg5NDUgNS44OTQ1IDE0LjAyMyA5LjU2MjUgMjIuOTYxIDkuNTYyNWgyMzQuMjhjNi41MTk1IDAgMTEuODA1IDUuMjg1MiAxMS44MDUgMTEuODA1cy01LjI4NTIgMTEuODA1LTExLjgwNSAxMS44MDVoLTIzNC4yOGMtMTUuNDQ1IDAtMjkuNDgtNi4zMDg2LTM5LjY1Mi0xNi40OHMtMTYuNDgtMjQuMjExLTE2LjQ4LTM5LjY1MmMwLTE1LjQ0NSA2LjMwODYtMjkuNDk2IDE2LjQ4LTM5LjY1MiA2LjgwNDctNi44MDQ3IDE1LjM0NC0xMS44OTEgMjQuODc5LTE0LjUwOGwtNTIuNjI1LTE5OS41NmgtNzEuMzUyem0zMTEuODEgMzI5LjNjMTIuMjAzIDAgMjMuMjU4IDQuOTQ1MyAzMS4yNTggMTIuOTQxIDggOCAxMi45NDEgMTkuMDUxIDEyLjk0MSAzMS4yNTggMCAxMi4yMDMtNC45NDUzIDIzLjI0Mi0xMi45NDEgMzEuMjQyLTggOC0xOS4wNTEgMTIuOTQxLTMxLjI1OCAxMi45NDEtMTIuMjAzIDAtMjMuMjU4LTQuOTQ1My0zMS4yNDItMTIuOTQxLTgtOC0xMi45NDEtMTkuMDUxLTEyLjk0MS0zMS4yNDIgMC0xMi4yMDMgNC45NDUzLTIzLjI1OCAxMi45NDEtMzEuMjU4IDgtOCAxOS4wNTEtMTIuOTQxIDMxLjI0Mi0xMi45NDF6bTE0LjU0NyAyOS42MzdjLTMuNzIyNy0zLjcyMjctOC44NjcyLTYuMDIzNC0xNC41NDctNi4wMjM0LTUuNjgzNiAwLTEwLjgyNCAyLjMwMDgtMTQuNTQ3IDYuMDIzNHMtNi4wMjM0IDguODY3Mi02LjAyMzQgMTQuNTQ3YzAgNS42ODM2IDIuMzAwOCAxMC44MjQgNi4wMjM0IDE0LjU0N3M4Ljg2NzIgNi4wMjM0IDE0LjU0NyA2LjAyMzRjNS42ODM2IDAgMTAuODI0LTIuMzAwOCAxNC41NDctNi4wMjM0czYuMDIzNC04Ljg2NzIgNi4wMjM0LTE0LjU0N2MwLTUuNjgzNi0yLjMwMDgtMTAuODQtNi4wMjM0LTE0LjU0N3ptLTE2MC42Ny0yOS42MzdjMTIuMjAzIDAgMjMuMjU4IDQuOTQ1MyAzMS4yNDIgMTIuOTQxIDggOCAxMi45NDEgMTkuMDUxIDEyLjk0MSAzMS4yNTggMCAxMi4yMDMtNC45NDUzIDIzLjI0Mi0xMi45NDEgMzEuMjQyLTggOC0xOS4wNTEgMTIuOTQxLTMxLjI0MiAxMi45NDEtMTIuMjAzIDAtMjMuMjQyLTQuOTQ1My0zMS4yNDItMTIuOTQxLTgtOC0xMi45NDEtMTkuMDUxLTEyLjk0MS0zMS4yNDIgMC0xMi4yMDMgNC45NDUzLTIzLjI1OCAxMi45NDEtMzEuMjU4IDgtOCAxOS4wNTEtMTIuOTQxIDMxLjI0Mi0xMi45NDF6bTE0LjU0NyAyOS42MzdjLTMuNzIyNy0zLjcyMjctOC44NjcyLTYuMDIzNC0xNC41NDctNi4wMjM0LTUuNjgzNiAwLTEwLjgyNCAyLjMwMDgtMTQuNTQ3IDYuMDIzNHMtNi4wMjM0IDguODY3Mi02LjAyMzQgMTQuNTQ3YzAgNS42ODM2IDIuMzAwOCAxMC44MjQgNi4wMjM0IDE0LjU0N3M4Ljg2NzIgNi4wMjM0IDE0LjU0NyA2LjAyMzRjNS42ODM2IDAgMTAuODI0LTIuMzAwOCAxNC41NDctNi4wMjM0czYuMDIzNC04Ljg2NzIgNi4wMjM0LTE0LjU0N2MwLTUuNjgzNi0yLjMwMDgtMTAuODQtNi4wMjM0LTE0LjU0N3ptLTQyLjQyMi0xOTkuMyAxMC4wMDQgMzcuOTM0aDE4My45MmwzNy42NjQtMTQ5LjkyaC0yNjEuMTFsMjkuNTM5IDExMS45OHoiIGZpbGw9IiNmZmYiLz4KIDwvZz4KPC9zdmc+Cg=="
+      alt="" />
+    <p>Cart</p>
+  </div>
+  <div id="buttons">
+    <div>
+      <p id="top">Top Deals</p>
+      <p id="deal">Deal of the Day</p>
+      <p class="other">Totaltech Membership</p>
+      <p class="other other1">Credit Cards</p>
+      <p class="other other1">Gift Cards</p>
+      <p class="other other1">Gift Ideas</p>
+      <select name="" id="">
+        <option value="">More</option>
+      </select>
+    </div>
+    <div>
+      <div class="dropdown1">
+        <button onclick="myFunction1()" class="dropbtn1">Account</button>
+        <div id="myDropdown1" class="dropdown-content1">
+          <a href="login.html">Sign In</a>
+          <a href="signup.html">Create Account</a>
+          <a href="userAccount.html">Your Account</a>
+        </div>
+      </div>
+      <select class="other" name="" id="">
+        <option value="">Recently Viewed</option>
+      </select>
+      <select class="other" name="" id="">
+        <option value="">Order Status</option>
+      </select>
+      <select class="other" name="" id="">
+        <option value="">Saved Items</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <p id="bb-ap-sale">
+    <span class="bb-ap-sale-text">Best Buy </span><i class="fa-solid fa-caret-right"></i><span class="bb-ap-sale-text">
+      Appliances </span><i class="fa-solid fa-caret-right"></i><span class="bb-ap-sale-text"> Appliances On Sale</span>
+  </p>
+  <h3 id="mj-ap-sale">Major Appliances On Sale</h3>
+  <!-- body -->
+  <main id="pagebody">
+    <div class="scroll">
+      <div class="hl-1"></div>
+      <div id="product-container-div">
+        <h5 id="pc-cata">Category</h5>
+        <p class="product-category p-c-all">All</p>
+        <p class="product-category p-c-mobiles">Mobiles</p>
+        <p class="product-category p-c-ref">Laptops</p>
+        <p class="product-category p-c-micr">Microwaves</p>
+        <p class="product-category p-c-ice">Freezers & Ice Makers</p>
+        <p class="product-category p-c-oven">Ranges, Cooktops & Ovens</p>
+        <p class="product-category p-c-wash">Washers & Dryers</p>
+        <p class="product-category p-c-dish">Dishwashers</p>
+      </div>
+      <div id="brands-container-div">
+        <form action="" id="filter-brands">
+          <h5 id="pc-cata">Filter By Brand</h5>
+          <input type="checkbox" id="ASUS" value="ASUS" />
+          <label for="ASUS">ASUS</label><br />
+          <input type="checkbox" id="Dell" value="Dell" />
+          <label for="Dell">Dell</label><br />
+          <input type="checkbox" id="HP" value="HP" />
+          <label for="HP">HP</label><br />
+          <input type="checkbox" id="MacBook" value="MacBook" />
+          <label for="MacBook">MacBook</label><br />
+        </form>
+      </div>
+      <div class="hl-1"></div>
+      <div id="fbp-line">
+        <form action="" id="filter-price">
+          <h5 id="pc-cata">Filter By Price</h5>
+          <input type="checkbox" id="zero-100" value="0-100" />
+          <label for="zero-100">0 to $100</label><br />
+          <input type="checkbox" id="oneZeroOne" value="oneZeroOne" />
+          <label for="oneZeroOne">$101 to $500</label><br />
+          <input type="checkbox" id="toOnezero" value="toOnezero" />
+          <label for="toOnezero">$501 to $1000</label><br />
+          <input type="checkbox" id="toThreeZero" value="toThreeZero" />
+          <label for="toThreeZero">$1001 to $3000</label>
+        </form>
+
+        <!-- <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul> -->
+      </div>
+    </div>
+    <div id="items">
+      <div id="heading-1">
+        <h1>Sponsored products</h1>
+        <i class="fa-solid fa-circle-info"></i>
+      </div>
+      <div class="hl-1"></div>
+      <div class="slider">
+        <img src="/slider-2-1.png" id="productSlide" alt="product" />
+        <button id="slide-1">
+          <i id="arrow1" class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id="slide-2">
+          <i id="arrow2" class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="hl-1"></div>
+      <div id="sorting">
+        <h2 id="item_count">Products: <a href="laptops.html">Laptops</a></h2>
+        <label for="sortlabel" id="sortlabel"></label>
+        <select id="sort">
+          <option value="All">Sort By</option>
+          <option value="A">A to Z</option>
+          <option value="Z">Z to A</option>
+          <option value="LtoH">Price Low to High</option>
+          <option value="HtoL">Price High to Low</option>
+        </select>
+      </div>
+      <div id="item-list-div">
+        <ol class="item-list">
+          <!-- <li class="item">
+            <div class="rowdiv">
+              <div class="item_image"></div>
+              <div class="item_details"></div>
+              <div class="item_cost"></div>
+            </div>
+          </li> -->
+        </ol>
+      </div>
+    </div>
+  </main>
+  <!-- body -->
+
+  <!-- footer -->
+  <!-- use this at the bottom of every page important -->
+  <!-- Don't forgot to add script in head tag -->
+  <footer>
+    <div class="sec_1">
+      <div>
+        <div>
+          <i class="fa-regular fa-circle-question font-60"></i>
+        </div>
+        <a href="#">Visit Our Support Center</a>
+      </div>
+      <div>
+        <div>
+          <i class="fa-solid fa-dolly font-60"></i>
+        </div>
+        <a href="#">Check your Order Status</a>
+      </div>
+      <div>
+        <div>
+          <i class="fa-solid fa-truck-fast font-60"></i>
+        </div>
+        <a href="#">Shipping, Delivery & Store Pickup</a>
+      </div>
+      <div>
+        <div>
+          <i class="fa-solid fa-right-left font-60"></i>
+        </div>
+        <a href="#">Returns & Exchanges</a>
+      </div>
+      <div>
+        <div>
+          <i class="fa-solid fa-dollar-sign font-60"></i>
+        </div>
+        <a href="#">Price Match Guarantee</a>
+      </div>
+    </div>
+    <div class="hl"></div>
+    <div class="sec_2">
+      <div id="sec_2-1">
+        <div>
+          <h3>Order & Purchases</h3>
+          <p>Check Order Status</p>
+          <p>Shipping, Delivery & Pickup</p>
+          <p>Returns & Exchanges</p>
+        </div>
+        <div>
+          <h3>Support & Services</h3>
+          <p>Visit our Support Center</p>
+          <p>Shop with an Expert</p>
+          <p>Schedule a Service</p>
+        </div>
+        <div>
+          <h3>Partnerships</h3>
+          <p>Best Buy Totaltech</p>
+          <p>My Best Buy</p>
+          <p>View Points & Certificates</p>
+          <p>Member Offers</p>
+        </div>
+        <div>
+          <h3>Payment Options</h3>
+          <p>Affiliate Program</p>
+          <p>Advertise with Us</p>
+          <p>Developers</p>
+        </div>
+        <div>
+          <h3>Rewards & Membership</h3>
+          <p>My Best Buy® Credit Card</p>
+          <p>Pay Your Bill at Citibank</p>
+          <p>Lease to Own</p>
+        </div>
+        <div>
+          <h3>About Best Buy</h3>
+          <p>Corporate Information</p>
+          <p>Careers</p>
+          <p>Corporate Responsibility & Sustainability</p>
+          <p>Discover & Learn</p>
+        </div>
+      </div>
+      <div id="footer_form">
+        <p>Sign in or Create Account</p>
+        <div class="hl"></div>
+        <h3>Get the latest deals and more.</h3>
+        <input type="text" placeholder="Enter email Address" />
+        <input type="submit" value="Sign Up" />
+        <div class="hl" style="margin-top: 30px"></div>
+        <div>
+          <i class="fa-solid fa-mobile-button"></i>
+          <span>Best Buy App > </span>
+        </div>
+        <div class="hl"></div>
+        <div>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="hl"></div>
+        <p>Forums, blogs & more</p>
+      </div>
+    </div>
+    <div>
+      <p>
+        How was your experience?<span>Give feedback about our website</span>
+      </p>
+      <div>
+        <p>Mobile Site</p>
+        <p>Best Buy Canada</p>
+      </div>
+    </div>
+    <div class="hl"></div>
+    <div id="sec_3">
+      <div>
+        <p>Accessibility</p>
+        <p>Terms & Conditions</p>
+        <p>Privacy</p>
+        <p>Interest-Based Ads</p>
+        <p>California Privacy Rights</p>
+        <p>Do Not Sell My Personal Information</p>
+        <p>California Supply Chain Transparency Act</p>
+      </div>
+      <div>
+        In-store pricing may vary. Prices and offers are subject to change. ©
+        2022 Best Buy. All rights reserved. BEST BUY, the BEST BUY logo, the
+        tag design, and MY BEST BUY are trademarks of Best Buy and its
+        affiliated companies.
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+</body>
+<script src="laptops.js"></script>
+
+</html>
