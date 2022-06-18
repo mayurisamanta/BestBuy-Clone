@@ -5,13 +5,1358 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Deals</title>
+    <style>
+        
+ 
+.navCls{
+    overflow: hidden;
+  
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  border: none;
+
+}
+
+#container{
+    
+    width: 100%;
+    height: auto;
+    margin-top: 0.38rem;
+  
+    overflow: hidden;
+    box-sizing: border-box;
+    border: none;
+
+}
+
+
+.banner{
+    border: none;
+    position: relative;
+}
+
+
+
+.belowBanner{
+   
+
+    padding: 0px 10px 0px 10px;
+
+}
+.lapImg{
+    width: 100%;
+    height: 190px;
+}
+
+.closeToImg{
+    position: absolute;
+    top: 6%;
+    left: 60%;
+}
+
+
+.topDealBtn {
+    margin-bottom: 0px;
+    color: whitesmoke;
+    background-color: red;
+    padding: 5px 20px 5px 20px;
+    transform: skew(-20deg);
+    border: none;
+}
+
+.margBot{
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    font-size: 50px;
+}
+
+.margTop{
+    color: white;
+    margin-top: 0px;
+    font-size: 40px;
+    margin-bottom: 4px;
+    
+}
+
+
+
+.flexing{
+    display: flex;
+}
+
+
+
+.marg{
+    margin-top: 20px;
+}
+
+.shiftLeft{
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+
+.hrStyle{
+    margin-top: 0px;
+}
+
+
+
+.topDealCat{
+    width: 100%;
+    
+    margin: auto;
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+
+.oneDiv{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.oneDiv img{
+    width: 100%;
+    height: 50%;
+  
+}
+
+
+
+#imgStyle{
+    width: 70%;
+    /* margin: auto; */
+    margin-left: 21px;
+    margin-top: 0px;
+}
+
+.reduceWidth{
+    width: 70%;
+}
+
+.increaseWidth{
+    width:100%
+}
+
+a{
+    
+    text-decoration: none;
+    color: #4784d6;
+   
+}
+
+
+
+.hMargBot{
+    margin-bottom: 10px;
+}
+
+
+
+.hrMargBot{
+    margin-bottom: 30px;
+    
+    height: 0px;
+    color: lightgray;
+}
+
+
+
+.todayDeals{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid green; */
+    margin: auto;
+    position: relative;
+}
+
+.up_sec{
+    margin-bottom: 3rem;
+}
+
+.todayDeals img{
+    width: 100%;
+    height: auto;
+}
+
+.topLeft{
+    position: absolute;
+    left:52%;
+    top: 1%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.topLeft span:nth-child(1){
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 90px;
+    margin-bottom: 0px;
+}
+
+.topLeft span:nth-child(2){
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;;
+    font-size: 105px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-top: 0px;
+    /* margin-left: -60px; */
+}
+
+#spn{
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;;
+    font-size: 105px;
+    font-weight: 700;
+    line-height: 78px;
+    margin-top: 0px;
+    color: blue;
+}
+
+.supScript{
+    top: -0.65em;
+    font-size: 56px;
+}
+
+.todayDeals p:nth-child(3){
+    position: absolute;
+    left:52%;
+    top: 34%;
+}
+
+.todayDeals p:nth-child(4){
+    position: absolute;
+    left:52%;
+    top: 38%;
+}
+
+/* Common */
+
+.tod_btn{
+    color: white;
+    background-color: blue;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 6px;
+    position: absolute;
+    left:52%;
+    top: 46%;
+    cursor: pointer;
+}
+
+/* todayDeal Lowersection */
+
+.low_sec{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 20px;
+    margin: auto;
+}
+
+/* .low_sec div{
+    border: 1px solid black;
+} */
+
+.firstItem{
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+#fi_item_img{
+    width: 100%;
+    height: 300px;
+}
+
+#fi_item_logo{
+    width: 30%;
+    height: 24px;
+}
+
+.firstItem a{
+    padding: 0px;
+    text-align: left;
+    line-height: 20px;
+}
+
+.fi_item_price{
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;;
+    color: #1d252c;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 1rem;
+
+}
+
+#fi_item_btn{
+    background-color: rgb(252, 252, 14);
+    color: black;
+    border: none;
+    padding: 1px 30px 1px 20px;
+    border-radius: 6px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.pad_left, .fi_item_price{
+    line-height: 38px;
+}
+
+#cart_img{
+    width: 12px;
+    height: 12px;
+    margin-bottom: 0.5rem;
+}
+
+/* 9. Outlet Event */
+
+.fiftyPercentDeals{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid violet; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 20px;
+}
+.fif_padding{
+    padding-left: 26px;
+}
+
+/* .fiftyPercentDeals div{
+    border: 1px solid black;
+} */
+
+.fif_btn{
+    background-color: blue;
+    border: none;
+    /* border-radius: 6px; */
+    padding: 10px 25px 10px 25px;
+}
+
+.out_clr{
+    color: yellow;
+}
+
+.eve_clr{
+    color: white;
+}
+
+.saveCls{
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;;
+    font-size: 32px;
+    font-weight: 800;
+    color: #bb0628;
+    /* font-size: larger; */
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+#disc{
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 62px;
+    font-weight: 900;
+
+}
+
+.onClr{
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.fif_sec_col_link{
+    padding: 0px;
+}
+
+.fif_sec_col_link:hover{
+    text-decoration: underline;
+    color: rgb(85, 82, 82);
+}
+
+.third_col_img{
+    width: 100%;
+    height: 200px;
+}
+
+.fif_btn{
+    color: white;
+    background-color: blue;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 10. More of this div */
+
+.moreofMonth{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    box-sizing: border-box;
+    padding: 22px;
+    justify-content: center;
+    background-color: black;
+}
+
+.moreofMonth div{
+    /* border: 1px solid white; */
+    width: 20%;
+    height: auto;
+    /* margin-bottom: 6rem; */
+
+}
+
+.moreofMonth div:nth-child(1)
+{
+    flex-basis: 60%;
+}
+
+.more_first_para{
+    margin-top: 0px;
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #e0e6ef;
+    margin-bottom: 0px;
+
+}
+
+ .more_first_para .more_dot_clr{
+    color: yellow;
+    border-radius: 50%;
+}
+
+.more_sec_para{
+    margin-top: 8px;
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 17.5px;
+    color: #e0e6ef;
+}
+
+.more_btn{
+    color: white;
+    background-color: black;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+/* 11. save up to 400 dollars  */
+
+.fourDollars{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid blue; */
+    margin: auto;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.fourDollars img{
+    width: 100%;
+}
+
+.fourDollars .four_text{
+    position: absolute;
+    top: 10%;
+    left: 18%;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+.four_text span:nth-child(1){
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 90px;
+    margin-bottom: 0px;
+    color: #1d252c;
+}
+
+.four_text span:nth-child(2){
+    /* position: absolute; */
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;;
+    font-size: 105px;
+    font-weight: 700;
+    line-height: 35px;
+    margin-top: 0px;
+    margin-left: -4rem;
+}
+
+#four_spn{
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;;
+    font-size: 105px;
+    font-weight: 700;
+    line-height: 78px;
+    margin-top: 0px;
+    color: blue;
+}
+
+.four_thirdLine
+{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.four_btn{
+    color: white;
+    background-color: blue;
+    padding: 1px 20px 1px 20px;
+    border: none;
+    border-radius: 6px;
+    position: absolute;
+    left:0%;
+    top: 100%;
+    cursor: pointer;
+    /* line-height: 40px; */
+
+}
+
+/* <!-- 12. save up to 400 dollars --> */
+
+.iphone13Pro{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid violet; */
+    margin: auto;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.iphone13Pro img{
+    width: 100%;
+    /* position: relative; */
+}
+
+.iph_cls{
+     position: absolute;
+    top: 8%;
+    left: 38%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    width: 350px;
+    height: 268px;
+    text-align: center;
+}
+
+.iph_cls img{
+    vertical-align: middle;
+}
+
+.iph_cls div:nth-child(1)
+{
+    width: 165px;
+    font-size: 13px;
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+}
+
+.iph_cls div:nth-child(2)
+{
+    width: 350px;
+    margin-top: 20px;
+    /* padding-left: 4rem; */
+    font-size: 13px;
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+
+}
+
+.iph_para_wid{
+    text-align: center;
+    width: 80%;
+    line-height: 20px;
+    margin-bottom: 0px;
+}
+
+.iph_para_sec_clr{
+    color: #b7b7b9;
+    margin-top: 2px;
+}
+
+.iph_btn{
+    position: absolute;
+    top: 66%;
+    left: 34%;
+    color: white;
+    background-color: blue;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/*         <!--13. oven and dinasaur items  --> */
+
+.randomItems{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid green; */
+    margin: auto; 
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 10px;
+}
+
+/* .randomItems div{
+    border: 1px solid red;
+} */
+
+.ran_fi_img img{
+    width: 100%;
+}
+
+.ran_sec_img img{
+    width: 100%;
+}
+
+.ran_sec_col{
+    display: flex;
+    flex-direction: column;
+}
+
+.ran_para_colr{
+    color: rgb(124, 124, 124);
+}
+
+.ran_sec_col a{
+    padding: 0px;
+    text-align: start;
+}
+
+.ran_four_col a{
+    /* margin-top: 4rem; */
+    padding: 0px;
+    text-align: start;
+    line-height: 50px;
+}
+
+.ran_four_col p:nth-child(2){
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.ran_btn{
+    color: white;
+    background-color: blue;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*         <!-- 14. bestBuy totaltech --> */
+
+.totalTech{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: auto; 
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 26px;
+    /* box-sizing: border-box; */
+}
+
+
+
+.tot_fi_div{
+    background-color: #ebebeb;
+    display: flex;
+}
+
+.tot_fi_div div{
+    /* border: 1px solid red; */
+    width: 50%;
+}
+
+.tot_fi_col{
+    padding: 30px 0px 20px 10px;
+    flex-basis: 64%;
+    /* height: 300px; */
+}
+
+#tot_fi_img{
+    width: 140px;
+}
+
+.tot_fi_col_para{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.tot_fi_col_para_third{
+    font-size: 14px;
+    color: rgb(95, 93, 93);
+}
+
+.tot_fi_col_btn{
+    color: white;
+    background-color: blue;
+    padding: 10px 34px 10px 34px;
+    border: none;
+    border-radius: 4px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tot_fi_sec_col{
+    position: relative;
+}
+
+#tot_fi_sec_col_img{
+    position: absolute;
+    bottom: 0%;
+    height: 300px;
+    width: 150px;
+}
+
+.tot_sec_div{
+    background: linear-gradient(180deg, rgba(0,70,190,1) 0%, rgba(12,7,78,1) 100%);
+}
+
+.tot_sec_div_col{
+    padding: 30px 0px 20px 10px;
+}
+
+.tot_sec_div_para_fi{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+#tot_sec_div_para_sec{
+    font: 20px;
+    /* line-height: 2000px; */
+    color: white;
+}
+
+.tot_sec_div_col_btn{
+    color: black;
+    background-color: rgb(238, 238, 5);
+    padding: 10px 34px 10px 34px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/*         <!-- 15. 12 month financing --> */
+
+.financing{
+    width: 100%;
+    height: 240px;
+    /* border: 1px solid blue; */
+    margin: auto; 
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;   
+}
+
+.fin_fi_div img{
+    width: 100%;
+    height: 240px;
+}
+
+.fin_fi_text_left{
+    position: absolute;
+    top: 10%;
+    left: 20px;
+}
+
+.fin_fi_text_left p:nth-child(1){
+    color: rgb(253, 253, 5);
+    font-size:26px;
+    font-weight: bolder;
+    font-weight: 900;
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+}
+
+.fin_fi_text_left p:nth-child(2){
+    color: white;
+    font-size:13px;
+    font-weight: bolder;
+    font-weight: 400;
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+    margin-top: 4px;
+}
+
+.fin_fi_text_left button{
+    color: blue;
+    background-color: white;
+    padding: 10px 24px 10px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.fin_fi_text_right{
+    position: absolute;
+    top: 13%;
+    right: 9%;
+}
+
+.fin_fi_text_right p:nth-child(1){
+    color: white;
+    font-size:24px;
+    font-weight: bolder;
+    font-weight: 600;
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+}
+
+.fin_fi_text_right p:nth-child(2){
+    color: white;
+    font-size:24px;
+    font-weight: bolder;
+    font-weight: 600;
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.fin_fi_text_right p:nth-child(3){
+    color: white;
+    font-size:24px;
+    font-weight: bolder;
+    font-weight: 600;
+    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+}
+
+.fin_fi_text_right button{
+    color: blue;
+    background-color: white;
+    padding: 10px 24px 10px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+
+#itemSection{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-content: space-around;
+    width: 100%;
+  
+    
+}
+        </style
+   
 </head>
-<style>
-    h1{
-        text-align: center;
-    }
-</style>
 <body>
-    <h1>Top Deals</h1>
+   
+    <div id="navbar"></div>
+   <div id="container">
+        <div class="banner">
+            <img class="lapImg" 
+            src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL72512_220328_VPT-LV-f7d6de7e-ff64-4443-a98e-11d49d0d3e39.jpg"
+            alt="">
+            <div class="closeToImg">
+                <button class="topDealBtn"> Top Deals</button>
+                <p class="margBot">Great Deals</p>
+                <p class="margTop">happening right now.</p>
+            </div>
+        </div >
+
+
+
+<div class="belowBanner">
+
+        <div class="flexing">
+            <button class="topDealBtn marg">Top Deals</button>
+            <p class="shiftLeft">Top Deals
+                Today’s featured deals and top tech. Valid through 18/06/22.*
+            </p>
+        </div>
+
+        <hr class="hrStyle">
+
+
+        <div class="topDealCat">
+
+            <div class="oneDiv">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/FeaturedDeals_Blue_Solid_Lg_RGB-104799.png;maxHeight=140;maxWidth=140" alt="">
+                <a style="padding: 16px; text-align: center;"  href="">Featured Deals</a>
+            </div>
+
+            <div class="oneDiv">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6479/6479683_sd.jpg;maxHeight=140;maxWidth=140" alt="">
+                <a style="padding: 16px; text-align: center;"  href="">Laptops & Computers</a>
+            </div>
+
+            <div class="oneDiv">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6470/6470258_sd.jpg;maxHeight=140;maxWidth=140" alt="">
+                <a style="padding: 16px; text-align: center;"  href="">TVs & Projectors</a>
+            </div>
+
+            <div class="oneDiv">
+                <img id="imgStyle" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6356/6356072_sd.jpg;maxHeight=140;maxWidth=140" alt="">
+                <a style="padding: 16px; text-align: center;"  href="">Video Games</a>
+            </div>
+
+            <div class="oneDiv">
+                <img id="imgStyle" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443321_sd.jpg;maxHeight=140;maxWidth=140" alt="">
+                <a style="padding: 16px; text-align: center;"  href="">Apple</a>
+            </div>
+
+            <div class="oneDiv">
+                <img id="imgStyle" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408356_rd.jpg;maxHeight=140;maxWidth=140" alt="">
+                <a style="padding: 16px; text-align: center;"  href="">Headphones</a>
+            </div>
+
+            <div class="oneDiv">
+                <img id="imgStyle" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6494/6494419_sd.jpg;maxHeight=140;maxWidth=140" alt="">
+                <a style="padding: 16px; text-align: center;"  href="">Cell Phones</a>
+            </div>
+
+            <div class="oneDiv">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403872_sd.jpg;maxHeight=140;maxWidth=140" alt="">
+                <a style="padding: 16px; text-align: center;"  href="">Tablets</a>
+            </div>
+
+            <div class="oneDiv reduceWidth">
+                <img id="imgStyle" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6168/6168626_sd.jpg;maxHeight=140;maxWidth=140" alt="">
+                <a style="padding: 16px; text-align: center;"  href="">Major Appliances</a>
+            </div>
+
+            <div class="oneDiv increaseWidth">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5850/5850410_sd.jpg;maxHeight=140;maxWidth=140" alt="">
+                <a style="padding: 16px; text-align: center;"  href="">Small Kitchen Appliances</a>
+            </div>
+
+        </div>
+
+        <h2 class="hMargBot">Today’s featured deals</h2>
+
+        <hr class="hrStyle hrMargBot">
+
+
+        <div class="todayDeals">
+
+            <div class="up_sec">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-527151_xlarge-af265fd1-bc72-491e-8a74-183a0bfc0ad7.jpg" alt="">
+                
+                <div class="topLeft">
+                    <span>Big-Screen TVs as low as</span>
+                    <span><span id="spn">$</span>199<sup class="supScript">99</sup> </span>
+                </div>
+    
+                <p>Free shipping, delivery or Curbside Pickup. Installation available.
+                </p>
+    
+                <p>Insignia™ model NS-50F301NA22 is $199.99 (not pictured).
+                </p>
+    
+                <button class="tod_btn">Shop Now</button>
+            </div>
+
+
+            <div class="low_sec" style="display: none;">
+                <div class="firstItem">
+                    <div>
+                        <img id="fi_item_img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451519_sd.jpg;maxHeight=160;maxWidth=160" alt="">
+                        <img id="fi_item_logo"  src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120" alt="">                        
+
+                    </div>
+                    <a href="" class="itemName">samsung-82-class-q60t-series-led-4k-uhd-smart-tizen</a>
+                    <span class="fi_item_price">$1599</span>
+                    <span class="pad_left">
+                        <button id="fi_item_btn"><img id="cart_img"  src="./images/shopping-cart.png" alt=""> Add to Cart</button>
+                    </span>
+                </div>
+
+                <div>
+                    <div class="firstItem">
+                        <div>
+                            <img id="fi_item_img"  src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6480/6480926_sd.jpg;maxHeight=640;maxWidth=550" alt="">
+                            <img id="fi_item_logo"  src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Insignia_4C_eps_renditionpicker_319x319-91902.png;maxHeight=70;maxWidth=120" alt="">                        
+                        </div>
+                        <a href="" class="itemName">Insignia-75-class-f30-series-led-4k-uhd-smart-fire</a>
+                        <span class="fi_item_price">$689.99</span>
+                        <span class="pad_left">
+                            <button id="fi_item_btn"><img id="cart_img"  src="./images/shopping-cart.png" alt=""> Add to Cart</button>
+                        </span>
+                    </div>                   
+
+                </div>
+
+                <div class="firstItem">
+                    <div>
+                        <img id="fi_item_img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401726_sd.jpg;maxHeight=160;maxWidth=160" alt="">
+                        <img id="fi_item_logo"  src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120" alt="">                        
+                    </div>
+                    <a href="" class="itemName">Samsung-58-class-q60t-series-led-4k-uhd-smart-tizen</a>
+                    <span class="fi_item_price">$229.99</span>
+                    <span class="pad_left">
+                        <button id="fi_item_btn"><img id="cart_img"  src="./images/shopping-cart.png" alt=""> Add to Cart</button>
+                    </span>
+                </div> 
+
+                <div class="firstItem">
+                    <div>
+                        <img id="fi_item_img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6470/6470258_sd.jpg;maxHeight=640;maxWidth=550" alt="">
+                        <img id="fi_item_logo"  src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/TCL_Red_4_Rev_eps_renditionpicker_319x319-92350.png;maxHeight=70;maxWidth=120" alt="">                        
+                    </div>
+                    <a href="" class="itemName">TCL-50-class-5-series-qled-4k-uhd-smart-google</a>
+                    <span class="fi_item_price">$379.99</span>
+                    <span class="pad_left">
+                        <button id="fi_item_btn"><img id="cart_img"  src="./images/shopping-cart.png" alt=""> Add to Cart</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="itemSection"></div>
+
+        <hr>
+
+
+
+        <div class="fiftyPercentDeals">
+            <div class="fif_padding">
+                <div>
+                    <button class="fif_btn"><span class="out_clr">Outlet</span> <span class="eve_clr">Event</span></button>
+                </div>
+                <p class="saveCls">Save up to</p>
+                <p id="disc">50%</p>
+                <p class="onClr">on clearance and open box</p>
+            </div>
+
+            <div>
+                <a class="fif_sec_col_link" href="">Save up to 50% on clearance and open-box items.
+                </a>
+
+                <p>Find great deals on a huge selection of products.</p>
+
+                <p>Ends 06/19/22. Online and in store. Minimum savings is 5%. Exclusions apply.
+                </p>
+
+                <button class="fif_btn">Shop Now</button>
+                
+            </div>
+
+            <div>
+                <img class="third_col_img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-524588-der-0758b409-d566-474e-b203-4e1f04cbdd44.jpg;maxHeight=302;maxWidth=504" alt="">
+            </div>
+
+            <div>
+                <a class="fif_sec_col_link" href="">Electric bikes and more.
+                </a>
+
+                <p>Energy-efficient and enjoyable to ride, e-vehicles are ideal for families and individuals.</p>
+
+                <button class="fif_btn">Shop Now</button>
+            </div>
+        </div>
+
+
+
+        <div class="moreofMonth">
+            <div>
+                <p class="more_first_para">More speaking up<span class="more_dot_clr">.</span>More moving forward<span class="more_dot_clr">.</span></p>
+
+                <p class="more_sec_para">See how we’re amplifying the voices of women in tech and throughout the digital world, with the goal of promoting digital equity.</p>
+           
+                <button class="more_btn">Learn More</button>
+            </div>
+
+            <div>
+                <p class="more_first_para">More of this.</p>
+
+            </div>
+        </div>
+
+
+
+        <div class="fourDollars">
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/custom_fluid_lg_mmt-514753-413b3d02-417d-4a27-ab91-850276076d52.jpg" alt="">
+            <div class="four_text">
+                <span>Save up to</span>
+                <span><span id="four_spn">$</span>300</span>
+                <span class="four_thirdLine">on select Windows laptops.</span>
+                <span>Minimum savings is $20.</span>
+
+                <button class="four_btn">Shop Now</button>
+           
+            </div>
+        
+        </div>
+
+        
+
+        <div class="iphone13Pro">
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/SOL-93899-TopDeals_iPhone13Pro-Custom-XL-cb71882a-fb85-4835-9211-f3a427bf78f6.jpg" alt="">
+            
+            <div class="iph_cls">
+                <div>
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/SOL-93899-iPhone13pro-Logo-Lockup-1ffc872e-4431-45bd-bf44-019cca475f6b.png" alt="">
+                </div>
+                <div class="iph_marg">
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-528765-now-in-apline-green-logo-3b0880d6-af44-4d94-be2f-665199f693f0.png" alt="">
+                </div>
+
+                <p class="iph_para_fi_wid">Save up to $1,000 with qualified activation
+                    and trade-in of iPhone 11 Pro or newer.</p>
+
+                <p class="iph_para_sec_clr">Terms and conditions apply.
+                </p>
+
+                <button class="iph_btn">Shop Now</button>
+            
+            </div>        
+        </div>
+
+        
+
+        <div class="randomItems">
+            <div class="ran_fi_img">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5850/5850410_sd.jpg;maxHeight=302;maxWidth=504" alt="">
+            </div>
+
+            <div class="ran_sec_col" id="addingToCart">
+                <p class="ran_para_colr">Other Color Available</p>
+                <a id="cartItemName" href="">Breville-smart-oven-air-fryer-pro-convection-toaster-pizza-oven-stainless-steel</a>
+                <span id="cartItemPrice" class="fi_item_price">$349.95</span>
+                <span class="pad_left">
+                    <button id="fi_item_btn"><img id="cart_img"  src="./images/shopping-cart.png" alt=""> Add to Cart</button>
+                </span>
+
+            </div>
+
+            <div class="ran_sec_img">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_MMT-528275_der-f53987a5-c3ee-4d33-973c-cdd743dd697d.jpg;maxHeight=302;maxWidth=504" alt="">
+            </div>
+
+            <div class="ran_four_col">
+                <a href="">Toy for spring gifts</a>
+                <p>Surprise a child in your life with toys, trading cards and more.</p>
+                <p>Some items chosen at random.</p>
+
+                <button class="ran_btn">Shop Now</button>
+            </div>
+        </div>
+
+        
+
+        <div class="totalTech">
+
+            <div class="tot_fi_div">
+                <div class="tot_fi_col">
+                    <img id="tot_fi_img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/tt-color-logo-gl66402-91da81e0-6a26-4b0f-96c9-9cace52b7303.png" alt="">
+                    <p class="tot_fi_col_para">The membership you and your tech deserve.</p>
+                    <p>Best Buy Totaltech™ provides 24/7/365 tech support, up to 24 months of product protection with active membership, free standard installation and so much more.</p>
+                    <p class="tot_fi_col_para_third">Terms and conditions apply.</p>
+                    <button class="tot_fi_col_btn">Learn More</button>
+                </div>
+
+                <div class="tot_fi_sec_col">
+                    <img id="tot_fi_sec_col_img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/custom-sm-bg-tts-gl67745-52a13f6e-024c-4f0e-bd92-d3ce5851d96d.png" alt="">
+
+                </div>
+
+            </div>
+
+            <div class="tot_sec_div">
+
+                <div class="tot_sec_div_col">
+                    <img id="tot_fi_img" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-66613-total-tech-tall-logo-588dcc64-257f-4bc3-9003-0114cee4bfc7.png" alt="">
+                    <p class="tot_sec_div_para_fi">Exclusive product savings for members.</p>
+                    <p id="tot_sec_div_para_sec">Whether you’re a Best Buy Totaltech™ member or thinking of joining, here are today’s featured discounts, with many more available online and in store.</p>
+                    <button class="tot_sec_div_col_btn">Shop Now</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+        <div class="financing">
+            <div class="fin_fi_div">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-72360-cbw-cc-lv-220325-d27ab18d-28ae-4c31-aeb5-60179c9bc43d.jpg" alt="">
+                
+                <div class="fin_fi_text_left">
+                    <p>12 month financing</p>
+                    <p>on storewide purchases $299 and up.</p>
+                    <button>Learn More</button>
+                </div>
+
+                <div class="fin_fi_text_right">
+                    <p>Interested in a</p>
+                    <p>no credit</p>
+                    <p>needed*See disclosure option?</p>
+                    <button>Learn More</button>
+                </div>
+            
+            
+            </div>
+
+            
+
+        </div>
+
+
+
+      </div>
+    </div>
+    <div id="footer"></div>
+    
 </body>
 </html>
+<script>
+         
+ var topDealItemArr=[
+    {
+        prod_url:"https://images.unsplash.com/photo-1588200908342-23b585c03e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80;maxHeight=160;maxWidth=160",
+        prod_logo:"https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120",
+        prod_model:"samsung-82-class-q60t-series-led-4k-uhd-smart",
+        prod_price:"899.99",
+                   
+    },
+    {
+        prod_url:"https://images.unsplash.com/photo-1588200908342-23b585c03e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80;maxHeight=640;maxWidth=550",
+        prod_logo:"https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120",
+        prod_model: "samsung-82-class-q60t-series-led-4k-uhd-smart",
+        prod_price:"659.99",
+    },
+    {
+        prod_url:"https://images.unsplash.com/photo-1588200908342-23b585c03e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80;maxHeight=160;maxWidth=160",
+        prod_logo:"https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120",
+        prod_model: "Samsung-58-class-q60t-series-led-4k-uhd-smart",
+        prod_price:"469.99",
+    },
+    {
+        prod_url:"https://images.unsplash.com/photo-1588200908342-23b585c03e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80;maxHeight=640;maxWidth=550",
+        prod_logo:"https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120",
+        prod_model: "samsung-82-class-q60t-series-led-4k-uhd-smart",
+        prod_price:"389.99"
+    }
+];
+
+    var cartItemArr = JSON.parse(localStorage.getItem("cart_page")) || []
+  
+    topDealItemArr.map(function (ele)
+    {
+
+    var box=document.createElement("div");
+    box.style.height = 'auto';
+    box.style.alignItems = 'center';
+     
+    box.setAttribute("class","photo_A")
+
+     var img=document.createElement("img")
+     img.src=ele.prod_url;
+      
+     img.style.width="90%";
+     img.style.height = '200px';
+     img.style.paddingLeft = '40px';
+      
+     img.setAttribute("class","photo_B");
+
+     var logo = document.createElement('img');
+     logo.src = ele.prod_logo;
+     logo.style.width = '30%';
+     logo.style.height = '24px';
+     logo.style.marginBottom = '0.6rem'
+    //  logo.style.paddingLeft = '40px';
+
+
+     var model = document.createElement('a');
+     model.innerText = ele.prod_model;
+     model.style.lineHeight = '20px';
+     model.style.color = '#0091f7';
+     model.style.marginBottom = '0.6rem'
+     model.style.cursor = 'pointer';
+
+     var price = document.createElement("p")
+     price.innerText = ele.prod_price;
+
+     var btn=document.createElement("button")
+     btn.innerText="Add to Cart";
+     btn.style.backgroundColor = 'yellow';
+     btn.style.color = 'black';
+     btn.style.border = 'none';
+     btn.style.padding = '10px 30px 10px 20px';
+     btn.style.borderRadius = '6px';
+     btn.style.marginTop = '1rem';
+     btn.style.cursor = 'pointer';
+     btn.style.width = '50%';
+     btn.style.display = 'flex'
+     btn.style.flexDirection = 'row-reverse'
+     btn.addEventListener("click",function()
+     {
+         addtocart(ele)
+     })
+
+    //  var cartImg = document.createElement('img');
+    //  cartImg.src = './images/shopping-cart.png';
+    //  cartImg.style.width = '12px';
+    //  cartImg.style.height = '12px';
+    //  cartImg.style.marginTop = '0.25rem'
+    //  cartImg.style.marginRight = '0.25rem'
+
+    //  btn.append(cartImg);
+
+     var lowerDiv = document.createElement('div');
+     lowerDiv.style.display = 'flex';
+     lowerDiv.style.flexDirection = 'column';
+     lowerDiv.style.padding = '10px'
+     lowerDiv.style.lineHeight = '20px';
+     lowerDiv.style.paddingLeft = '40px';
+
+
+     lowerDiv.append(logo, model, price, btn)
+
+    box.append(img, lowerDiv)
+
+    document.querySelector("#itemSection").append(box)
+    });
+
+
+    function addtocart(ele)
+    {
+        cartItemArr.push(ele)
+        localStorage.setItem("cart_page",JSON.stringify(cartItemArr));
+        alert("Item/s added to cart");
+        console.log(ele)
+    }
+        </script>
