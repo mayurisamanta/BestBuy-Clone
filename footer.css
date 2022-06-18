@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* footer css css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: rgb(240,242,244);
+    width: 100%;
+}
+
+
+.sec_1{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+}
+.sec_1>div{
+    padding: 60px;
+}
+.sec_1>div:hover{
+    cursor: pointer;
+}
+
+.font-60{
+    font-size: 60px;
+    padding-bottom: 20px;
+    color: gray;
+}
+
+.sec_1>div>a{
+    text-decoration: none;
+    margin-top: 10px;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(9,90,201);
+}
+.sec_1>div>a:hover{
+    text-decoration: underline;
+}
+.hl{
+    width: 95%;
+    background-color: rgb(152, 150, 150);
+    height: 1px;
+    margin: auto;
+}
+
+.sec_2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#sec_2-1{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+}
+
+#sec_2-1>div>h3{
+    font-family: 'Poppins' , sans-serif;
+}
+#sec_2-1>div>p{
+    color: rgb(9,90,201);
+    font-family: 'Poppins' , sans-serif;
+    padding-top: 20px;
+}
+footer>div:nth-child(4){
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 20px;
+}
+footer>div:nth-child(4)>div{
+    display: flex;
+    justify-content: space-around;
+}
+footer>div:nth-child(4)>p>span{
+    color: rgb(9,90,201);
+    font-family: 'Poppins' ,sans-serif;
+}
+footer>div:nth-child(4)>div>p{
+    color: rgb(9,90,201);
+    font-family: 'Poppins' ,sans-serif;
+    margin-right: 40px;
+}
+
+
+#footer_form{
+    background-color: white;
+    width: 30%;
+    padding: 10px 20px 10px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
+}
+
+#footer_form>p:first-child{
+    color: rgb(9,90,201);
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#footer_form>h3{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+#footer_form>input:nth-child(4){
+    padding: 10px 40px 10px 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-left: 10px;
+}
+#footer_form>input:nth-child(5){
+    margin-left: 15px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(9,90,201);
+    color: white;
+}
+.fa-mobile-button{
+    font-size: 60px;
+    color: rgb(9,90,201);
+}
+#footer_form>div:nth-child(7){
+    padding: 20px;
+}
+#footer_form>div:nth-child(7)>p{
+    font-family: 'Poppins' , sans-serif;
+}
+#footer_form>div:nth-child(7)>span{
+    font-size: 30px;
+    font-family: 'Poppins' ,sans-serif;
+    font-weight: 600;
+}
+
+.fa-brands{
+    font-size: 35px;
+    margin: 20px 5px 20px 40px;
+    color: rgb(9,90,201);
+}
+#footer_form>p:last-child{
+    padding-left: 10px;
+    color: rgb(9,90,201);
+    font-family: 'Poppins' ,sans-serif;
+}
+
+#sec_3>div:first-child{
+    display: flex;
+    color: rgb(9,90,201);
+    justify-content: space-around;
+    font-size: 13px;
+    width: 90%;
+    margin-top: 30px;
+    font-family: 'Poppins' , sans-serif;
+}
+#sec_3>div:last-child{
+    color: rgb(115, 115, 115);
+    width: 90%;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: 'Poppins' ,sans-serif;
+    margin-left: 20px;
+}
+
+@media all and (min-width: 1324px) and (max-width: 1524px){
+    #footer_form{
+        width: 35%;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 1324px) {
+    .sec_1{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #footer_form{
+        width: 50%;
+    }
+    #sec_2{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+    #sec_2-1{
+        padding: 10px;
+        gap: 20px;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 867px) {
+    .sec_1{
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    #footer_form{
+        width:80%;
+    }
+    #sec_2-1{
+        padding: 20px;
+        gap: 20px;
+    }
+    #sec_3>div:first-child{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+    #footer_form>input{
+        margin-top: 15px;
+    }
+}

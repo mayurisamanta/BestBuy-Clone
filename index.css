@@ -1,0 +1,1505 @@
+/* Navbar  */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+#main >select > option , #buttons  select > option{
+    background-color: white;
+    color: #0046be;
+    font-family: 'Raleway', sans-serif;
+}
+#main > select, #buttons > select{
+    cursor: pointer;
+}
+
+/* First div */
+
+#main{
+    height: 70px;
+    width: 100%;
+    min-width: 100vw;
+    background-color: 
+    #0046be;
+    display: flex;
+    align-items: center;
+}
+#main > img:first-child{
+    height: 90%;
+    margin-left: 1.5%;
+    cursor: pointer;
+}
+#main > img:nth-child(2){  
+    height: 30px;
+    cursor: pointer;
+    margin-left: 2%;
+}
+#main > div > img{
+    height: 55%; 
+}
+
+#main > div:nth-child(5){
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 57%;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#search-nav{
+    height: 60%;
+    width: 35%;
+    padding-left: 1%;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #0046be;
+    border-right: white;
+    margin-left: 2%;
+}
+/* #main > select{
+    background-color: #0046be;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid #0046be;
+    width: 6%;
+} */
+
+/* Drop down  */
+
+.dropbtn {
+    /* background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px; */
+    background-color: #0046be;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid #0046be;
+    width: 6%;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn1 {
+    background-color: #0046be;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    border: 1px solid #0046be;
+    width: 8%;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown,.dropdown1 {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content , .dropdown-content1{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a , .dropdown-content1 a{
+    color: #0046be;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+  }
+  .show {display: block;}
+
+  .dropdown-content a:hover, .dropdown-content1 a:hover{
+    text-decoration: underline;
+  }
+#main > p{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+#main > p:nth-child(7){
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+#main > img:nth-child(8){
+    height: 80%;
+    cursor: pointer;
+    margin-left: 3%;
+}
+#main > p:last-child{
+    cursor: pointer;
+    margin-right: 1%;
+    font-family: 'Raleway', sans-serif;
+}
+#main > p:last-child:hover{
+    text-decoration: underline;
+}
+#main > img:nth-child(6){
+    height: 100%;
+    cursor: pointer;
+    margin-left: 18%;
+}
+
+/* Second div  */
+
+#buttons{
+    height: 50px;
+    width: 100%;
+    border-top: 0.5px solid 
+    #1e88e5;
+    background-color: #0046be;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+}
+#buttons > div{
+    display: flex;
+    align-items: center;
+   color: white;
+   font-size: 14px;
+}
+#buttons > div:first-child{
+   width: 52%;
+   justify-content: space-around;
+   margin-left: 2%;
+}
+#buttons > div:last-child{
+    width: 37%;
+    justify-content: space-between;
+    margin-right: 3.5%;
+}
+#buttons select{
+    background-color: #0046be;
+    color: white;
+    font-size: 14px;
+    border: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+#buttons p{
+    cursor: pointer;
+}
+#buttons P:hover{
+    text-decoration: underline;
+}
+
+/* Medium screen  */
+
+@media all and (min-width:768px) and (max-width:1023px){
+    #main  .other1, #buttons  .other1{
+        width: 0%;
+        height: 0%;
+        font-size: 0px;
+        font-size: 0%;
+     }
+
+    /* First div  */
+    #search-nav{
+        width: 20%;
+        font-size: 14px;
+    }
+    /* #main > select{
+        font-size: 18px;
+        width: 12%;
+    } */
+    #main > img:first-child{
+        margin-left: 0.5%;
+        
+    }
+    #main > img:nth-child(2){  
+        margin-left: 0.5%;
+    }
+    #main > img:nth-child(6){
+        margin-left: 3%; 
+    }
+    #main > img:nth-child(8){
+        margin-left: 1%;
+    }
+    /* Second div  */
+    #buttons > div{
+       font-size: 12px;
+    }
+    #buttons select{
+        font-size: 10px;
+    }
+    #buttons > div:last-child{
+        width: 45%;
+        margin-right: 0.5%;
+    }
+    #buttons > div:first-child{
+        width: 48%;
+        margin-left: 0.5%;
+     }
+}
+
+/* Small screen */
+
+@media all and (min-width:340px) and (max-width:767px){
+
+    #main  .other, #buttons  .other{
+        width: 0%;
+        height: 0%;
+        font-size: 0px;
+        font-size: 0%;
+     }
+
+    /* First div  */
+    /* #main > select{
+        font-size: 18px;
+        width: 30%;
+        margin-left: 0%;
+    } */
+    #main > img:first-child{
+        height: 60%;
+    }
+    #search-nav{
+        width: 60%;
+        font-size: 12px;
+    }
+    #main > p:nth-child(7){
+        font-size: 0px;
+        margin: 0%;
+    }
+    #main > img:nth-child(6){
+        margin-left: 0%; 
+    }
+    #main > img:nth-child(8){
+        margin-left: 0%;
+    }
+
+    /* Second div  */
+    #buttons > div:last-child{
+        width: 35%;
+        margin-right: 1%;
+    }
+    #buttons > div:first-child{
+        width: 50%;
+        margin-left: 0.5%;
+    }  
+    /* #main > div{
+        width: 0%;
+        height: 0%;
+    } */
+}
+
+
+/* Homepage  */
+body{
+    background-color: #f0f2f4;
+}
+
+/* First section */
+
+#firstsec{
+    width: 97%;
+    height: fit-content;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#firstsec > div:first-child{
+    width: 49%;
+    height: 620px;
+    position: relative;
+}
+#firstsec > div:first-child > img{
+    height: 100%;
+    width: 100%;
+}
+#firstsec > div:first-child > p{
+    position: absolute;
+    top: 55%;
+    right: 17%;
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+}
+#firstsec > div:first-child > button{
+    position: absolute;
+    top: 65%;
+    right: 42%;
+    padding: 8px 18px;
+    border-radius: 5px;
+    border: 0px solid;
+    color: #0046be;
+    font-weight: bold;
+}
+#firstsec > div:first-child > button:hover{
+    color: white;
+    background-color: #0046be;
+    border: 1px solid white;
+}
+#firstsec > div:last-child{
+    width: 49%;
+    height: fit-content;
+}
+#first{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid lightgray;
+}
+#first > p{
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 15px;
+}
+#first > div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+#first img{
+    height: 100px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+#first > div > div > p{
+    font-size: 14px;
+    color: #0046be;
+}
+#first > div > div > p:hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#second{
+    display: flex;
+    margin-top: 20px;
+    height: fit-content;
+}
+#second > div:first-child{
+ width: 48%;
+ height: 365px;
+ margin-right: 35px;
+ border: 1px solid lightgray;
+ background-color: white;
+ cursor: pointer;
+}
+#second > div:first-child > p:first-child{
+    background-color: #0046be;
+    padding: 5px 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: fit-content;
+}
+#second > div:first-child > p:first-child > span:first-child{
+    color: yellow;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+#second > div:first-child > p:first-child > span:last-child{
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+#second > div:first-child > p:nth-child(2){
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    width: 90%;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: 40px;
+}
+#second > div:first-child > p:nth-child(2) > span:first-child , #second > div:first-child > p:nth-child(2) > span:last-child{
+    color: #bb0729;
+}
+#second > div:first-child > p:nth-child(3){
+    color: #0046be;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+#second > div:first-child > p:nth-child(3):hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+}
+#second > div:last-child{
+    width: 48%;
+    height: 365px;
+    border: 1px solid lightgray;
+    background-color: white;
+    cursor: pointer;
+}
+#second > div:last-child >p:first-child{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+#second > div:last-child > img{
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+#second > div:last-child >p:nth-child(3) , #second > div:last-child >p:nth-child(4){
+    color: #0046be;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#second > div:last-child >p:nth-child(3):hover , #second > div:last-child >p:nth-child(4):hover {
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+}
+
+/* Second section  */
+
+#secondsec{
+    border: 1px solid transparent;
+    width: 100%;
+    background-color: white;
+}
+#secondsec > p:first-child{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 20px;
+}
+#secondsec1{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 98%;
+    margin: auto;
+}
+#secondsec > hr{
+    margin-bottom: 40px;
+    color: lightgray;
+}
+#secondsec1 > div{
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#secondsec1 > div >  img{
+    height: 150px;
+    width: 200px;
+}
+#secondsec1 > div > p{
+    margin-top: 20px;
+    color: #0046be;
+}
+#secondsec1 > div > p:hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+}
+#secondsec2 {
+    height: 80px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+#secondsec2 > div{
+    display: flex;
+    width: 96%;
+    height: 100%;
+    border: 1px solid lightgray;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f4;
+}
+#secondsec2 > div > img{
+    height: 90%;
+    cursor: pointer;
+}
+#secondsec2 > div > div{
+    margin-left: 20px;
+}
+#secondsec2 > div > div > p:first-child{
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+}
+#secondsec2 > div > div > p:last-child{
+    color: #0046be;
+}
+#secondsec2 > div > div > p:last-child:hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#secondsec3{
+    height: 70px;
+    width: 98%;
+    margin-top: 30px;
+    margin-left: 12px;
+    margin-bottom: 30px;
+    background-color: 
+    #fff200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#secondsec3 > p:first-child{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+#secondsec3 > p:last-child{
+    color: #0046be;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+#secondsec3 > p:last-child:hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Third section */
+#thirdsec{
+    display: grid;
+    padding: 25px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+#thirdsec1{
+    position: relative;
+}
+#thirdsec1 > div{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+#thirdsec1 > div > p:first-child{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+#thirdsec1 > div > p:nth-child(2){
+    font-family: 'Raleway', sans-serif;
+    margin-top: 5px;
+}
+#thirdsec1 > div > p:nth-child(3){
+    font-family: 'Raleway', sans-serif;
+    margin-top: 5px;
+    font-size: 12px;
+}
+#thirdsec1 > div > button{
+    margin-top: 5px;
+    padding: 8px 20px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #0046be;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#thirdsec1 > div > button:hover{
+    background-color: #133775;
+}
+#thirdsec1 > img{
+    width: 100%;
+}
+#thirdsec2{
+    position: relative;
+}
+#thirdsec2 > div{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+#thirdsec2 > img{
+    width: 100%;
+}
+#thirdsec2 > div > p:first-child{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+#thirdsec2 > div > p:nth-child(2){
+    font-family: 'Raleway', sans-serif;
+    margin-top: 5px;
+}
+#thirdsec2 > div > button{
+    margin-top: 5px;
+    padding: 8px 20px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #0046be;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#thirdsec2 > div > button:hover{
+    background-color: #133775;
+}
+
+/* Forth Section  */
+
+#forthsec{
+    background-color: white;
+}
+#forthsec1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    background-color: white;
+}
+#forthsec1 > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#forthsec1 > div:first-child{
+    justify-content: right;
+}
+#forthsec1 > div:last-child{
+    justify-content: left;
+}
+#forthsec1 > div > img{
+    height: 50%;
+    margin-right: 10px;
+}
+#forthsec1 > div > div > p:first-child{
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(75, 71, 71);
+    font-weight: bold;
+    cursor: pointer;
+}
+#forthsec1 > div > div > p:nth-child(2){
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(75, 71, 71);
+    margin-top: 5px;
+}
+#forthsec1 > div > div > p:nth-child(3){
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(75, 71, 71);
+    margin-top: 5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.positn-abs {
+    position: absolute;
+}
+
+#bar_main {
+    height: 200px;
+}
+
+#bar {
+    background: rgb(42, 95, 202);
+    background: linear-gradient(180deg, rgba(42, 95, 202, 1) 12%, rgba(5, 26, 94, 1) 56%, rgba(0, 9, 101, 1) 100%);
+    height: 150px;
+    margin-top: 80px;
+    position: relative;
+}
+
+#bar>div:last-child>img {
+    width: 90%;
+}
+
+#bar>div:last-child {
+    right: 5em;
+    top: -47px;
+}
+
+#bar>div:nth-child(1) {
+    left: 8rem;
+    top: 25px;
+    line-height: 2rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#bar>div:nth-child(1)>button {
+    background-color: white;
+    color: rgb(0, 70, 190);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px 5px 20px;
+    font-weight: 600;
+}
+
+#bar>div:nth-child(1)>button:hover {
+    background-color: rgb(11, 54, 127);
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#bar>div:nth-child(2) {
+    border: none;
+    border-radius: 1px;
+    width: 1px;
+    height: 90px;
+    left: 20em;
+    top: 30px;
+    background-color: white;
+}
+
+#bar>div:nth-child(3) {
+    top: 20px;
+    width: 45%;
+    left: 22em;
+    padding: 10px;
+    color: white;
+    font-family : 'Raleway', sans-serif;
+}
+
+#bar>div:nth-child(3)>h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+#bar>div:nth-child(3)>p:nth-child(2) {
+    font-size: .9rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#bar>div:nth-child(3)>p:nth-child(3) {
+    font-size: .5rem;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Fifth Section  */
+
+#fifthsec{
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-around;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+#fifthsec >div > p{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-left: 13px;
+}
+#fifthsec > div{
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: 
+    #f0f2f4;
+}
+#fifthsec > div > div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+   gap: 20px;
+}
+#fifthsec > div > div  p{
+    color: #0046be;
+}
+#fifthsec > div > div  p:hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#fifthsec > div > div img{
+    height: 170px;
+    cursor: pointer;
+}
+
+/* Sixth Section  */
+#sixthsec{
+    height: fit-content;
+    width: 100%;
+    background-color: white;
+}
+#sixthsec > p{
+    font-size: 20px;
+   margin-bottom: 20px;
+   margin-left: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+#sixthsec > div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#sixthsec > div > div{
+    border: 0.5px solid rgb(228, 226, 226);
+    padding: 30px;
+}
+#sixthsec > div > div > img{
+    height: 250px;
+    cursor: pointer;
+}
+#sixthsec > div > div > P:nth-child(2){
+    color: #0457c8;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+}
+#sixthsec > div > div > P:nth-child(2):hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#sixthsec > div > div > P:nth-child(3){
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+}
+#sixthsec > div > div > P:nth-child(4){
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+    color: gray;
+}
+
+/* Seventh Section & Eighth Section & Tenth Section*/
+
+#seventhsec , #eighthsec, #tenthsec{
+    width: 100%;
+    background-color: white;
+    height: fit-content;
+}
+#seventhsec > p, #eighthsec > p,  #tenthsec > p {
+    padding-top: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+#seventhsec > p > span:first-child, #eighthsec > p > span:first-child,#tenthsec > p > span:first-child{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+#seventhsec > div, #eighthsec > div, #tenthsec> div{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+#seventhsec > div > div, #eighthsec > div > div, #tenthsec > div > div{
+    padding: 30px;
+}
+#seventhsec > div > div > img, #eighthsec > div > div > img, #tenthsec > div > div > img{
+    height: 100px;
+    cursor: pointer;
+}
+#tenthsec > div > div > img{
+    width: 100%;
+}
+#seventhsec > div > div > P:nth-child(2), #eighthsec > div > div > P:nth-child(2), #tenthsec > div > div > P:nth-child(2){
+    color: #0457c8;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+}
+#seventhsec > div > div > P:nth-child(2):hover, #eighthsec > div > div > P:nth-child(2):hover, #tenthsec > div > div > P:nth-child(2):hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#seventhsec > div > div > P:nth-child(3), #eighthsec > div > div > P:nth-child(3), #tenthsec > div > div > P:nth-child(3){
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Ninth Section  */
+
+#ninthsec{
+    width: 100%;
+    background-color: white;
+    height: fit-content;
+}
+#ninthsec > div:first-child{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+#ninthsec > div:first-child > div{
+    border: 1px solid lightgray;
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}
+#ninthsec > div:first-child > div > img{
+    width: 100%;
+    cursor: pointer;
+}
+#ninthsec > div:first-child > div > :nth-child(2){
+    color: #0046be;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#ninthsec > div:first-child > div > :nth-child(2):hover{
+    color: rgb(23, 23, 143);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#ninthsec > div:first-child > div > :nth-child(3){
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+}
+#ninthsec > div:last-child{
+    height: fit-content;
+    width: 98%;
+    margin: auto;
+    background-color: #0046be;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ninthsec > div:last-child > img {
+    height: 100px;
+}
+#ninthsec > div:last-child > div{
+    display: grid;
+    align-items: center;
+    margin-left: 30px;
+}
+#ninthsec > div:last-child > div > p:first-child{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+#ninthsec > div:last-child > div > p:last-child{
+    color: yellow;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+#ninthsec > div:last-child > p{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    width: 20%;
+    margin-left: 30px;
+}
+#ninthsec > div:last-child > button{
+    background-color: yellow;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 25px;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-left: 30px;
+    cursor: pointer;
+}
+/* Medium screen  */
+
+@media all and (min-width:768px) and (max-width:1024px){
+
+     /* navbar */
+
+    /* First div  */
+    #main > input{
+        width: 20%;
+    }
+    #main > select{
+        font-size: 18px;
+        width: 12%;
+    }
+    #main > img:first-child{
+        margin-left: 0.5%;
+    }
+    #main > img:nth-child(2){  
+        margin-left: 0.5%;
+    }
+    #main > img:nth-child(6){
+        margin-left: 3%; 
+    }
+    #main > img:nth-child(8){
+        margin-left: 1%;
+    }
+    /* Second div  */
+    #buttons > div{
+       font-size: 12px;
+    }
+    #buttons select{
+        font-size: 10px;
+    }
+    #buttons > div:last-child{
+        width: 45%;
+        margin-right: 0.5%;
+    }
+    #buttons > div:first-child{
+        width: 48%;
+        margin-left: 0.5%;
+     }
+
+     /* Homepage */
+
+     /* First section */
+
+    #firstsec{
+        display: inline;
+    }
+    #firstsec > div:first-child{
+        width: 100%;
+    }
+    #firstsec > div:first-child > p{
+        right: 23%;
+    }
+    #firstsec > div:first-child > button{
+        right: 43%;
+    }
+    #firstsec > div:last-child{
+        width: 100%;
+    }
+
+    /* Second section  */
+
+    #secondsec1{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #secondsec3{
+        margin-left: 7px;
+    }
+
+    /* Third section */
+
+    #thirdsec{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #bar>div:last-child>img {
+        width: 0%;
+    } 
+    #bar>div:nth-child(3)>h1{
+        font-size: 1em;
+    }
+    #bar>div:nth-child(3)>p:nth-child(2){
+        font-size: 0.7em;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+
+    /* Forth section  */
+
+    #forthsec1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #forthsec1 > div:first-child{
+        justify-content: center;
+    }
+    #forthsec1 > div:last-child{
+        justify-content: center;
+    }
+
+    /* Fifth Section  */
+    #fifthsec{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* Sixth Section  */
+
+    #sixthsec > div{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* Seventh Section & Eighth Section */
+
+    #seventhsec > div, #eighthsec > div, #tenthsec > div{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    /* Ninth Section  */
+    #ninthsec > div:first-child{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* Small screen */
+
+@media all and (min-width:340px) and (max-width:767px){
+
+    /* navbar */
+
+    #main  .other, #buttons  .other{
+        width: 0%;
+        height: 0%;
+        font-size: 0px;
+        font-size: 0%;
+     }
+
+    /* First div  */
+    #first > div{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #main > select{
+        font-size: 18px;
+        width: 30%;
+        margin-left: 0%;
+    }
+    #main > input{
+        width: 60%;
+    }
+    #main > p:nth-child(7){
+        font-size: 0px;
+        margin: 0%;
+    }
+    #main > img:nth-child(6){
+        margin-left: 0%; 
+    }
+    #main > img:nth-child(8){
+        margin-left: 0%;
+    }
+
+    /* Second div  */
+    #buttons > div:last-child{
+        width: 35%;
+        margin-right: 1%;
+    }
+    #buttons > div:first-child{
+        width: 50%;
+        margin-left: 0.5%;
+    }  
+    #main > div{
+        width: 0%;
+        height: 0%;
+    }
+
+     /* Homepage */
+
+     /* First section */
+
+     #firstsec{
+        display: inline;
+    }
+    #firstsec > div:first-child{
+        width: 100%;
+    }
+    #firstsec > div:first-child > p{
+        font-size: 0px;
+    }
+    #firstsec > div:first-child > button{
+        right: 45rem;
+    }
+    #firstsec > div:last-child{
+        width: 100%;
+    }
+    #second{
+        display: block;
+    }
+    #second > div:first-child{
+        height: fit-content;
+        width: 100%;
+    }
+    #second > div:last-child{
+        height: fit-content;
+        width: 100%;
+    }
+
+        /* Second section  */
+
+        #secondsec1{
+            grid-template-columns: repeat(1,1fr);
+        }
+        #secondsec3{
+            margin-left: 7px;
+        }
+        #secondsec2{
+            display: inline;
+        }
+
+    /* Third section */
+
+    #thirdsec{
+        grid-template-columns: repeat(1,1fr);
+    } 
+    #bar>div:last-child>img {
+        width: 0%;
+    } 
+    #bar>div:nth-child(3)>h1{
+        font-size: 1em;
+    }
+    #bar>div:nth-child(3)>p:nth-child(2){
+        font-size: 0.5em;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+    #bar>div:nth-child(1){
+        left: 1rem;
+    }
+    #bar>div:nth-child(2){
+        left: 12rem;
+    }
+    #bar>div:nth-child(3){
+        left: 13rem;
+    }
+    
+    /* Forth section  */
+
+    #forthsec1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #forthsec1 > div:first-child{
+        justify-content: center;
+    }
+    #forthsec1 > div:last-child{
+        justify-content: center;
+    }
+
+    /* Fifth Section  */
+
+    #fifthsec{
+        grid-template-columns: repeat(1,400px);
+    }
+
+    /* Sixth Section  */
+
+    #sixthsec > div{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+       /* Seventh Section & Eighth Section */
+
+       #seventhsec > div, #eighthsec > div, #tenthsec > div{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #ninthsec > div:first-child{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* Footer  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* footer css css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: rgb(240,242,244);
+    width: 100%;
+}
+
+
+.sec_1{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+}
+.sec_1>div{
+    padding: 60px;
+}
+.sec_1>div:hover{
+    cursor: pointer;
+}
+
+.font-60{
+    font-size: 60px;
+    padding-bottom: 20px;
+    color: gray;
+}
+
+.sec_1>div>a{
+    text-decoration: none;
+    margin-top: 10px;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(9,90,201);
+}
+.sec_1>div>a:hover{
+    text-decoration: underline;
+}
+.hl{
+    width: 95%;
+    background-color: rgb(152, 150, 150);
+    height: 1px;
+    margin: auto;
+}
+
+.sec_2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#sec_2-1{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+}
+
+#sec_2-1>div>h3{
+    font-family: 'Poppins' , sans-serif;
+}
+#sec_2-1>div>p{
+    color: rgb(9,90,201);
+    font-family: 'Poppins' , sans-serif;
+    padding-top: 20px;
+}
+footer>div:nth-child(4){
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 20px;
+}
+footer>div:nth-child(4)>div{
+    display: flex;
+    justify-content: space-around;
+}
+footer>div:nth-child(4)>p>span{
+    color: rgb(9,90,201);
+    font-family: 'Poppins' ,sans-serif;
+}
+footer>div:nth-child(4)>div>p{
+    color: rgb(9,90,201);
+    font-family: 'Poppins' ,sans-serif;
+    margin-right: 40px;
+}
+
+
+#footer_form{
+    background-color: white;
+    width: 30%;
+    padding: 10px 20px 10px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
+}
+
+#footer_form>p:first-child{
+    color: rgb(9,90,201);
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#footer_form>h3{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+#footer_form>input:nth-child(4){
+    padding: 10px 40px 10px 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-left: 10px;
+}
+#footer_form>input:nth-child(5){
+    margin-left: 15px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(9,90,201);
+    color: white;
+}
+.fa-mobile-button{
+    font-size: 60px;
+    color: rgb(9,90,201);
+}
+#footer_form>div:nth-child(7){
+    padding: 20px;
+}
+#footer_form>div:nth-child(7)>p{
+    font-family: 'Poppins' , sans-serif;
+}
+#footer_form>div:nth-child(7)>span{
+    font-size: 30px;
+    font-family: 'Poppins' ,sans-serif;
+    font-weight: 600;
+}
+
+.fa-brands{
+    font-size: 35px;
+    margin: 20px 5px 20px 40px;
+    color: rgb(9,90,201);
+}
+#footer_form>p:last-child{
+    padding-left: 10px;
+    color: rgb(9,90,201);
+    font-family: 'Poppins' ,sans-serif;
+}
+
+#sec_3>div:first-child{
+    display: flex;
+    color: rgb(9,90,201);
+    justify-content: space-around;
+    font-size: 13px;
+    width: 90%;
+    margin-top: 30px;
+    font-family: 'Poppins' , sans-serif;
+}
+#sec_3>div:last-child{
+    color: rgb(115, 115, 115);
+    width: 90%;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: 'Poppins' ,sans-serif;
+    margin-left: 20px;
+}
+
+@media all and (min-width: 1324px) and (max-width: 1524px){
+    #footer_form{
+        width: 35%;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 1324px) {
+    .sec_1{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #footer_form{
+        width: 50%;
+    }
+    #sec_2{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+    #sec_2-1{
+        padding: 10px;
+        gap: 20px;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 867px) {
+    .sec_1{
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    #footer_form{
+        width:80%;
+    }
+    #sec_2-1{
+        padding: 20px;
+        gap: 20px;
+    }
+    #sec_3>div:first-child{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+    #footer_form>input{
+        margin-top: 15px;
+    }
+}

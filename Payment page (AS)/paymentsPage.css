@@ -1,0 +1,296 @@
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body {
+    background-color: #f0f2f4;
+  }
+  
+  /* Navbar Styling */
+  
+  nav {
+    background-color: #0046be;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    position: static;
+  }
+  nav > div {
+    display: flex;
+    align-items: center;
+  }
+  nav > div > a > img {
+    height: 60px;
+    margin-right: 10px;
+  }
+  nav > div + div > a {
+    text-decoration: none;
+    color: white;
+  }
+  nav > div + div > a:hover {
+    text-decoration: underline;
+  }
+  nav > div > p {
+    font-size: 35px;
+  }
+  /* Navbar Styling */
+
+  /* Main Page styling */
+
+  main{
+    margin: auto;
+    margin-top: 10px;
+    width: 70%;
+  }
+
+  main>p>a{
+    color: blue;
+    text-decoration: none;
+  }
+
+  #container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #formSection{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    width: 60%;
+  }
+
+  form{
+    width: 92%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #summary{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    width: 38%;
+  }
+
+  #summary>div{
+    width: 92%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #referalAndSaving>button{
+      margin-top: 20px;
+      margin-bottom: 10px;
+      width: 95%;
+      padding: 10px;
+      background-color: rgb(33, 67, 221);
+      color: white;
+      border: none;
+      font-weight: bold;
+  }
+
+  #referalAndSaving>button:hover {
+    cursor: pointer;
+    background-color: #073788e5;
+  }
+
+  #FirstAndLastName{
+    display: flex;
+  }
+
+  #FirstAndLastName>div:last-child{
+    margin-left: 20px;
+  }
+
+  #cityStateCode{
+    display: flex;
+  }
+
+  #cityStateCode>div:first-child{
+    margin-right: 20px;
+  }
+
+  #cityStateCode>div:last-child{
+    margin-left: 20px;
+  }
+
+  input{
+    width: 90%;
+    padding: 10px;
+  }
+
+  select{
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  #submit{
+    margin-top: 10px;
+    border: none;
+    background-color: rgba(228, 228, 9, 0.924);
+    font-size: 18px;
+    font-weight: bold;
+    width: 95%;
+    padding: 10px;
+  }
+
+  #submit:hover{
+    cursor: pointer;
+    background-color: yellow;
+  }
+
+  #image{
+    margin-top: 15px;
+  }
+
+  img{
+    display: flex;
+    margin: auto;
+    height: 60px;
+    width: 90%;
+  }
+
+  #summary>div>h4{
+    margin-bottom: 0px;
+  }
+
+  #summary>div>p{
+      margin-top: 0px;
+  }
+
+  #responsiveness>div{
+     display: flex;
+     /* justify-content: space-between; */
+  }
+
+  #responsiveness>div>p{
+    margin-left: 5px;
+    margin-right: 13%;
+    font-size: 12px;
+    width: 40%;
+  }
+
+  #responsiveness>div>img{
+    width: 20%;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+  #responsiveness>div>div>p{
+    font-size: 14px;
+  }
+
+  #responsiveness>div>div>p:last-child{
+    color: blue;
+  }
+  #responsiveness>div>div>p:last-child:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  #total{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #referalAndSaving>h3{
+      color: green;
+  }
+
+  #savings{
+     color: rgb(25, 228, 10);
+  }
+
+  .mb{
+    margin-bottom: 15px;
+  }
+
+  .mt{
+    margin-top: 15px;
+  }
+
+  .moreMt{
+    margin-top: 25px;
+  }
+  .moreMb{
+    margin-bottom: 20px;
+  }
+  .font{
+    font-size: 13px;
+  }
+
+  /* Main Page styling */
+
+  
+  
+  /* footer styling */
+footer {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  #footer {
+    width: 80%;
+    margin: auto;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  span {
+    color: blue;
+  }
+  span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  /* footer styling */
+
+  /* Media queries */ 
+
+  @media all and (min-width: 790px) and (max-width: 865px){
+    #total{
+      font-size: 15px;
+    }
+  }
+  @media all and (max-width: 790px){
+    #container{
+      display: block;
+    }
+    #formSection{
+      width: 95%;
+    }
+    #summary{
+      width: 95%;
+      margin-top: 20px;
+
+    }
+  }
+  @media all and (min-width: 320px) and (max-width: 536px){
+    #container{
+      display: block;
+    }
+    #formSection{
+      width: 95%;
+    }
+    #summary{
+      width: 95%;
+      margin-top: 20px;
+    }
+    input{
+      width: 80%;
+    }
+  }
+
+  @media all and (min-width: 320px) and (max-width: 415px){
+    #total{
+      font-size: 15px;
+    }
+  }

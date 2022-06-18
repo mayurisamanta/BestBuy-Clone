@@ -1,0 +1,289 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+#main >select > option , #buttons  select > option{
+    background-color: white;
+    color: #0046be;
+    font-family: 'Raleway', sans-serif;
+}
+#main > select, #buttons > select{
+    cursor: pointer;
+}
+
+/* First div */
+
+#main{
+    height: 70px;
+    width: 100%;
+    min-width: 100vw;
+    background-color: 
+    #0046be;
+    display: flex;
+    align-items: center;
+}
+#main > img:first-child{
+    height: 90%;
+    margin-left: 1.5%;
+    cursor: pointer;
+}
+#main > img:nth-child(2){  
+    height: 30px;
+    cursor: pointer;
+    margin-left: 2%;
+}
+#main > div > img{
+    height: 55%; 
+}
+
+#main > div:nth-child(5){
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 57%;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#search-nav{
+    height: 60%;
+    width: 35%;
+    padding-left: 1%;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #0046be;
+    border-right: white;
+    margin-left: 2%;
+}
+/* #main > select{
+    background-color: #0046be;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid #0046be;
+    width: 6%;
+} */
+
+/* Drop down  */
+
+.dropbtn {
+    /* background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px; */
+    background-color: #0046be;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid #0046be;
+    width: 6%;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn1 {
+    background-color: #0046be;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    border: 1px solid #0046be;
+    width: 8%;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown,.dropdown1 {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content , .dropdown-content1{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a , .dropdown-content1 a{
+    color: #0046be;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+  }
+  .show {display: block;}
+
+  .dropdown-content a:hover, .dropdown-content1 a:hover{
+    text-decoration: underline;
+  }
+#main > p{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+#main > p:nth-child(7){
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+#main > img:nth-child(8){
+    height: 80%;
+    cursor: pointer;
+    margin-left: 3%;
+}
+#main > p:last-child{
+    cursor: pointer;
+    margin-right: 1%;
+    font-family: 'Raleway', sans-serif;
+}
+#main > p:last-child:hover{
+    text-decoration: underline;
+}
+#main > img:nth-child(6){
+    height: 100%;
+    cursor: pointer;
+    margin-left: 18%;
+}
+
+/* Second div  */
+
+#buttons{
+    height: 50px;
+    width: 100%;
+    border-top: 0.5px solid 
+    #1e88e5;
+    background-color: #0046be;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+}
+#buttons > div{
+    display: flex;
+    align-items: center;
+   color: white;
+   font-size: 14px;
+}
+#buttons > div:first-child{
+   width: 52%;
+   justify-content: space-around;
+   margin-left: 2%;
+}
+#buttons > div:last-child{
+    width: 37%;
+    justify-content: space-between;
+    margin-right: 3.5%;
+}
+#buttons select{
+    background-color: #0046be;
+    color: white;
+    font-size: 14px;
+    border: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+#buttons p{
+    cursor: pointer;
+}
+#buttons P:hover{
+    text-decoration: underline;
+}
+
+/* Medium screen  */
+
+@media all and (min-width:768px) and (max-width:1023px){
+    #main  .other1, #buttons  .other1{
+        width: 0%;
+        height: 0%;
+        font-size: 0px;
+        font-size: 0%;
+     }
+
+    /* First div  */
+    #search-nav{
+        width: 20%;
+        font-size: 14px;
+    }
+    /* #main > select{
+        font-size: 18px;
+        width: 12%;
+    } */
+    #main > img:first-child{
+        margin-left: 0.5%;
+        
+    }
+    #main > img:nth-child(2){  
+        margin-left: 0.5%;
+    }
+    #main > img:nth-child(6){
+        margin-left: 3%; 
+    }
+    #main > img:nth-child(8){
+        margin-left: 1%;
+    }
+    /* Second div  */
+    #buttons > div{
+       font-size: 12px;
+    }
+    #buttons select{
+        font-size: 10px;
+    }
+    #buttons > div:last-child{
+        width: 45%;
+        margin-right: 0.5%;
+    }
+    #buttons > div:first-child{
+        width: 48%;
+        margin-left: 0.5%;
+     }
+}
+
+/* Small screen */
+
+@media all and (min-width:340px) and (max-width:767px){
+
+    #main  .other, #buttons  .other{
+        width: 0%;
+        height: 0%;
+        font-size: 0px;
+        font-size: 0%;
+     }
+
+    /* First div  */
+    /* #main > select{
+        font-size: 18px;
+        width: 30%;
+        margin-left: 0%;
+    } */
+    #main > img:first-child{
+        height: 60%;
+    }
+    #search-nav{
+        width: 60%;
+        font-size: 12px;
+    }
+    #main > p:nth-child(7){
+        font-size: 0px;
+        margin: 0%;
+    }
+    #main > img:nth-child(6){
+        margin-left: 0%; 
+    }
+    #main > img:nth-child(8){
+        margin-left: 0%;
+    }
+
+    /* Second div  */
+    #buttons > div:last-child{
+        width: 35%;
+        margin-right: 1%;
+    }
+    #buttons > div:first-child{
+        width: 50%;
+        margin-left: 0.5%;
+    }  
+    /* #main > div{
+        width: 0%;
+        height: 0%;
+    } */
+}

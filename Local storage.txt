@@ -1,0 +1,9 @@
+--> Sign up page:- 
+    1. userData(for storing data of new users)
+        Key:- userName , userEmail , userPassword , userPhone , userId
+        
+--> Sign in page:-
+    1. tempUserData (For storing temproray data)
+        key:- Name , Email , memberID
+
+--> Add Your's

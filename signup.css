@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* sign up css start*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+}
+
+nav {
+    background-color: rgb(0, 70, 190);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+img {
+    cursor: pointer;
+}
+
+nav>a {
+    color: white;
+    text-decoration: none;
+}
+
+form {
+    width: 70%;
+    margin: auto;
+}
+
+form>input:nth-child(10) {
+    text-align: center;
+    background-color: rgb(0, 70, 190);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+form>input:nth-child(10):hover {
+    background-color: rgb(0, 48, 131);
+    cursor: pointer;
+}
+
+.signup {
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.signup>h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.signup>p {
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid rgb(181, 181, 181);
+}
+
+::placeholder {
+    font-size: 15px;
+    padding: 5px;
+    color: rgb(41, 41, 41);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.signup>div:nth-child(4) {
+    width: 60%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup>div:nth-child(4)>div:nth-child(1) {
+    position: absolute;
+    background-color: #595a5c;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    height: 3px;
+}
+
+.withGoogle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: 25%;
+    padding: 5px 10% 5px 50px;
+    background-color: white;
+    border: 1px solid rgb(0, 70, 190);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: rgb(0, 70, 190);
+}
+
+.withGoogle>img {
+    width: 30px;
+}
+
+.withGoogle:hover {
+    background-color: rgb(0, 70, 190);
+    color: white;
+    cursor: pointer;
+}
+
+.signup>div:nth-child(6) {
+    height: 2px;
+    background-color: rgb(80, 80, 80);
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.signup>div:nth-child(7)>p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#tabLogo {
+    border-radius: 100%;
+}
+
+footer {
+    box-sizing: border-box;
+    background-color: white;
+    margin-top: 50px;
+    height: 250px;
+    padding: 50px 200px 10px 200px;
+    line-height: 25px;
+}
+
+.footer {
+    display: flex;
+}
+
+.vl {
+    border-left: 1px solid rgb(209, 209, 209);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer>div>a {
+    text-decoration: none;
+}
+
+footer>div>p {
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #939393;
+}
+
+@media all and (min-width: 768px) and (max-width: 1324px) {
+    .signup {
+        width: 60%;
+    }
+
+    .withGoogle {
+        padding-left: 30px;
+    }
+
+    footer {
+        height: 200px;
+        padding: 50px;
+    }
+
+}
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+    .signup {
+        width: 90%;
+    }
+
+    .withGoogle {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-left: 20%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
