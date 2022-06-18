@@ -28,12 +28,20 @@
 </head>
 
 <body>
+<<<<<<< HEAD
+=======
+    <a href="cartpage.html">Go to cart</a>
+>>>>>>> 0d06ed357e4aa50da535a814ac261984eecff70b
     <div id="products"></div>
 </body>
 
 </html>
 <script>
+<<<<<<< HEAD
     let produdata  = [
+=======
+    let produdata = [
+>>>>>>> 0d06ed357e4aa50da535a814ac261984eecff70b
         {
             quantity: 1,
             brand: "Puma",
@@ -111,7 +119,11 @@
 
     function Displaydata(produdata) {
         produdata.forEach(function (ele) {
+<<<<<<< HEAD
 
+=======
+            ele.totalPrice = ele.price * ele.quantity;
+>>>>>>> 0d06ed357e4aa50da535a814ac261984eecff70b
             let product = document.createElement("div")
             let img = document.createElement("img")
             img.src = ele.img
@@ -122,11 +134,20 @@
             let addtocart = document.createElement("button")
             addtocart.innerText = "Add To Cart"
             addtocart.addEventListener("click", function () {
+<<<<<<< HEAD
                 if(Addtocartfun(ele.productID)===true){
                     alert("Added")
                     cartLS.push(ele)
                     localStorage.setItem("cart_page",JSON.stringify(cartLS))
                 }else{
+=======
+                if (Addtocartfun(ele.productID) === true) {
+                    alert("Added")
+
+                    cartLS.push(ele)
+                    localStorage.setItem("cart_page", JSON.stringify(cartLS))
+                } else {
+>>>>>>> 0d06ed357e4aa50da535a814ac261984eecff70b
                     alert("Already there")
                 };
             })
@@ -138,8 +159,13 @@
     }
     Displaydata(produdata);
     function Addtocartfun(id) {
+<<<<<<< HEAD
         for (let i = 0; i<cartLS.length; i++) {
             if (cartLS[i].productID === id){
+=======
+        for (let i = 0; i < cartLS.length; i++) {
+            if (cartLS[i].productID === id) {
+>>>>>>> 0d06ed357e4aa50da535a814ac261984eecff70b
                 return false
             }
         }
