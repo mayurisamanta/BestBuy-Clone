@@ -12,3 +12,10 @@ data.forEach(function (elem) {
   let id = `Member ID:  ${userId}`;
   document.getElementById("memberID").innerText = id;
 });
+
+function applynow() {
+  window.location.href = "topDeals.html";
+}
+function shopnow() {
+  window.location.href = "laptops.html";
+}

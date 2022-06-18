@@ -4,10 +4,7 @@ let userData = JSON.parse(localStorage.getItem("userData")) || []; // use this  
 
 function main(event) {
   event.preventDefault();
-  let name =
-    document.getElementById("fName").value +
-    " " +
-    document.getElementById("lName").value;
+  let name = document.getElementById("fName").value;
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
   let cPassword = document.getElementById("cPassword").value;
