@@ -60,7 +60,6 @@ document.querySelector("#top").addEventListener("click",function(){
     window.location.href = "topDeals.html";
 });
 
-// changes
 // Deals of the day 
 document.querySelector("#deal").addEventListener("click", function(){
     window.location.href = "dealsOftheDay.html";

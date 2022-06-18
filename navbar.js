@@ -60,7 +60,7 @@ document.querySelector("#top").addEventListener("click",function(){
 
 // Deals of the day 
 document.querySelector("#deal").addEventListener("click", function(){
-    window.location.href = "deals.html";
+    window.location.href = "dealsOftheDay.html";
 });
 
 // Account 
