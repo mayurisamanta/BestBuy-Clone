@@ -1,5 +1,4 @@
-/* Navbar  start*/
-
+/* Navbar  */
 *{
     padding: 0%;
     margin: 0%;
@@ -8,6 +7,7 @@
 #main >select > option , #buttons  select > option{
     background-color: white;
     color: #0046be;
+    font-family: 'Raleway', sans-serif;
 }
 #main > select, #buttons > select{
     cursor: pointer;
@@ -18,6 +18,7 @@
 #main{
     height: 70px;
     width: 100%;
+    min-width: 100vw;
     background-color: 
     #0046be;
     display: flex;
@@ -37,7 +38,7 @@
     height: 55%; 
 }
 
-#main > div{
+#main > div:nth-child(5){
     display: flex;
     align-items: center;
     background-color: white;
@@ -47,7 +48,7 @@
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
-#main > input{
+#search-nav{
     height: 60%;
     width: 35%;
     padding-left: 1%;
@@ -58,14 +59,66 @@
     border-right: white;
     margin-left: 2%;
 }
-#main > select{
+/* #main > select{
     background-color: #0046be;
     color: white;
     font-weight: bold;
     font-size: 20px;
     border: 1px solid #0046be;
     width: 6%;
-}
+} */
+
+/* Drop down  */
+
+.dropbtn {
+    /* background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px; */
+    background-color: #0046be;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid #0046be;
+    width: 6%;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn1 {
+    background-color: #0046be;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    border: 1px solid #0046be;
+    width: 8%;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown,.dropdown1 {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content , .dropdown-content1{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a , .dropdown-content1 a{
+    color: #0046be;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+  }
+  .show {display: block;}
+
+  .dropdown-content a:hover, .dropdown-content1 a:hover{
+    text-decoration: underline;
+  }
 #main > p{
     color: white;
     font-size: 24px;
@@ -73,6 +126,7 @@
 }
 #main > p:nth-child(7){
     cursor: pointer;
+    font-family: 'Raleway', sans-serif;
 }
 #main > img:nth-child(8){
     height: 80%;
@@ -82,6 +136,7 @@
 #main > p:last-child{
     cursor: pointer;
     margin-right: 1%;
+    font-family: 'Raleway', sans-serif;
 }
 #main > p:last-child:hover{
     text-decoration: underline;
@@ -102,6 +157,7 @@
     background-color: #0046be;
     display: flex;
     justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
 }
 #buttons > div{
     display: flex;
@@ -115,21 +171,122 @@
    margin-left: 2%;
 }
 #buttons > div:last-child{
-    width: 35%;
+    width: 37%;
     justify-content: space-between;
-    margin-right: 2.5%;
+    margin-right: 3.5%;
 }
 #buttons select{
     background-color: #0046be;
     color: white;
     font-size: 14px;
     border: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
 #buttons p{
     cursor: pointer;
 }
 #buttons P:hover{
     text-decoration: underline;
+}
+
+/* Medium screen  */
+
+@media all and (min-width:768px) and (max-width:1023px){
+    #main  .other1, #buttons  .other1{
+        width: 0%;
+        height: 0%;
+        font-size: 0px;
+        font-size: 0%;
+     }
+
+    /* First div  */
+    #search-nav{
+        width: 20%;
+        font-size: 14px;
+    }
+    /* #main > select{
+        font-size: 18px;
+        width: 12%;
+    } */
+    #main > img:first-child{
+        margin-left: 0.5%;
+        
+    }
+    #main > img:nth-child(2){  
+        margin-left: 0.5%;
+    }
+    #main > img:nth-child(6){
+        margin-left: 3%; 
+    }
+    #main > img:nth-child(8){
+        margin-left: 1%;
+    }
+    /* Second div  */
+    #buttons > div{
+       font-size: 12px;
+    }
+    #buttons select{
+        font-size: 10px;
+    }
+    #buttons > div:last-child{
+        width: 45%;
+        margin-right: 0.5%;
+    }
+    #buttons > div:first-child{
+        width: 48%;
+        margin-left: 0.5%;
+     }
+}
+
+/* Small screen */
+
+@media all and (min-width:340px) and (max-width:767px){
+
+    #main  .other, #buttons  .other{
+        width: 0%;
+        height: 0%;
+        font-size: 0px;
+        font-size: 0%;
+     }
+
+    /* First div  */
+    /* #main > select{
+        font-size: 18px;
+        width: 30%;
+        margin-left: 0%;
+    } */
+    #main > img:first-child{
+        height: 60%;
+    }
+    #search-nav{
+        width: 60%;
+        font-size: 12px;
+    }
+    #main > p:nth-child(7){
+        font-size: 0px;
+        margin: 0%;
+    }
+    #main > img:nth-child(6){
+        margin-left: 0%; 
+    }
+    #main > img:nth-child(8){
+        margin-left: 0%;
+    }
+
+    /* Second div  */
+    #buttons > div:last-child{
+        width: 35%;
+        margin-right: 1%;
+    }
+    #buttons > div:first-child{
+        width: 50%;
+        margin-left: 0.5%;
+    }  
+    /* #main > div{
+        width: 0%;
+        height: 0%;
+    } */
 }
 
 
@@ -848,7 +1005,7 @@ body{
 }
 /* Medium screen  */
 
-@media all and (min-width:768px) and (max-width:1023px){
+@media all and (min-width:768px) and (max-width:1024px){
 
      /* navbar */
 
@@ -925,6 +1082,14 @@ body{
     #bar>div:last-child>img {
         width: 0%;
     } 
+    #bar>div:nth-child(3)>h1{
+        font-size: 1em;
+    }
+    #bar>div:nth-child(3)>p:nth-child(2){
+        font-size: 0.7em;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
 
     /* Forth section  */
 
@@ -955,6 +1120,8 @@ body{
         display: grid;
         grid-template-columns: repeat(3,1fr);
     }
+
+    /* Ninth Section  */
     #ninthsec > div:first-child{
         grid-template-columns: repeat(2,1fr);
     }
@@ -1021,10 +1188,10 @@ body{
         width: 100%;
     }
     #firstsec > div:first-child > p{
-        right: 23%;
+        font-size: 0px;
     }
     #firstsec > div:first-child > button{
-        right: 43%;
+        right: 45rem;
     }
     #firstsec > div:last-child{
         width: 100%;
@@ -1061,6 +1228,23 @@ body{
     #bar>div:last-child>img {
         width: 0%;
     } 
+    #bar>div:nth-child(3)>h1{
+        font-size: 1em;
+    }
+    #bar>div:nth-child(3)>p:nth-child(2){
+        font-size: 0.5em;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+    #bar>div:nth-child(1){
+        left: 1rem;
+    }
+    #bar>div:nth-child(2){
+        left: 12rem;
+    }
+    #bar>div:nth-child(3){
+        left: 13rem;
+    }
     
     /* Forth section  */
 
@@ -1095,5 +1279,227 @@ body{
 
     #ninthsec > div:first-child{
         grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* Footer  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* footer css css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: rgb(240,242,244);
+    width: 100%;
+}
+
+
+.sec_1{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+}
+.sec_1>div{
+    padding: 60px;
+}
+.sec_1>div:hover{
+    cursor: pointer;
+}
+
+.font-60{
+    font-size: 60px;
+    padding-bottom: 20px;
+    color: gray;
+}
+
+.sec_1>div>a{
+    text-decoration: none;
+    margin-top: 10px;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(9,90,201);
+}
+.sec_1>div>a:hover{
+    text-decoration: underline;
+}
+.hl{
+    width: 95%;
+    background-color: rgb(152, 150, 150);
+    height: 1px;
+    margin: auto;
+}
+
+.sec_2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#sec_2-1{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+}
+
+#sec_2-1>div>h3{
+    font-family: 'Poppins' , sans-serif;
+}
+#sec_2-1>div>p{
+    color: rgb(9,90,201);
+    font-family: 'Poppins' , sans-serif;
+    padding-top: 20px;
+}
+footer>div:nth-child(4){
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 20px;
+}
+footer>div:nth-child(4)>div{
+    display: flex;
+    justify-content: space-around;
+}
+footer>div:nth-child(4)>p>span{
+    color: rgb(9,90,201);
+    font-family: 'Poppins' ,sans-serif;
+}
+footer>div:nth-child(4)>div>p{
+    color: rgb(9,90,201);
+    font-family: 'Poppins' ,sans-serif;
+    margin-right: 40px;
+}
+
+
+#footer_form{
+    background-color: white;
+    width: 30%;
+    padding: 10px 20px 10px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
+}
+
+#footer_form>p:first-child{
+    color: rgb(9,90,201);
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#footer_form>h3{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+#footer_form>input:nth-child(4){
+    padding: 10px 40px 10px 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-left: 10px;
+}
+#footer_form>input:nth-child(5){
+    margin-left: 15px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(9,90,201);
+    color: white;
+}
+.fa-mobile-button{
+    font-size: 60px;
+    color: rgb(9,90,201);
+}
+#footer_form>div:nth-child(7){
+    padding: 20px;
+}
+#footer_form>div:nth-child(7)>p{
+    font-family: 'Poppins' , sans-serif;
+}
+#footer_form>div:nth-child(7)>span{
+    font-size: 30px;
+    font-family: 'Poppins' ,sans-serif;
+    font-weight: 600;
+}
+
+.fa-brands{
+    font-size: 35px;
+    margin: 20px 5px 20px 40px;
+    color: rgb(9,90,201);
+}
+#footer_form>p:last-child{
+    padding-left: 10px;
+    color: rgb(9,90,201);
+    font-family: 'Poppins' ,sans-serif;
+}
+
+#sec_3>div:first-child{
+    display: flex;
+    color: rgb(9,90,201);
+    justify-content: space-around;
+    font-size: 13px;
+    width: 90%;
+    margin-top: 30px;
+    font-family: 'Poppins' , sans-serif;
+}
+#sec_3>div:last-child{
+    color: rgb(115, 115, 115);
+    width: 90%;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: 'Poppins' ,sans-serif;
+    margin-left: 20px;
+}
+
+@media all and (min-width: 1324px) and (max-width: 1524px){
+    #footer_form{
+        width: 35%;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 1324px) {
+    .sec_1{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #footer_form{
+        width: 50%;
+    }
+    #sec_2{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+    #sec_2-1{
+        padding: 10px;
+        gap: 20px;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 867px) {
+    .sec_1{
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    #footer_form{
+        width:80%;
+    }
+    #sec_2-1{
+        padding: 20px;
+        gap: 20px;
+    }
+    #sec_3>div:first-child{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+    #footer_form>input{
+        margin-top: 15px;
     }
 }
