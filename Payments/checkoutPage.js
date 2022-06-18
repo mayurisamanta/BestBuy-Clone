@@ -62,9 +62,12 @@ let temp = totalAmount;
 function referal(){
     if(document.querySelector("#referal").value == "buyers10"){
         totalAmount = totalAmount - totalAmount*(10/100);
+        localStorage.setItem("totalReferalAmt",totalAmount.toFixed(2));
         alert("Referal added successfuly")
         document.querySelector("#totalAmount").innerText = "$"+(totalAmount).toFixed(2)
-        document.querySelector("#savings").innerText = "$"+(temp - totalAmount).toFixed(2)
+        let discount = document.querySelector("#savings");
+        discount.innerText =  "$"+(temp - totalAmount).toFixed(2); 
+        localStorage.setItem("referalDiscount",discount.innerText);
     }else{
         alert("Enter a valid referal code")
     }
