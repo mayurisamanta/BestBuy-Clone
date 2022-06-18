@@ -258,10 +258,13 @@ a:hover{
     display: block;
   }
   #container > div:last-child{
-    width: 80%;
+    width: 95%;
   }
   #container > div:first-child{
-    width: 80%;
+    width: 95%;
+  }
+  #redirect{
+    width: 95%;
   }
 }
 
@@ -270,10 +273,13 @@ a:hover{
     display: block;
   }
   #container > div:last-child{
-    width: 80%;
+    width: 95%;
   }
   #container > div:first-child{
-    width: 80%;
+    width: 95%;
+  }
+  #redirect{
+    width: 95%;
   }
 }
 

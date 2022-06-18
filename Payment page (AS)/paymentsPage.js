@@ -1,10 +1,10 @@
-let productArr = [
-    {image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6418/6418601_sd.jpg;canvasHeight=100;canvasWidth=100",name:"MacBook Pro 13.3 Laptop - Apple M1 chip - 8GB Memory - 256GB SSD - Space Gray",price:1299.99,quantity:2},
-    {image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451333_sd.jpg;canvasHeight=100;canvasWidth=100",name:"Best Buy essentials™ - Full Motion TV Wall Mount for 47–84 TVs - Black",price:59,quantity:1},
-    {image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451333_sd.jpg;canvasHeight=100;canvasWidth=100",name:"Best Buy essentials™ - Full Motion TV Wall Mount for 47–84 TVs - Black",price:800,quantity:4}
-]
+// let productArr = [
+//     {image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6418/6418601_sd.jpg;canvasHeight=100;canvasWidth=100",name:"MacBook Pro 13.3 Laptop - Apple M1 chip - 8GB Memory - 256GB SSD - Space Gray",price:1299.99,quantity:2},
+//     {image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451333_sd.jpg;canvasHeight=100;canvasWidth=100",name:"Best Buy essentials™ - Full Motion TV Wall Mount for 47–84 TVs - Black",price:59,quantity:1},
+//     {image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451333_sd.jpg;canvasHeight=100;canvasWidth=100",name:"Best Buy essentials™ - Full Motion TV Wall Mount for 47–84 TVs - Black",price:800,quantity:4}
+// ]
 
-// let productArr = JSON.parse(localStorage.getItem("cart_page"));
+let productArr = JSON.parse(localStorage.getItem("cart_page"));
 
 let totalAmount = 0;
 productArr.forEach(function(elem,index){
