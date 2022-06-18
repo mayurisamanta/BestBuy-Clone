@@ -735,9 +735,9 @@ div.scroll>div>ul {
         font-size: 6px;
     }
 
-    .item-list {
-        /* width: 10%; */
-    }
+    /* .item-list { */
+    /* width: 10%; */
+    /* } */
 
     #items {
         width: 95%;
@@ -883,9 +883,9 @@ div.scroll>div>ul {
         width: 100%;
     }
 
-    #item-list-div {
-        /* width: 50%; */
-    }
+    /* #item-list-div { */
+    /* width: 50%; */
+    /* } */
 
     .item-list {
         width: 100%;
