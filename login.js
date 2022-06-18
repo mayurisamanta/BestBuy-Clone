@@ -42,9 +42,9 @@ function showHide() {
   let column = document.getElementById("password");
   if (column.type == "password") {
     column.type = "text";
-    eye.src = "/Assets/hidden.png";
+    eye.src = "/Assets-1/hidden.png";
   } else {
     column.type = "password";
-    eye.src = "/Assets/eye.png";
+    eye.src = "/Assets-1/eye.png";
   }
 }
