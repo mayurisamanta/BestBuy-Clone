@@ -40,7 +40,7 @@ productArr.forEach(function(elem,index){
 
 let referalDiscount = localStorage.getItem("referalDiscount");
 document.querySelector("#referalDiscount").innerText = "$" + Number((referalDiscount)).toFixed(2);
-document.querySelector("#totalAmount").innerText = "$"+(totalAmount-Number(referalDiscount).toFixed(2));
+document.querySelector("#totalAmount").innerText = "$"+(totalAmount.toFixed(2)-Number(referalDiscount).toFixed(2));
 
 // "$"+totalAmount
 
