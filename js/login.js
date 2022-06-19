@@ -29,7 +29,7 @@ function checkForLogIn(event) {
     tempUserData.push(obj);
     localStorage.setItem("tempUserData", JSON.stringify(tempUserData));
     alert("Sign in Succesfully");
-    window.location.href = "index.html";
+    window.location.href = "userAccount.html";
   } else {
     alert("Invalid Login Email/ID or Password");
   }
@@ -42,9 +42,9 @@ function showHide() {
   let column = document.getElementById("password");
   if (column.type == "password") {
     column.type = "text";
-    eye.src = "/Assets-1/hidden.png";
+    eye.src = "/Assets-1/eye.png";
   } else {
     column.type = "password";
-    eye.src = "/Assets-1/eye.png";
+    eye.src = "/Assets-1/hidden.png";
   }
 }

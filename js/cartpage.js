@@ -8,15 +8,14 @@ let Checkout = document.getElementById("btn");
 
 // oder summary--------
 let totalbuy = document.getElementById("addtotal");
-let totalValue;
-if (cartLS.length == 1) {
-  totalValue = cartLS[0].price * cartLS[0].quantity;
-} else if (cartLS.length > 1) {
-  totalValue = cartLS.reduce(function (acc, el) {
-    return acc.totalPrice + el.totalPrice;
-  });
-}
-document.getElementById("finaltotal").innerText = totalValue;
+let totalValue = 0;
+cartLS.forEach(function (el) {
+  totalValue += el.totalPrice;
+  console.log("Hello world");
+  console.log(totalValue);
+});
+
+document.getElementById("finaltotal").innerText = totalValue.toFixed(2);
 
 if (cartLS.length > 0) {
   function DisplayTotal(cartLS) {

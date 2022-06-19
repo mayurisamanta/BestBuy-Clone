@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,6 +31,139 @@
       </div>
     </nav>
 
+=======
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Best Buy</title>
+  <link rel="shortcut icon" href="/Assets-1/price-tag.png" type="image/x-icon">
+  <link rel="stylesheet" href="paymentsPage.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- This is navbar for checkout page -->
+  <nav>
+    <div>
+      <!-- add home page link here -->
+      <a href="/index.html"><img src="/Payments/Assets/logo.png" alt="logo" /></a>
+      <p>Checkout</p>
+    </div>
+    <div>
+      <!-- add cart page link here -->
+      <a href="/cartpage.html">
+        <p>Return to Cart</p>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <p class="moreMt mb">
+      <a href="checkoutPage.html">
+        < Back to Pickup & Delivery Options</a>
+    </p>
+    <h1 class="moreMb">Payment Information</h1>
+    <div id="container">
+      <div id="formSection">
+        <form>
+          <h3 class="moreMt mb">Credit or Debit Card Number</h3>
+          <input id="card" type="number" placeholder="**** **** **** ****" />
+
+          <div id="image">
+            <img src="/Payments/Assets/visa-mastercard-discover-american-express-icons-21635415958rgxaunvs7z.png"
+              alt="" />
+          </div>
+          <hr class="mt" />
+          <br />
+          <p class="font mb">
+            <i>Other payment options are not available for orders with
+              recurring payments</i>
+          </p>
+          <hr class="mb" />
+
+          <h2 class="moreMb">Billing Address</h2>
+          <div id="FirstAndLastName">
+            <div>
+              <h3 class="mb">First Name</h3>
+              <input type="text" placeholder="First Name" required />
+            </div>
+            <div>
+              <h3 class="mb">Last Name</h3>
+              <input type="text" placeholder="Last Name" />
+            </div>
+          </div>
+
+          <h3 class="mt mb">Address</h3>
+          <input type="text" placeholder="Rz-xy, street no z" required />
+
+          <div id="cityStateCode">
+            <div>
+              <h3 class="mt mb">City</h3>
+              <input type="text" placeholder="City" required />
+            </div>
+            <div>
+              <h3 class="mt mb">State</h3>
+              <select name="" id="" required>
+                <option value="">Select</option>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AP">AP</option>
+                <option value="AE">AE</option>
+                <option value="AA">AA</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="">CO</option>
+                <option value="">CT</option>
+                <option value="">DC</option>
+                <option value="">DE</option>
+                <option value="">FL</option>
+                <option value="">GA</option>
+                <option value="">GU</option>
+                <option value="">HI</option>
+                <option value="">ID</option>
+                <option value="">IL</option>
+                <option value="">IN</option>
+                <option value="">IA</option>
+                <option value="">KS</option>
+                <option value="">KY</option>
+                <option value="">LA</option>
+                <option value="">ME</option>
+                <option value="">MD</option>
+                <option value="">MA</option>
+              </select>
+            </div>
+            <div>
+              <h3 class="mt mb">Zip Code</h3>
+              <input type="number" placeholder="110055" required />
+            </div>
+          </div>
+          <input class="mt moreMb" type="submit" name="" id="submit" value="Place Your Order" />
+        </form>
+      </div>
+      <!-- Order Summary -->
+      <div id="summary">
+        <div>
+          <h2 class="mt mb">Order Summary</h2>
+          <h4>Store Pickup</h4>
+          <p style="margin-bottom: 10px">Aiea</p>
+          <p class="mb font">Ready for pickup Tomorrow</p>
+          <div id="responsiveness">
+            <!-- Append data from local storage -->
+          </div>
+          <br />
+          <div class="mt" id="total">
+            <h1>Total</h1>
+            <h1 id="totalAmount"><span>$</span></h1>
+          </div>
+          <hr />
+          <!-- <div id="referalAndSaving">
+=======
+>>>>>>> 8a21f122887a6c181913d680a8f7b3ad5f2f867b
     <main>
       <p class="moreMt mb">
         <a href="checkoutPage.html">< Back to Pickup & Delivery Options</a>
@@ -125,6 +259,7 @@
         </div>
 
         <!-- Order Summary -->
+<<<<<<< HEAD
         <div id="summary">
           <div>
             <h2 class="mt mb">Order Summary</h2>
@@ -145,6 +280,29 @@
             </div>
             <hr />
             <!-- <div id="referalAndSaving">
+=======
+          <div id="summary">
+            <div>
+              <h2 class="mt mb">Order Summary</h2>
+              <h4>Store Pickup</h4>
+              <p style="margin-bottom: 10px">Aiea</p>
+              <p class="mb font">Ready for pickup Tomorrow</p>
+              <div id="responsiveness">
+                <!-- Append data from local storage -->
+              </div>
+              <br />
+              <div id="discount">
+                <h3>Discount</h3>
+                <h3 id="referalDiscount"></h3>
+              </div>
+              <div class="mt" id="total">
+                <h1>Total</h1>
+                <h1 id="totalAmount"><span>$</span></h1>
+              </div>
+              <hr />
+              <!-- <div id="referalAndSaving">
+>>>>>>> d6cd2f3c7ed7b8d49a00ea3747e3ca504396472b
+>>>>>>> 8a21f122887a6c181913d680a8f7b3ad5f2f867b
               <h2>Referals :-</h2>
               <input
                 id="referal"
@@ -156,11 +314,37 @@
                 You’re saving <span id="savings">$0</span> on your order today!
               </h3>
             </div> -->
+<<<<<<< HEAD
           </div>
         </div>
       </div>
       <!-- Form Section -->
     </main>
+=======
+            </div>
+          </div>
+        </div>
+        <!-- Form Section -->
+  </main>
+
+  <footer>
+    <div id="footer">
+      <p>
+        <span>Terms and Conditions</span> || <span>Privacy</span> ||
+        <span>Interest-Based Ads</span>
+      </p>
+      <p><span>Give Feedback</span> || <span>Mobile Site</span></p>
+      <p>
+        Prices and offers are subject to change. © 2022 Best Buy. All rights
+        reserved. BEST BUY, the BEST BUY logo, the Tag Design, MY BEST BUY,
+        and BESTBUY.COM are trademarks of Best Buy and its affiliated
+        companies.
+      </p>
+    </div>
+  </footer>
+</body>
+<script src="paymentsPage.js"></script>
+>>>>>>> 8a21f122887a6c181913d680a8f7b3ad5f2f867b
 
     <footer>
       <div id="footer">

@@ -209,7 +209,9 @@ footer>div>p {
     }
 
     .withGoogle {
-        padding-left: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 25%;
     }
 
     footer {
@@ -227,7 +229,7 @@ footer>div>p {
     .withGoogle {
         padding-right: 10px;
         padding-left: 10px;
-        margin-left: 20%;
+        margin-left: 30%;
     }
 
     input {
