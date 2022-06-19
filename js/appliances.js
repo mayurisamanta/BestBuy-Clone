@@ -541,7 +541,7 @@ function displayItems(productData) {
     pModel.innerText = "Brand: " + element.model;
     let pContent = document.createElement("img");
     pContent.setAttribute("class", "pContent");
-    pContent.src = "/rating.png";
+    pContent.src = "/img/rating.png";
     let pAvail = document.createElement("p");
     pAvail.setAttribute("class", "pAvail");
     pAvail.innerText = "No rebates available in 96939";
@@ -557,19 +557,24 @@ function displayItems(productData) {
     // cart
     let pCart = document.createElement("button");
     let cLogo = document.createElement("img");
-    cLogo.src = "/trolly.png";
+    cLogo.src = "/img/trolly.png";
 
     let text = document.createElement("p");
     text.innerText = "Add to Cart";
 
     pCart.setAttribute("class", "pCart");
     pCart.addEventListener("click", function () {
-      if (addtoCartFunction(element.id)) {
-        element.quantity = 1;
-        element.totalPrice = element.price * element.quantity;
-        cart_page.push(element);
+      if (localStorage.getItem("tempUserData") == undefined) {
+        alert("You Have to Login or Sign Up to add items into cart!");
+        window.location.href = "signup.html";
+      } else {
+        if (addtoCartFunction(element.id)) {
+          element.quantity = 1;
+          element.totalPrice = element.price * element.quantity;
+          cart_page.push(element);
 
-        localStorage.setItem("cart_page", JSON.stringify(cart_page));
+          localStorage.setItem("cart_page", JSON.stringify(cart_page));
+        }
       }
     });
 
@@ -597,7 +602,11 @@ let slide_2 = document.getElementById("slide-2");
 slide_1.addEventListener("click", slider);
 slide_2.addEventListener("click", sliderTwo);
 
-let slide_img = ["/slider-2-1.png", "/slider-2-2.png", "/slider-2-3.png"];
+let slide_img = [
+  "/img/slider-2-1.png",
+  "/img/slider-2-2.png",
+  "/img/slider-2-3.png",
+];
 
 let img = document.getElementById("productSlide");
 let count = 0;

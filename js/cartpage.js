@@ -9,27 +9,23 @@ let Checkout = document.getElementById("btn");
 // oder summary--------
 let totalbuy = document.getElementById("addtotal");
 let totalValue;
-if (cartLS.length==1){
-    totalValue = cartLS[0].price* cartLS[0].quantity;
-    console.log("inside cart");
-}else if(cartLS.length > 1){
- totalValue = cartLS.reduce(function (acc, el) {
-  return acc.totalPrice + el.totalPrice;
-});
-console.log("inisde cartls");
+if (cartLS.length == 1) {
+  totalValue = cartLS[0].price * cartLS[0].quantity;
+} else if (cartLS.length > 1) {
+  totalValue = cartLS.reduce(function (acc, el) {
+    return acc.totalPrice + el.totalPrice;
+  });
 }
 document.getElementById("finaltotal").innerText = totalValue;
 
 if (cartLS.length > 0) {
   function DisplayTotal(cartLS) {
     producont.innerHTML = "";
-    cartLS.forEach(function (ele) {
-  
-    });
+    cartLS.forEach(function (ele) {});
   }
 } else {
   // producont.innerHTML = "";
-  document.getElementById("finaltotal").innerText =0;
+  document.getElementById("finaltotal").innerText = 0;
   let headempty = document.createElement("h2");
   headempty.innerText = "Empty";
   let para = document.createElement("p");
@@ -40,6 +36,10 @@ if (cartLS.length > 0) {
   btn1.setAttribute("class", "shopbtn1");
 
   btn1.innerText = "Continue Shopping";
+  btn1.id = "c-shopping";
+  btn1.addEventListener("click", function () {
+    window.location.href = "signup.html";
+  });
   btn.append(btn1);
   Checkout.append(btn);
   producont.append(headempty, para);
@@ -61,7 +61,7 @@ if (cartLS.length > 0) {
       let product = document.createElement("div");
 
       let img = document.createElement("img");
-      img.src = ele.img;
+      img.src = ele.image;
 
       let name = document.createElement("h3");
       name.innerText = ele.name;
@@ -121,7 +121,7 @@ if (cartLS.length > 0) {
       btn1.style.cursor = "pointer";
       btn1.addEventListener("click", function () {
         localStorage.setItem("TotalAmount", totalValue);
-        window.location.href = "checkoutPage.html";
+        window.location.href = "/Payments/checkoutPage.html";
       });
 
       let btn2 = document.createElement("button");

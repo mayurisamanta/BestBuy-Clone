@@ -1,55 +1,3 @@
-// nav bar
-document
-  .querySelector("#main > img:first-child")
-  .addEventListener("click", function () {
-    window.location.href = "index.html";
-  });
-
-// Menu js
-document.querySelector("#main > select").addEventListener("click", function () {
-  let selected = document.querySelector("#main > select").value;
-  if (selected == "all") {
-    window.location.href = "appliances.html";
-  } else if (selected == "topdeals") {
-    window.location.href = "topDeals.html";
-  } else if (selected == "dealofday") {
-    window.location.href = "";
-  }
-});
-
-// cart Image
-document
-  .querySelector("#main > p:last-child")
-  .addEventListener("click", function () {
-    window.location.href = "";
-  });
-
-// Top deals
-document.querySelector("#top").addEventListener("click", function () {
-  window.location.href = "topDeals.html";
-});
-
-// Deals of the day
-document.querySelector("#deal").addEventListener("click", function () {
-  window.location.href = "";
-  console.log("inside");
-});
-
-// Account
-document.querySelector("#account").addEventListener("click", function () {
-  let selectedd = document.querySelector("#account").value;
-  if (selectedd == "signin") {
-    window.location.href = "";
-  } else if (selectedd == "create") {
-    window.location.href = "";
-  } else if (selectedd == "ac") {
-    window.location.href = "";
-  }
-});
-
-// end
-// nav bar
-
 let productData = [
   {
     name: "OnePlus - 9 5G 128GB (Unlocked) - Astral Black",
@@ -290,7 +238,7 @@ function displayItems(productData) {
     pModel.innerText = "Brand: " + element.model;
     let pContent = document.createElement("img");
     pContent.setAttribute("class", "pContent");
-    pContent.src = "/rating.png";
+    pContent.src = "/img/rating.png";
     let pAvail = document.createElement("p");
     pAvail.setAttribute("class", "pAvail");
     pAvail.innerText = "No rebates available in 96939";
@@ -306,19 +254,24 @@ function displayItems(productData) {
     // cart
     let pCart = document.createElement("button");
     let cLogo = document.createElement("img");
-    cLogo.src = "/trolly.png";
+    cLogo.src = "/img/trolly.png";
 
     let text = document.createElement("p");
     text.innerText = "Add to Cart";
 
     pCart.setAttribute("class", "pCart");
     pCart.addEventListener("click", function () {
-      if (addtoCartFunction(element.id)) {
-        element.quantity = 1;
-        element.totalPrice = element.price * element.quantity;
-        cart_page.push(element);
+      if (localStorage.getItem("tempUserData") == undefined) {
+        alert("You Have to Login or Sign Up to add items into cart!");
+        window.location.href = "signup.html";
+      } else {
+        if (addtoCartFunction(element.id)) {
+          element.quantity = 1;
+          element.totalPrice = element.price * element.quantity;
+          cart_page.push(element);
 
-        localStorage.setItem("cart_page", JSON.stringify(cart_page));
+          localStorage.setItem("cart_page", JSON.stringify(cart_page));
+        }
       }
     });
 
@@ -346,7 +299,11 @@ let slide_2 = document.getElementById("slide-2");
 slide_1.addEventListener("click", slider);
 slide_2.addEventListener("click", sliderTwo);
 
-let slide_img = ["/slider-2-1.png", "/slider-2-2.png", "/slider-2-3.png"];
+let slide_img = [
+  "/img/slider-2-1.png",
+  "/img/slider-2-2.png",
+  "/img/slider-2-3.png",
+];
 
 let img = document.getElementById("productSlide");
 let count = 0;

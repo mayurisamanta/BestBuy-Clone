@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Deals</title>
+    <title>Top Deals - Best Buy</title>
+    <link rel="shortcut icon" href="/Assets-1/price-tag.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/2cdd242e4b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navbar.css">
     <style>
         * {
             font-family: 'Raleway', sans-serif;
@@ -1318,35 +1319,39 @@
 
 </html>
 <script>var topDealItemArr = [{
-        prod_url: "https://images.unsplash.com/photo-1588200908342-23b585c03e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80;maxHeight=160;maxWidth=160",
+        image: "https://images.unsplash.com/photo-1588200908342-23b585c03e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80;maxHeight=160;maxWidth=160",
         prod_logo: "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120",
-        prod_model: "samsung-82-class-q60t-series-led-4k-uhd-smart",
-        prod_price: "899.99",
+        name: "samsung-82-class-q60t-series-led-4k-uhd-smart",
+        price: "899.99",
+        quantity: 1,
 
     }
 
         ,
     {
-        prod_url: "https://images.unsplash.com/photo-1588200908342-23b585c03e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80;maxHeight=640;maxWidth=550",
+        image: "https://images.unsplash.com/photo-1588200908342-23b585c03e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80;maxHeight=640;maxWidth=550",
         prod_logo: "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120",
-        prod_model: "samsung-82-class-q60t-series-led-4k-uhd-smart",
-        prod_price: "659.99",
+        name: "samsung-82-class-q60t-series-led-4k-uhd-smart",
+        price: "659.99",
+        quantity: 1,
     }
 
         ,
     {
-        prod_url: "https://images.unsplash.com/photo-1588200908342-23b585c03e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80;maxHeight=160;maxWidth=160",
+        image: "https://images.unsplash.com/photo-1588200908342-23b585c03e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80;maxHeight=160;maxWidth=160",
         prod_logo: "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120",
-        prod_model: "Samsung-58-class-q60t-series-led-4k-uhd-smart",
-        prod_price: "469.99",
+        name: "Samsung-58-class-q60t-series-led-4k-uhd-smart",
+        price: "469.99",
+        quantity: 1,
     }
 
         ,
     {
-        prod_url: "https://images.unsplash.com/photo-1588200908342-23b585c03e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80;maxHeight=640;maxWidth=550",
+        image: "https://images.unsplash.com/photo-1588200908342-23b585c03e26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80;maxHeight=640;maxWidth=550",
         prod_logo: "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120",
-        prod_model: "samsung-82-class-q60t-series-led-4k-uhd-smart",
-        prod_price: "389.99"
+        name: "samsung-82-class-q60t-series-led-4k-uhd-smart",
+        price: "389.99",
+        quantity: 1,
     }
 
     ];
@@ -1360,7 +1365,7 @@
 
         box.setAttribute("class", "photo_A");
         var img = document.createElement("img");
-        img.src = ele.prod_url;
+        img.src = ele.image;
 
         img.style.width = "90%";
         img.style.height = '200px';
@@ -1377,15 +1382,17 @@
 
 
         var model = document.createElement('a');
-        model.innerText = ele.prod_model;
+        model.innerText = ele.name;
         model.style.lineHeight = '20px';
         model.style.color = '#0091f7';
         model.style.marginBottom = '0.6rem'
         model.style.cursor = 'pointer';
 
         var price = document.createElement("p");
-        price.innerText = ele.prod_price;
+        price.innerText = ele.price;
 
+
+        // quantity:1,
         var btn = document.createElement("button");
         btn.innerText = "Add to Cart";
         btn.style.backgroundColor = 'yellow';
@@ -1425,6 +1432,7 @@
 
 
     function addtocart(ele) {
+        ele.totalPrice = ele.price * ele.quantity;
         cartItemArr.push(ele);
         localStorage.setItem("cart_page", JSON.stringify(cartItemArr));
         alert("Item/s added to cart");
@@ -1433,4 +1441,4 @@
 
 </script>
 
-<script src="navbar.js"></script>
+<script src="/js/navbar.js"></script>
