@@ -11,6 +11,7 @@ let productArr = JSON.parse(localStorage.getItem("cart_page"))
 
 productArr.forEach(function(elem){
     let newDiv = document.createElement("div");
+    newDiv.style.marginBottom = "10px";
 
     let image = document.createElement("img");
     image.setAttribute("src",elem.image);
@@ -27,6 +28,7 @@ let totalAmount = 0;
 productArr.forEach(function(elem,index){
     totalAmount = (totalAmount + (elem.quantity*elem.price));
     let div = document.createElement("div");
+    div.style.marginBottom = "10px"
     
     let image = document.createElement("img");
     image.setAttribute("src",elem.image);
@@ -55,19 +57,18 @@ productArr.forEach(function(elem,index){
     
 })
 
-document.querySelector("#totalAmount").innerText = "$"+(totalAmount)
+document.querySelector("#totalAmount").innerText = "$"+(totalAmount).toFixed(2);
 
 document.querySelector("#referalBtn").addEventListener("click",referal);
 let temp = totalAmount;
 function referal(){
     if(document.querySelector("#referal").value == "buyers10"){
         totalAmount = totalAmount - totalAmount*(10/100);
-        localStorage.setItem("totalReferalAmt",totalAmount.toFixed(2));
         alert("Referal added successfuly")
         document.querySelector("#totalAmount").innerText = "$"+(totalAmount).toFixed(2)
         let discount = document.querySelector("#savings");
         discount.innerText =  "$"+(temp - totalAmount).toFixed(2); 
-        localStorage.setItem("referalDiscount",discount.innerText);
+        localStorage.setItem("referalDiscount",(temp - totalAmount));
     }else{
         alert("Enter a valid referal code")
     }
@@ -78,4 +79,5 @@ function removefun(index){
     localStorage.setItem("cart_page",JSON.stringify(productArr));
     window.location.reload();
 }
+
 

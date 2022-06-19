@@ -6,10 +6,11 @@
 
 let productArr = JSON.parse(localStorage.getItem("cart_page"));
 
-// let totalAmount = 0;
+let totalAmount = 0;
 productArr.forEach(function(elem,index){
-    // totalAmount = totalAmount + (elem.quantity*elem.price);
+    totalAmount = totalAmount + (elem.quantity*elem.price);
     let div = document.createElement("div");
+    div.style.marginBottom = "10px";
     
     let image = document.createElement("img");
     image.setAttribute("src",elem.image);
@@ -34,14 +35,13 @@ productArr.forEach(function(elem,index){
 
     div2.append(price,quantity,remove);
     div.append(image,name,div2);
-    document.querySelector("#responsiveness").append(div);
-    
+    document.querySelector("#responsiveness").append(div); 
 })
-let referalAmt = localStorage.getItem("totalReferalAmt")
-document.querySelector("#totalAmount").innerText = "$"+referalAmt;
 
 let referalDiscount = localStorage.getItem("referalDiscount");
-document.querySelector("#referalDiscount").innerText = referalDiscount;
+document.querySelector("#referalDiscount").innerText = "$" + Number((referalDiscount)).toFixed(2);
+document.querySelector("#totalAmount").innerText = "$"+(totalAmount-Number(referalDiscount).toFixed(2));
+
 // "$"+totalAmount
 
 // document.querySelector("#referalBtn").addEventListener("click",referal);
