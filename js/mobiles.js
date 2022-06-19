@@ -2,7 +2,7 @@ let productData = [
   {
     name: "OnePlus - 9 5G 128GB (Unlocked) - Astral Black",
     price: "989.99",
-    img_url:
+    image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6457/6457035_sd.jpg;maxHeight=300;maxWidth=450",
     model: "Oneplus",
     id: 20222,
@@ -10,7 +10,7 @@ let productData = [
   {
     name: "Apple - Pre-Owned iPhone XR with 128GB Memory Cell Phone (Unlocked) - Black",
     price: "289.99",
-    img_url:
+    image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6398/6398614_sd.jpg;maxHeight=300;maxWidth=450",
     model: "Apple",
     id: 20223,
@@ -18,7 +18,7 @@ let productData = [
   {
     name: "OnePlus - Geek Squad Certified Refurbished Nord N10 5G 128GB (Unlocked) - Midnight Ice",
     price: "299.99",
-    img_url:
+    image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6463/6463777_sd.jpg;maxHeight=300;maxWidth=450",
     model: "Oneplus",
     id: 20225,
@@ -26,7 +26,7 @@ let productData = [
   {
     name: "Motorola Edge 256GB (Unlocked) 2021 - Nebula Blue",
     price: "599.99",
-    img_url:
+    image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6472/6472092_rd.jpg;maxHeight=300;maxWidth=450",
     model: "Motorola",
     id: 20226,
@@ -34,7 +34,7 @@ let productData = [
   {
     name: "OnePlus - 8T 5G 256G (Unlocked) - Aquamarine Green",
     price: "599.99",
-    img_url:
+    image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6448/6448201_sd.jpg;maxHeight=300;maxWidth=450",
     model: "Oneplus",
     id: 20227,
@@ -42,7 +42,7 @@ let productData = [
   {
     name: "OnePlus - Nord N10 5G 128GB (Unlocked) - Midnight Ice",
     price: "799.99",
-    img_url:
+    image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6448/6448207_sd.jpg;maxHeight=300;maxWidth=450",
     model: "Oneplus",
     id: 20228,
@@ -50,7 +50,7 @@ let productData = [
   {
     name: "Apple - iPhone 12 5G 64GB - Blue (T-Mobile)",
     price: "2799.99",
-    img_url:
+    image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6418/6418409_sd.jpg;maxHeight=300;maxWidth=450",
     model: "Apple",
     id: 20229,
@@ -58,7 +58,7 @@ let productData = [
   {
     name: "Apple - Pre-Owned iPhone XR with 128GB Memory Cell Phone (Unlocked) - Black",
     price: "289.99",
-    img_url:
+    image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6398/6398614_sd.jpg;maxHeight=300;maxWidth=450",
     model: "Apple",
     id: 202210,
@@ -66,7 +66,7 @@ let productData = [
   {
     name: "Motorola - Moto G Power (2022) 128GB (Unlocked) - Ice Blue",
     price: "199.99",
-    img_url:
+    image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6494/6494854_sd.jpg;maxHeight=300;maxWidth=450",
     model: "Motorola",
     id: 202211,
@@ -74,7 +74,7 @@ let productData = [
   {
     name: "Motorola - Geek Squad Certified Refurbished Moto G Stylus 2021 (Unlocked) - Aurora Black",
     price: "189.99",
-    img_url:
+    image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6463/6463774_sd.jpg;maxHeight=300;maxWidth=450",
     model: "Motorola",
     id: 202215,
@@ -82,7 +82,7 @@ let productData = [
   {
     name: "Apple - iPhone 13 Pro Max 5G 128GB - Alpine Green (AT&T)",
     price: "1789.99",
-    img_url:
+    image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6487/6487226_sd.jpg;maxHeight=300;maxWidth=450",
     model: "Apple",
     id: 202216,
@@ -90,7 +90,7 @@ let productData = [
   {
     name: "Motorola - Moto G 5G 256GB (2022 Unlocked) - Moonlight Gray",
     price: "389.99",
-    img_url:
+    image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501829_sd.jpg;maxHeight=300;maxWidth=450",
     model: "Motorola",
     id: 202217,
@@ -98,7 +98,7 @@ let productData = [
   {
     name: "Apple - iPhone 13 Pro 5G 128GB - Sierra Blue (Verizon)",
     price: "1389.99",
-    img_url:
+    image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443321_sd.jpg;maxHeight=300;maxWidth=450",
     model: "Apple",
     id: 202218,
@@ -106,7 +106,7 @@ let productData = [
   {
     name: "OnePlus - 9 5G 128GB (Unlocked) - Astral Black",
     price: "989.99",
-    img_url:
+    image:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6457/6457035_sd.jpg;maxHeight=300;maxWidth=450",
     model: "Oneplus",
     id: 202218,
@@ -226,7 +226,7 @@ function displayItems(productData) {
   productData.forEach(function (element) {
     let pImage = document.createElement("img");
     pImage.setAttribute("class", "pImage");
-    pImage.src = element.img_url;
+    pImage.src = element.image;
     let pName = document.createElement("p");
     pName.setAttribute("class", "pName");
     pName.innerText = element.name;
