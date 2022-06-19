@@ -96,6 +96,9 @@ if (cartLS.length > 0) {
       decre.style.cursor = "pointer";
       decre.addEventListener("click", function () {
         ele.quantity--;
+        if(ele.quantity===-1){
+          deleteforcart(ind)
+        }
         quantity.innerText = ele.quantity;
         ele.totalPrice = ele.price * ele.quantity;
         cost.innerText = `$ ${ele.totalPrice}`;
