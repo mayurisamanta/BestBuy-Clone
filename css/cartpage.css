@@ -364,12 +364,18 @@
 .cartsec {
     margin: 30px;
 }
-
+#addtotal{
+    border-bottom: 2px solid gray;
+    padding-bottom: 2px;
+}
 #total {
-    border-top: 2px solid gray;
+    /* border-top: 2px solid gray; */
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+}
+#finaltotal{
+    margin-top: 10px;
 }
 
 /* button {

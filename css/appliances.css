@@ -394,6 +394,9 @@
     height: auto;
     border-bottom: 1px solid rgb(150, 146, 146);
 }
+#product-container-div:hover{
+    cursor: pointer;
+}
 
 .product-category {
     font-weight: 100px;
