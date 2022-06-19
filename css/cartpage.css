@@ -450,7 +450,7 @@
 }
 
 #Addtocart>div>img {
-    height: 60%;
+    /* height: 60%; */
     width: 60%;
 }
 
@@ -511,6 +511,10 @@
 
     }
 
+    #Addtocart>div>img {
+        height: 80%;
+        width: 60%;
+    }
     .rightpart {
         background-color: white;
         align-items: center;
