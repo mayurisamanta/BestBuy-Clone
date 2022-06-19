@@ -226,6 +226,11 @@
     font-size: 13px;
   }
 
+  #discount{
+    display: flex;
+    justify-content: space-between;
+  }
+
   /* Main Page styling */
 
   
