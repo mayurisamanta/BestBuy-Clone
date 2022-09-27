@@ -20,7 +20,7 @@
 - GitHub
 - Bash
 - Vs code
-- Netlify ([Check our site here](http://bestbuy-in.netlify.com/))
+- Netlify ([Check our work here](http://bestbuy-in.netlify.com/))
 
 # Overview of our work
 
