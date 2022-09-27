@@ -25,13 +25,15 @@
 # Overview of our work
 
 **Home Page**
-- This is the landing page.
-- 
-![App Screenshot](https://www.linkpicture.com/q/BB3.png)
+- This is the Home Page
+![Screenshot](https://www.linkpicture.com/q/BB3.png)
 
 
 **Login Page**
-- This is the Login Page in case you dont have any account already. 
-- 
-![App Screenshot](https://www.linkpicture.com/q/BB2.png)
+- This is the Login Page to register users  
+![Screenshot](https://www.linkpicture.com/q/BB2.png)
+
+- This is Laptop section where user can select product from different brands  
+![Screenshot](https://www.linkpicture.com/q/BB4.png)
+
 
