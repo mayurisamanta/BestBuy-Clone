@@ -27,11 +27,11 @@
 **Home Page**
 - This is the landing page.
 - 
-![App Screenshot](https://ibb.co/1ZSvjH5)
+![App Screenshot](https://www.linkpicture.com/q/BB3.png)
 
 
 **Login Page**
 - This is the Login Page in case you dont have any account already. 
 - 
-![App Screenshot](https://www.linkpicture.com/q/BB3.png) 
+![App Screenshot](https://www.linkpicture.com/q/BB2.png)
 
