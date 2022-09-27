@@ -24,19 +24,17 @@
 
 # Overview of our work
 
-**Home Page**
-- This is the Home Page
+**This is the Home Page**
 ![Screenshot](https://www.linkpicture.com/q/BB3.png)
 
 
-**Login Page**
-- This is the Login Page to register users  
+**This is the Login Page to register users** 
 ![Screenshot](https://www.linkpicture.com/q/BB2.png)
 
 **This is Laptop section where user can select product from different brands** 
 ![Screenshot](https://www.linkpicture.com/q/BB4.png)
 
-**Cart Section*
+**Cart Section**
 ![Screenshot](https://www.linkpicture.com/q/BB5.png)
 
 **Checkout Page**
