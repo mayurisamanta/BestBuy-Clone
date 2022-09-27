@@ -27,11 +27,11 @@
 **Home Page**
 - This is the landing page.
 - 
-![App Screenshot](https://i.postimg.cc/T1Hq84d5/BB2.png)
+![App Screenshot](https://i.postimg.cc/sDVt3QVV/BB1.png)
 
 
 **Login Page**
 - This is the Login Page in case you dont have any account already. 
 - 
-![App Screenshot](https://postimg.cc/p5znzknP) 
+![App Screenshot](https://i.postimg.cc/T1Hq84d5/BB2.png) 
 
