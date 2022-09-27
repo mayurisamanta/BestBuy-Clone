@@ -42,3 +42,5 @@
 **Checkout Page**
 ![Screenshot](https://www.linkpicture.com/q/BB6.png)
 
+**Payment's Page**
+![Screenshot](https://www.linkpicture.com/q/BB7.png)
