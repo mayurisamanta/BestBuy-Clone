@@ -36,4 +36,5 @@
 - This is Laptop section where user can select product from different brands  
 ![Screenshot](https://www.linkpicture.com/q/BB4.png)
 
-
+- Cart Section
+![Screenshot](https://www.linkpicture.com/q/BB5.png)
