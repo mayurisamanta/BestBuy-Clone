@@ -33,8 +33,12 @@
 - This is the Login Page to register users  
 ![Screenshot](https://www.linkpicture.com/q/BB2.png)
 
-- This is Laptop section where user can select product from different brands  
+**This is Laptop section where user can select product from different brands** 
 ![Screenshot](https://www.linkpicture.com/q/BB4.png)
 
-- Cart Section
+**Cart Section*
 ![Screenshot](https://www.linkpicture.com/q/BB5.png)
+
+**Checkout Page**
+![Screenshot](https://www.linkpicture.com/q/BB6.png)
+
