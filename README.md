@@ -33,5 +33,5 @@
 **Login Page**
 - This is the Login Page in case you dont have any account already. 
 - 
-![App Screenshot](https://i.postimg.cc/T1Hq84d5/BB2.png) 
+![App Screenshot](https://www.linkpicture.com/q/BB3.png) 
 
