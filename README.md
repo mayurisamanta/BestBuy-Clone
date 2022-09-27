@@ -22,3 +22,13 @@
 - Vs code
 - Netlify ([Check our site here](http://bestbuy-in.netlify.com/))
 
+# Overview of our work
+
+**Home Page**
+- This is the landing page 
+![App Screenshot]([https://i.postimg.cc/v8pWxsbR/Web-capture-28-9-2022-03855-silver-sfogliatella-0c9664-netlify-app.jpg](https://postimg.cc/YjsX3SGV))
+
+**Login Page**
+- This is the Login Page in case you dont have any account already. 
+![App Screenshot]([https://i.postimg.cc/cC6XxMRQ/Web-capture-28-9-2022-04750-silver-sfogliatella-0c9664-netlify-app.jpg](https://postimg.cc/p5znzknP))
+
