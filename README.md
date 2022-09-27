@@ -27,7 +27,7 @@
 **Home Page**
 - This is the landing page.
 - 
-![App Screenshot](https://i.postimg.cc/sDVt3QVV/BB1.png)
+![App Screenshot](https://ibb.co/1ZSvjH5)
 
 
 **Login Page**
