@@ -44,3 +44,30 @@
 
 **Payment's Page**
 ![Screenshot](https://www.linkpicture.com/q/BB7.png)
+
+
+## Authors
+
+#### Sushank Mandal
+> Github: [sushank678](https://github.com/sushank678)
+Worked on All appliances, Phones, Laptop page
+
+#### Rohan Mourya
+> Github: [rohan209547mourya](https://github.com/rohan209547mourya)
+Worked on Footer, Login, Accounts page
+
+#### Mayuri Samanta
+> Github: [mayurisamanta](https://github.com/mayurisamanta)
+Worked on Navbar, Homepage
+
+#### Anurag Shekawat
+>Github:[Anurag-shekawat](https://github.com/Anurag-shekawat)
+Worked on Checkout, Payment page
+
+#### Sadanand
+>Github:[Sadanand012](https://github.com/Sadanand012)
+Worked on Cart page
+
+#### Siddharth Sharma
+>Github:[is1dd](https://github.com/is1dd)
+Worked on Deal-of-the-day page 
