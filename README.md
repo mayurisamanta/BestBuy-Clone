@@ -62,6 +62,7 @@
 *To place order enter with card details [Card No - 1234567812345678] and [OTP - 1234]*
 ![Screenshot](https://www.linkpicture.com/q/BB7.png)
 
+# Blog Post 👉 [Best Buy](https://medium.com/@mandal678/best-buy-clone-37561f1341cd)
 
 # Contributors
 
