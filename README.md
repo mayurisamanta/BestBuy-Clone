@@ -1,15 +1,18 @@
-# Best-Buyers
+![Logo](https://github.com/mayurisamanta/Best-Buyers/blob/main/Assets-1/best_buy.png?raw=true)
+
+# Bestbuy.com
 
 > [Best Buy](https://www.bestbuy.com/) is a provider of consumer technology products and services. The Company offers a range of merchandise and services to its customers, including computing and mobile phones, consumer electronics, appliances, entertainment and other products. Its services include consultation, delivery, design, health-related services, installation, memberships, repair, set-up, technical support, and warranty-related services.
 
-> Cloned BestBuy.com website during the construct week at [Masai School](masaischool.com). Completed the project in four days with a team of six members and implemented the maximum user centric functionality.
+> Cloned BestBuy.com website during the construct week at [Masai School](https://masaischool.com/). Completed the project in six days with a team of six members and implemented the maximum user centric functionality.
 
+# Click here to go through our work
+
+<button style=" border-radius :5px ; padding : 5px ; background-color : rgb(62,84,255) ; border : none " > <a style = "text-decoration : none ;color : white ; font-weight : bold" href="http://bestbuy-in.netlify.com/"> Deployed Link </a> </button>
 # Features
 
-- Collection of wide range of products 
-
+- Collection of wide range of products
 - Login with user details stored in localstorage
-
 - User can add products to cart 🛒 and can initiate order
 
 # Technology used 
@@ -17,36 +20,51 @@
 - HTML
 - CSS
 - JavaScript
-- GitHub
-- Bash
+- jQuery
+- Git & GitHub
 - Vs code
-- Netlify ([Check our work here](http://bestbuy-in.netlify.com/))
+- Netlify 
+
+# Lessons Learned
+
+- Gain excessive knowledge on application of HTML, CSS & JS.
+- Got to know how to collabrate with team members.
+- Enjoyed the process of learning and creating the product.
 
 # Overview of our work
 
-**This is the Home Page**
+## **Home Page**
+*This is Landing page of our website*
 ![Screenshot](https://www.linkpicture.com/q/BB3.png)
 
-**This is the SignUp Page to register users** 
-![Screenshort](https://i.postimg.cc/HkXkDd52/BB8.png)
+## **SignUp Page** 
+*SignUp to register with our website*
+*All details of the users will be stored in the local storage.*
+![Screenshot](https://i.postimg.cc/HkXkDd52/BB8.png)
 
-**This is the Login Page to register users** 
+
+## **Login Page** 
+*In order to continue shopping login with user details*
 ![Screenshot](https://www.linkpicture.com/q/BB2.png)
 
-**This is Laptop section where user can select product from different brands** 
+## **Product Page** 
+*User can select from variety of products and can filter or sort accordingly*
 ![Screenshot](https://www.linkpicture.com/q/BB4.png)
 
-**Cart Section**
+## **Cart Page**
+*User can increase or decrease the quantity of products*
 ![Screenshot](https://www.linkpicture.com/q/BB5.png)
 
-**Checkout Page**
+## **Checkout Page**
+*User can apply coupon 'buyers10' to get 10% discount*
 ![Screenshot](https://www.linkpicture.com/q/BB6.png)
 
-**Payment's Page**
+## **Payment's Page**
+*To place order enter with card details [Card No - 1234567812345678] and [OTP - 1234]*
 ![Screenshot](https://www.linkpicture.com/q/BB7.png)
 
 
-## Authors
+# Contributors
 
 #### Sushank Mandal
 > Github: [sushank678](https://github.com/sushank678)
