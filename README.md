@@ -8,7 +8,6 @@
 
 # 👉 [Click here](https://bestbuy-in.netlify.app/) to go through our work 
 
-<button style=" border-radius :5px ; padding : 5px ; background-color : rgb(62,84,255) ; border : none " > <a style = "text-decoration : none ;color : white ; font-weight : bold" href="http://bestbuy-in.netlify.com/"> Deployed Link </a> </button>
 # Features
 
 - Collection of wide range of products
