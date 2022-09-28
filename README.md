@@ -27,6 +27,8 @@
 **This is the Home Page**
 ![Screenshot](https://www.linkpicture.com/q/BB3.png)
 
+**This is the SignUp Page to register users** 
+![Screenshort](https://i.postimg.cc/HkXkDd52/BB8.png)
 
 **This is the Login Page to register users** 
 ![Screenshot](https://www.linkpicture.com/q/BB2.png)
