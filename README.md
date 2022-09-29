@@ -8,6 +8,8 @@
 
 # 👉 [Click here](https://bestbuy-in.netlify.app/) to go through our work 
 
+# Blog Post 👉 [Click here](https://medium.com/@mandal678/best-buy-clone-37561f1341cd)
+
 # Features
 
 - Collection of wide range of products
@@ -61,8 +63,6 @@
 ## **Payment's Page**
 *To place order enter with card details [Card No - 1234567812345678] and [OTP - 1234]*
 ![Screenshot](https://www.linkpicture.com/q/BB7.png)
-
-# Blog Post 👉 [Click here](https://medium.com/@mandal678/best-buy-clone-37561f1341cd)
 
 # Contributors
 
