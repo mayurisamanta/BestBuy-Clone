@@ -6,9 +6,9 @@
 
 > Cloned BestBuy.com website during the construct week at [Masai School](https://masaischool.com/). Completed the project in six days with a team of six members and implemented the maximum user centric functionality.
 
-# Overview of our work 👉 [Click here](https://bestbuy-in.netlify.app/)
+## Overview of our work 👉 [Click here](https://bestbuy-in.netlify.app/)
 
-# Blog Post 👉 [Click here](https://medium.com/@mandal678/best-buy-clone-37561f1341cd)
+## Blog Post 👉 [Click here](https://medium.com/@mandal678/best-buy-clone-37561f1341cd)
 
 # Features
 
