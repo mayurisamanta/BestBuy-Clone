@@ -4,7 +4,7 @@
 
 > [Best Buy](https://www.bestbuy.com/) is a provider of consumer technology products and services. The Company offers a range of merchandise and services to its customers, including computing and mobile phones, consumer electronics, appliances, entertainment and other products. Its services include consultation, delivery, design, health-related services, installation, memberships, repair, set-up, technical support, and warranty-related services.
 
-> Cloned BestBuy.com website during the construct week at [Masai School](https://masaischool.com/). Completed the project in six days with a team of six members and implemented the maximum user centric functionality.
+> Cloned BestBuy.com website during the construct week at [Masai School](https://masaischool.com/). Completed the project in five days with a team of six members and implemented the maximum user centric functionality.
 
 ## Overview of our work 👉 [Click here](https://bestbuy-in.netlify.app/)
 
@@ -79,13 +79,13 @@ Worked on Footer, Login, Accounts page
 Worked on Navbar, Homepage
 
 #### Anurag Shekawat
->Github:[Anurag-shekawat](https://github.com/Anurag-shekawat)
+>Github: [Anurag-shekawat](https://github.com/Anurag-shekawat)
 Worked on Checkout, Payment page
 
 #### Sadanand
->Github:[Sadanand012](https://github.com/Sadanand012)
+>Github: [Sadanand012](https://github.com/Sadanand012)
 Worked on Cart page
 
 #### Siddharth Sharma
->Github:[is1dd](https://github.com/is1dd)
+>Github: [is1dd](https://github.com/is1dd)
 Worked on Deal-of-the-day page 
